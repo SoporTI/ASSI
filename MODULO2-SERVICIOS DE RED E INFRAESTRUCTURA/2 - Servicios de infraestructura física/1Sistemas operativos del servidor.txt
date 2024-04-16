@@ -1,0 +1,14 @@
+Cuando quieres configurar un servidor,
+instalas un servicio o una aplicación en ese servidor,
+como uno de almacenamiento de archivos. Luego, ese servidor proporcionará esos servicios
+a las máquinas que lo soliciten. Quizá pensaste que instalarías servicios
+en un sistema operativo como Windows 10. Esa es una opción. Generalmente, en una organización
+debes instalar los servicios en un sistema operativo del servidor. Los sistemas operativos del servidor
+son sistemas operativos comunes optimizados
+para la funcionalidad del servidor. Esto incluye funciones como permitir
+más conexiones de red y más capacidad de RAM. La mayoría de los SO tienen
+una versión específica para los servidores. En Windows, está Windows Server. En Linux, muchas distribuciones tienen
+elementos superiores que tienen servidores como Ubuntu Server,
+que es ideal para el uso de servidor. Los SO de servidores suelen ser más seguros
+y vienen con servicios adicionales integrados así que no tienes
+que configurarlos por separado.

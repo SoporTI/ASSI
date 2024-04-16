@@ -1,0 +1,19 @@
+Un repaso rápido. El DNS es lo que asigna los nombres
+comprensibles para seres humanos a direcciones IP. Es un servicio de red importante
+para establecer y mantener cuando se administra
+la infraestructura de TI de una empresa. Si no lo configuras bien, nadie podrá acceder
+a los sitios web con sus nombres. No hace falta pensar en el DNS
+en nuestras computadoras personales. Cuando conectas una máquina nueva a Internet
+y empiezas a escribir la dirección web funciona automáticamente. No tienes que escribir
+la dirección IP ni nada pero algo sucede en segundo plano. Cuando te conectas a una red,
+usas la dirección del servidor DNS que proporcionó el router
+al que te conectaste. Actualiza la configuración de red
+para usar la dirección del servidor DNS que suele ser el servidor DNS de tu ISP. Desde allí, puedes acceder
+a cualquier sitio web prácticamente. ¿Por qué debes configurar tus propios
+servidores DNS si vienen listos para usarse? Existen dos motivos. Primero, si ejecutas
+un servicio web, como un sitio web necesitas indicar a Internet
+en qué dirección IP encontrar tu sitio web. Para ello, debes configurar el DNS. El segundo motivo es que quizá
+quieras trabajar en tu servidor o máquinas de usuario de forma remota. En teoría, podrías acceder
+de forma remota a través de una dirección IP pero también podrías usar
+un nombre de host fácil de recordar. Para ello, necesitas un DNS para asignar
+la dirección IP al nombre del host.

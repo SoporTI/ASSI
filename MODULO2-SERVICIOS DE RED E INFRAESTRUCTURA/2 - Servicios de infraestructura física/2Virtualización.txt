@@ -1,0 +1,40 @@
+En el último curso,
+hablamos sobre las máquinas virtuales y cómo establecer una máquina virtual
+en una computadora personal. En esta lección, hablaremos de por qué
+la virtualización puede ser importante para los servicios de infraestructura
+y la administración de sistemas. Hay dos formas de ejecutar los servicios,
+en un hardware dedicado o en una instancia de virtualización
+en un servidor. Cuando virtualizas un servidor,
+le ingresas muchas instancias virtuales. Cada instancia contiene un servicio. Hay muchísimos pros y contras de ejecutar tus servicios
+en cualquiera de estas plataformas. Te los resumiré. El rendimiento. Un servicio
+que se ejecuta en un hardware dedicado tendrá un mejor rendimiento
+que un servicio en un entorno virtualizado debido a que solo tienes
+un servicio que usa una máquina en lugar de muchos servicios
+que usan una máquina. El costo. El hardware del servidor puede
+ser muy costoso. Si pones un servicio
+en una pieza de hardware dedicado y tuvieras que hacer eso mismo
+con otros nueve servicios, es mucho. Uno de los grandes beneficios
+de la virtualización es que puedes tener 10 servicios ejecutándose en 10 instancias
+virtuales diferentes, en un servidor físico. Aquí hay otra forma de verlo. Este es un servidor típico.
+Si solo tienes un servicio en ejecución es probable que solo absorba
+del 10 al 20% del uso de CPU. El resto del hardware no se usa. Podrías agregar
+muchos servicios más al servidor físico y aun tener
+un buen umbral para el uso de los recursos. Es más económico ejecutar
+varios servicios en una máquina que ejecutar muchos servicios
+en varias máquinas. El mantenimiento. Los servicios requieren
+el mantenimiento del hardware y la actualización rutinaria
+de los sistemas operativos. A veces debes desconectar el servicio
+para hacer el mantenimiento. Con un servicio virtualizado,
+puedes detener el servicio con rapidez o migrarlo a otro servidor físico. Y luego tomarte el tiempo
+necesario para el mantenimiento. Los servidores virtualizados facilitan
+el mantenimiento del servidor. Los puntos de fallo. Cuando pones
+un servicio en una máquina física y esa máquina tiene problemas,
+empiezan las complicaciones. Con servidores virtualizados, puedes mover
+con facilidad servicios de una máquina física e iniciar el mismo servicio
+en una máquina diferente como respaldo. También puedes hacerlo con el servidor físico pero eso podría ser costoso
+si tienes varios servicios. Algo a favor es que puedes evitar
+un único punto de fallo de una máquina física si tienes una configuración redundante
+de servidores, que serían de respaldo. Como ves, hay muchos beneficios
+de usar servidores virtualizados. Solo asegúrate de analizar los pros
+y los contras de virtualizar los servidores y de usar un hardware de servidores dedicado. Así, podrás tomar
+la decisión correcta para tu empresa.

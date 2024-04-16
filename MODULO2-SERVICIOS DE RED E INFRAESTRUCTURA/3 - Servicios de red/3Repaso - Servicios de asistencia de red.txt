@@ -1,0 +1,24 @@
+Hay varios servicios de red
+que se usan de forma interna en un entorno empresarial de TI para mejorar la seguridad, la privacidad
+y la productividad de los empleados. Aunque son bastante comunes puede que no los encuentres
+en organizaciones pequeñas. Seguramente los viste
+en algún momento de tu carrera de TI. Son las intranets y los servidores proxy. Una intranet es una red interna
+dentro de una empresa a la que puedes acceder si estás
+en la red de una empresa. Las intranets
+pueden proporcionar una amplia variedad de información y deben
+mejorar la productividad y darles a los empleados un medio más grande
+para compartir información. Considéralo como el sitio web de la empresa que solo es accesible para quienes están
+en la red corporativa. En este sitio web,
+la documentación puede estar centralizada los equipos pueden publicar noticias,
+los empleados pueden escribir en foros y empezar charlas, y más. Las intranets son más comunes
+en empresas grandes y pueden ser herramientas muy valiosas
+para la productividad de los empleados. Otro servicio de asistencia interno
+que se usa mucho es el servidor proxy. Los servidores proxy funcionan
+como intermediarios entre la red de una empresa e Internet. Reciben el tráfico de red y retransmiten
+esa información a la red de la empresa. De este modo, el tráfico de red de la empresa
+se mantiene privado de Internet. Internet recibe tráfico
+a través de un servidor proxy pero no sabe de dónde provino originalmente. Solo conoce al proxy. Los servidores proxy también pueden usarse para supervisar y registrar
+la actividad interna de red de la empresa. Se pueden configurar para filtrar ciertos sitios web
+y que no se pueda acceder a ellos. Los servidores proxy son útiles
+para proporcionar privacidad y seguridad en Internet además de regular el acceso
+dentro de la empresa.

@@ -1,0 +1,27 @@
+Recordarás que podemos usar
+un servidor web para almacenar y entregar contenido
+a clientes que soliciten nuestros servicios. Quizá queremos almacenar el contenido
+del sitio web en nuestro servidor web. Si los clientes quieren visitar
+nuestro sitio web, debemos configurar el DNS para que solo escriban
+una URL para encontrarnos. Hablemos sobre cómo se configura
+el DNS para un sitio web. Primero, necesitamos un nombre de dominio. Podemos adquirir nombres de dominio,
+como ConfigurarDNSEsDivertido.ejemplo.com. Podemos adquirir nombres de dominio
+como este de empresas llamadas registradores de dominios,
+como Godaddy.com o BlueHost.com. Una vez que tenemos el nombre de dominio debemos direccionar los archivos
+de nuestro sitio web a este nombre. Estos archivos pueden almacenarse
+en un proveedor de hosting en la nube o podemos controlarlos nosotros
+y almacenarlos en nuestros servidores. Los registradores de dominios también suelen
+proporcionar servicios de hosting en la nube pero pueden cobrarte una tarifa mensual
+para alojar tus archivos web. Sugerencia: si no usas
+los servicios de hosting en la nube puedes ejecutar tu propio servidor web. No lo olvides: siempre hay pros y contras
+cuando alojas un servicio tú mismo o cuando lo deslocalizas en otro lugar. Si eres el único especialista
+en asistencia de TI de tu organización asegúrate de considerar todas las opciones
+antes de comprometerte con estos servicios. Supongamos que queremos alojar
+nuestros archivos de sitios web. A partir de aquí aun debemos dirigir el nombre del dominio
+nuevo a donde se encuentra el contenido web. Existen dos maneras. Casi todos los registradores de dominios
+ofrecen configuraciones de DNS y tú puedes brindar la dirección IP
+de donde está almacenado tu contenido. Si decides no usar tu registrador
+de dominios para alojar el DNS por ti deberás configurar un servidor DNS
+confiable para tu sitio web. Como el nombre del dominio nos pertenece
+y alojamos el contenido web nosotros mismos tiene sentido tener los servidores DNS
+que conocen esa información.

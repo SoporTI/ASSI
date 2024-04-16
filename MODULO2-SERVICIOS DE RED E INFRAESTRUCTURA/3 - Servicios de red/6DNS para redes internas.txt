@@ -1,0 +1,28 @@
+El otro motivo para tener
+nuestros propios servidores DNS es para asignar las computadoras
+internas a direcciones IP. Así, podemos hacer referencia
+a una computadora por su nombre y no por una dirección IP. Hay varias maneras de hacerlo. Una es con un archivo de host local
+que posee direcciones IP estáticas para alojar asignaciones de nombres. Veamos un ejemplo. Recuerda que aprendimos que los archivos
+de host en las redes permiten asignar direcciones IP
+a nombres de host de forma manual. En Linux,
+nuestro archivo de host se llama etc/hosts. Tiene una dirección IP que dirige a 127.0.0.1
+que dirige a un nombre llamado "host local". Esto hace referencia a la computadora. El host local suele usarse como una forma
+de acceder a un servidor web local. Si cambio esta asignación
+de dirección IP por www.google.com la guardo, abro un navegador web y escribo
+www.google.com., no me llevará allí. Te mostraré. Cambiaré mi host local por www.google.com. Lo guardo. Abro el navegador web
+y escribo www.google.com. Como verás, no me llevó a ningún lugar. Solo me redirige a mi computadora local. Esto se debe a que una consulta de DNS
+primero verifica nuestro archivo host local y luego nuestros servidores DNS locales. Si hay una entrada para google.com
+en mi archivo de host se dirigirá a esa dirección IP en su lugar. Supongamos que quisiera acceder
+a la computadora de Natalie en 192.168.1.5 y su nombre de host es
+catlady.examplecompany.com. Debería escribir esto en el archivo de host
+para cada computadora de mi flota. Sin dudas, no es una opción escalable. ¿Cuál es la opción siguiente? Podemos configurar un servidor DNS local
+que tenga todos los nombres de computadoras de la organización asignados
+a sus direcciones IP. Es una ubicación de almacenamiento
+más central para esta información. Luego, cambiamos la configuración
+de red de todas las computadoras para usar este servidor DNS,
+en lugar del que nos brinda nuestro ISP. Por último, veamos
+una de las últimas opciones de DNS que podemos usar desde la red interna. Puede integrarse en un servicio de directorio
+que administra la información de usuarios y máquinas en una ubicación central,
+como Active Directory y LDAP. Una vez configurado el DNS en nuestro servicio de directorio,
+se completará automáticamente con asignaciones de máquina a dirección IP. No hay necesidad de ingresar
+esta información de forma manual.

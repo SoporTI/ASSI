@@ -1,0 +1,65 @@
+Hablamos sobre los componentes de la infraestructura física
+de un entorno de TI en una lección anterior. Recuerda que puedes configurar distintos
+servidores donde ejecutar tus servicios como uno que ejecute
+tu servicio de almacenamiento de archivos. Puedes adquirir o alquilar hardware
+para estos servidores y configurarlos y almacenarlos
+en el sitio u otra ubicación. En esencia, los administrarás
+de extremo a extremo. Hay otra opción. Si no quieres encargarte
+de administrar las tareas de hardware y actualizar los SO del servidor
+con parches y actualizaciones de seguridad puedes usar la alternativa de la nube
+para mantener tu propia infraestructura que se llama
+"infraestructura como servicio" o IaaS. Los proveedores de IaaS ofrecen máquinas
+virtuales preconfiguradas que puedes usar al igual que un servidor físico. Algunos proveedores de IaaS populares
+son Amazon Web Services y su nube de procesamiento elástica
+o sus instancias de EC2. Linode, que alquila servidores virtuales. Windows Azure y Google Compute Engine,
+que lo usaste a lo largo de este curso. La red interna de tu empresa
+no será como la de tu hogar. Habrá varias computadoras
+que deben estar en una subred específica. Debes asignarles direcciones IP
+de forma estática o a través de DHCP. El hardware de redes debe configurarse. El Internet inalámbrico seguro
+deba estar disponible. El DNS debe estar funcionando, etc. Si tu empresa es grande, a las redes suelen
+administrarlas un equipo dedicado pero en empresas más pequeñas,
+tú serás responsable de configurar la red. La red puede estar integrada en un proveedor
+de IaaS, pero en los últimos años también se extendió a su propio servicio
+en la nube, "red como servicio" o NaaS. La NaaS permite a las empresas
+deslocalizar sus servicios de redes para que no tengan que ocuparse
+del hardware de redes costoso. Las empresas tampoco deberán
+establecer su propia seguridad de red administrar su propio enrutamiento,
+configurar una WAN ni Internet privada, etc. Hablemos del software que podrían
+querer usar en tu empresa. ¿Necesitas escribir documentos de Word,
+usar un correo electrónico cliente comunicarte con otros, usar SO,
+procesar hojas de cálculo o el software necesario
+para administrar una empresa? Seguro que sí. El software correcto debe estar disponible
+para los usuarios de la empresa. Ya analizamos cómo instalar
+y mantener las máquinas de software. Debes ocuparte de aspectos como las licencias la seguridad, las actualizaciones
+y el mantenimiento de cada máquina. La alternativa en la nube
+para mantener tu propio software se conoce como "software como servicio",
+o SaaS. En lugar de instalar
+un procesador de texto en cada máquina puedes usar
+Microsoft Office 365 o Google Workspace. Ambos son servicios que puedes adquirir
+y que permiten editar documentos de texto procesar hojas de cálculo, crear
+presentaciones y más desde un navegador web. Algunas empresas crean un producto
+en función de una aplicación de software. En este caso, los desarrolladores
+de software necesitan codificar, compilar y enviar ciertos elementos a su software. Primero, deben instalarse aplicaciones
+específicas para su entorno de desarrollo de programación, luego, según el producto,
+podrían necesitar una base de datos para almacenar información. Por último, si entregan contenido web,
+como un sitio web deberán publicar su producto en Internet. Si creas toda esta canalización tú mismo,
+deberías configurar una base de datos y un servidor web. El entorno de desarrollo de programación
+también deberá instalarse en cada máquina que lo necesite. Si deseas una solución integral para compilar
+e implementar una aplicación web puedes usar algo llamado
+"plataforma como servicio", o PaaS. Esto incluye una plataforma completa
+que permite compilar código almacenar información en una base de datos
+y entregar la app desde una sola plataforma. Las opciones populares de PaaS son Heroku,
+Windows Azure y Google App Engine. El último servicio de infraestructura de TI
+que analizaremos es la administración de usuarios, accesos y autorizaciones. Un servicio de directorio centraliza
+los usuarios y las computadoras de una organización en una ubicación
+para agregarlos, actualizarlos y quitarlos. Algunos servicios de directorio que puedes
+configurar son Windows Active Directory y OpenLDAP. Los servicios de directorio también
+pueden implementarse en la nube con directorio como servicio
+o proveedores de DaaS. Hay una descripción de los servicios
+de infraestructura de TI más comunes que verás al controlar
+la administración de sistemas. Si bien los servicios en la nube
+son muy buenos, es importante comprender cómo funcionan y cómo mantenerlos
+antes de usar un servicio en la nube. Aunque los servicios
+en la nube se usan mucho en el sector y presentan muchas ventajas,
+también tienen algunas desventajas como los costos recurrentes y la necesidad
+de depender del servicio del proveedor.

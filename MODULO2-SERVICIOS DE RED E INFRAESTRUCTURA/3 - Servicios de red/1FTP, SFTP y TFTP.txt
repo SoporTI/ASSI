@@ -1,0 +1,35 @@
+Ahora que estamos más familiarizados
+con algunos aspectos comunes de la infraestructura física,
+pasemos a los servicios de red. Un servicio de red
+que suele usarse una organización es un servicio de transferencia de archivos. ¿Por qué querrías tener un servicio dedicado
+a la transferencia de archivos? Probablemente podrías llevar una memoria USB y copiar archivos
+en cada máquina en la que trabajes o hasta usar las herramientas de copia remota
+que aprendimos a usar antes. O podrías almacenar archivos enormes y transferir archivos
+de una computadora a otra por Internet. Hoy en día, existen varios servicios
+de protocolo de transferencia de archivos. Veamos un resumen de cuáles son y qué hacen. FTP. Es una forma heredada de transferir archivos de una computadora
+a otra a través de Internet y se sigue usando hoy en día. No es una forma muy segura
+de transferir datos porque no maneja la encriptación de datos. El servicio FTP funciona
+de forma similar al servicio SSH. Los clientes que desean acceder a un servidor FTP
+deben instalar un cliente FTP. En el servidor FTP, instalamos el software
+que permite compartir información ubicada en un directorio de ese servidor. Hoy, FTP se usa principalmente
+para compartir contenido de la Web. Si usas un proveedor
+de alojamiento en sitios web verás que ya tiene
+una conexión FTP disponible para su uso. Puede copiar archivos
+con facilidad desde y hacia tu sitio web. SFTP es una versión segura de FTP por lo que tiene sentido
+elegir esta opción y no FTP. Durante este proceso SFTP los datos están encriptados
+y se envían por conexiones SSH. TFTP significa un FTP trivial. Es una forma más simple
+de transferir archivos que el FTP. El TFTP no necesita
+la autenticación de usuarios como el FTP por lo que los archivos que almacenes aquí deberían ser genéricos
+y no necesitar seguridad. Un uso popular del TFTP
+es alojar archivos de instalación. Un método para crear una computadora
+que aún no analizamos es PXE o el inicio PXE que significa ejecución previa al inicio. Este método te permite iniciar
+en un software que está disponible en la red. Un caso de uso común para una organización
+que desea instalar software en una red es guardar los archivos de instalación
+del sistema operativo en un servidor TFTP. Así, cuando realizas un inicio de red puedes hacerlo
+automáticamente en el instalador. Esto es mucho más eficiente que llevar una memoria USB contigo
+con una imagen del sistema operativo. Según tu uso
+de los servicios de transferencia de archivos deberías considerar
+la opción que mencionamos. Si solo quieres compartir archivos
+entre tus computadoras de forma segura y tener un directorio al que accedas
+a todos los archivos compartidos en vez de transferirlos a tu máquina mejor deberías analizar el almacenamiento
+de archivos en red.

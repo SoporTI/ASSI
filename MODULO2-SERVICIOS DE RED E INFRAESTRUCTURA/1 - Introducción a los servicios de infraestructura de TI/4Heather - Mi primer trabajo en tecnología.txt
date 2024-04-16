@@ -1,0 +1,20 @@
+[MÚSICA] Crecí en un pequeño
+pueblo en el desierto y no había mucho para hacer en realidad, excepto leer,
+jugar con computadoras y estudiar. Y así fue
+que en verdad aprendí a amar la tecnología para comprender cómo funcionaba
+la computadora, cómo lo hacía qué hacía, y cómo podía
+lograr que hiciera algo diferente. Y, cuando fui a la universidad, comencé
+a estudiar el sistema operativo UNIX. Y aprendí lo suficiente como para obtener
+una pasantía en el ISP local. Fue algo bastante alarmante para mí
+porque, el primer día de la pasantía, llegué y dijeron "Excelente, nos encanta
+que estés aquí, conoces Unix, ¿no?" "Sí". "Este es un servidor RADIUS,
+queremos que lo configures tiene que estar listo al final de la semana". Y dije que me emocionaba
+poder hacer algo que tuviera un impacto en los usuarios y poder aprender cosas. Solo había un problema:
+no sabía lo que era RADIUS. Por lo que eso iba a representar
+un verdadero desafío para mí. Así que tuve que leer los manuales,
+sus páginas, y registrar la biblioteca en busca de libros. Me tomó
+unos tres días aprender qué era RADIUS y cómo configurarlo. Pero, al final, sabía más de eso
+que cualquier otra persona en el ISP. Y eso, en verdad, creo que me llevó
+a convertirme en experta en más áreas. Me dio mucha confianza
+en cuanto a que podía hacer ese trabajo y fue realmente revitalizante. Así que terminé
+siendo administradora de UNIX y así empecé.

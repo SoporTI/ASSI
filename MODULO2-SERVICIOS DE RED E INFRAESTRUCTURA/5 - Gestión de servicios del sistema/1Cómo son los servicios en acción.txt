@@ -1,0 +1,31 @@
+Ya hablamos sobre muchos servicios:
+DNS, DHCP y NTP, entre otros. Como especialista en asistencia de TI
+es importante entender cómo operan los programas
+que proporcionan estos servicios para que puedas gestionarlos
+y solucionar cualquier problema que surja. Estos programas se ejecutan
+como procesos en segundo plano también conocidos
+como daemons o solo servicios. Esto significa que el programa
+no necesita interactuar con un usuario a través de la interfaz gráfica
+o la interfaz de línea de comando para proporcionar el servicio necesario. El sistema operativo garantiza
+que el programa se está ejecutando. Cada servicio tiene uno o varios
+archivos de configuración que tú, como administrador de sistemas,
+usarás para establecer cómo quieres que funcione el servicio. Algunos servicios pueden ofrecer
+interfaces interactivas que permitan que el usuario edite la configuración
+e inspeccione el estado del historial de uso. Otros servicios pueden depender
+de la infraestructura del sistema por lo que necesitarás editar
+los archivos de configuración tú mismo. Tienes que saber cómo iniciar y detener
+el servicio y cómo revisar sus registros para ver cualquier
+actividad actual o anterior. Los servicios se suelen configurar
+para que inicien al arrancar la máquina de modo que si hay un corte de energía
+o un evento similar que hace que la máquina se reinicie no necesitarás un administrador de sistema
+para iniciar el servicio de forma manual. Si quieres decidir tú
+cuándo se inicia el servicio en lugar de iniciarse al arrancar tendrás que cambiar la configuración
+del software para que se inicie cuando quieras. Así mismo, los servicios
+suelen estar configurados para reiniciarse si se bloquean
+de forma imprevista. Si no es así como quieres configurarlo necesitarás cambiar la configuración
+del sistema que gestiona estas propiedades. Existen muchos servicios,
+y cada uno puede requerir conocimiento específico
+sobre su configuración y momentos de uso pero los conceptos generales
+relacionados con la gestión y configuración de los servicios
+son los mismos en todos los casos. En el resto de la lección, veremos ejemplos
+sobre cómo hacer esto en Windows y Linux.

@@ -1,0 +1,12 @@
+Te damos la bienvenida otra vez. En el último módulo,
+aprendimos que los administradores de sistema tienen muchas responsabilidades como mantener
+los servicios de infraestructura. Los servicios de infraestructura de TI
+permiten que una organización funcione. Esto incluye conectarse a Internet,
+gestionar redes configurando el hardware de red, conectarse a computadoras
+de una red interna, etc. En esta lección, aprenderemos
+sobre los servicios de infraestructura de TI más comunes y lo necesario para saber
+integrarlos en una organización. También profundizaremos en cada
+servicio de infraestructura por separado. Nos centraremos más en la infraestructura
+física, los servicios como servidores y los servicios de infraestructura de red que mantienen a tu empresa
+conectada a Internet. En definitiva, atenderemos todas las necesidades
+de servicios de infraestructura.

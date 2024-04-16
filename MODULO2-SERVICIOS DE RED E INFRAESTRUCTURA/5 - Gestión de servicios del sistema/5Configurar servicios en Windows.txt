@@ -1,0 +1,40 @@
+Ya vimos cómo iniciar, detener
+reiniciar, modificar y volver a cargar esta configuración
+para los servicios de Linux. Veamos cómo puedes
+hacer algo similar con Windows. En este ejemplo, usaremos
+Internet Information Services la función que ofrece Windows
+para entregar páginas web. Primero, debemos habilitar esta función. Usaremos la opción de activar y desactivar funciones
+en el Panel de control. Haz clic en "Turn Windows features
+on or off". Se abrirá el Administrador de servidores que ahora podemos usar
+para habilitar Internet Information Services. Voy a hacer clic en "Next" otra vez "Next" y otra vez un total de tres veces. Voy a desplazarme hacia abajo y buscaré
+el Web Server IIS. Le haré clic
+y, luego, clic en "Add Features". Haré clic en "Next".
+Clic en "Next" otra vez otra vez y otra vez y, luego, presionaré "Install". Seleccioné la opción de servidor web
+para que el servicio esté habilitado en esta instancia de Windows. Ahora está instalando
+todas las piezas necesarias para habilitar
+un servidor web en esta máquina. Ya terminó de instalarse. Cuando cerramos esta ventana,
+notamos que hay una opción nueva en el administrador de servicios llamada IIS. Aquí vemos que tenemos un servicio IIS
+que se ejecuta en este servidor. Para configurar este servicio,
+haz clic derecho en la entrada y selecciona
+"Internet Information Services Manager" Luego, expandiré nuestro servidor
+y haré clic en "Sites". Estos son los sitios web
+que controla este servicio. Actualmente, solo hay uno llamado
+Default Web Site. Veamos cómo es este sitio web. Iremos al host local. Haré clic en "Internet Explorer"
+y escribiré localhost. Muy bien. Nuestro servidor entrega
+el sitio web predeterminado. Ahora, agreguémosle un sitio web diferente. Volvemos a Windows Information Services. Creé un sitio de ejemplo
+y almacené allí mi carpeta de documentos. Ahora, copiaré este sitio de ejemplo
+en el directorio inetpub que es el directorio que se suele usar
+para entregar sitios web cuando se usa IIS. Haré clic en "Copiar". Luego, iré al directorio inet y escribiré C:/inetpub. Pegaré esa carpeta de ejemplo de Mis documentos al directorio inetpub. Luego, haré clic en "Continuar"
+en el control de seguridad. Copié mi sitio web. Ahora, habilitémoslo
+en la consola del Administrador de IIS. Regresemos a la consola. Puedo agregar un sitio web nuevo. Haré clic en la lista de sitios web
+y seleccionaré la opción Add Website. Ahora se me presentan
+muchas opciones que debo completar. Escribamos "Example"
+como el nombre de mi sitio web. Seleccionemos la carpeta que acabo de copiar
+como la ruta física del sitio web. Por último,
+seleccionemos 8080 como el puerto. Esto es para que el sitio web predeterminado
+pueda ejecutarse en el puerto predeterminando el puerto 80 mientras que el sitio web de ejemplo
+se ejecuta en otro puerto. Configuré el sitio web nuevo. IIS me dice que el sitio web
+ya está en funcionamiento. Veamos si esto es así. Haré clic en "Internet Explorer" escribiré localhost dos puntos, luego el puerto 8080 e Intro. Bien. Agregamos un segundo sitio web
+a nuestro servidor web. Ya vimos cómo instalar administrar y configurar
+los servicios de Linux y Windows. En los próximos ejercicios del lab rápido,
+podrás probar estas acciones por tu cuenta. Qué te diviertas.

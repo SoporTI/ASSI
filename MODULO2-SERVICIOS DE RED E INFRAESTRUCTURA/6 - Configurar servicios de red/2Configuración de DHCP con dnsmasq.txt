@@ -1,0 +1,62 @@
+Aprendimos a usar dnsmasq
+para hacer consultas DNS. Pero como se mencionó, dnsmasq también es útil
+para otros servicios de red. Veamos la forma
+de usarlo como un servidor DHCP. Los servidores DHCP suelen instalarse
+en una máquina o un dispositivo que tiene una dirección IP estática configurada según la interfaz de red
+que se usa para hacer las consultas DHCP. Luego, esa interfaz se conecta a la red
+física que deseas configurar a través de DHCP que puede alojar
+cualquier cantidad de máquinas. En la práctica,
+el servidor DHCP y el cliente DHCP suelen ejecutarse
+en dos máquinas independientes. Pero en este ejemplo, haremos
+una simulación en una sola máquina. En esta máquina,
+hay una interfaz llamada eth_srv. Configurémosla para que sea
+la interfaz de los servidores DHCP. Escribiré ip address show eth_srv. Este comando nos indica que esta interfaz
+tiene la dirección IP 192.168.1.1. El pot /24 indica que esta IP
+está en una red que va desde 192.168.1.0 hasta 192.168.1.255. En la interfaz también se configuró
+una dirección IPV6, pero no la veremos aquí. También hay una interfaz llamada eth_cli que es la que usaremos para simular que un cliente solicita
+una dirección con DHCP. Esta interfaz aún no tiene
+ninguna IP configurada. Escribiré ip address show eth_cli. Podemos ver que esta interfaz
+no tiene ninguna dirección IPV4 configurada. Lo cambiaremos con el servidor DHCP. Para ello, debemos
+seguir configurando dnsmasq. Hay muchos parámetros que podemos configurar. Usaremos un conjunto
+de opciones muy sencillas. Veamos el archivo de configuración. Escribiré cat dhcp.conf. La opción de la interfaz le pide a dnsmasq
+que esté a la escucha de las consultas DHCP en la interfaz eth_srv. La opción bind interfaces ordena
+que no esté a la escucha de consultas en ninguna otra interfaz. Esto permite tener más de un servidor dnsmasq
+en ejecución al mismo tiempo cada uno en su propia interfaz. La opción de dominio indica los clientes
+el nombre de dominio de las redes y se usa para consultar nombres de hosts. Luego hay dos opciones de DHCP distintas que son la información adicional
+que se transmitirá a los clientes DHCP cuando se asigne la IP. En este caso,
+indicamos a los clientes qué configurar como la puerta de enlace predeterminada
+y qué servidores DNS deberían usarse. Hay muchas más opciones
+que podemos configurar pero estas dos son las más habituales. Por último, configuraremos el rango DHCP. Este es el rango de direcciones IP
+que el servidor DHCP puede manejar. Según la instalación en particular,
+es recomendable reservar algunas direcciones de tu red para las máquinas
+que requieren una dirección estática. No es la intención hacerlo,
+se puede ampliar el rango pero asegúrate de no incluir
+la misma dirección del servidor DHCP. El último valor de la línea de rangos DHCP es la duración del tiempo de concesión
+de la dirección IP. En este caso, es de 12 horas. Por lo tanto, una vez que se asigne
+una dirección a una máquina se reservará para ella durante 12 horas. Si la concesión expira
+y el cliente no la renueva se puede asignar la dirección a otra máquina. Ya vimos los archivos de configuración. Ahora, indiquemos a dnsmasq que empiece
+a estar a la escucha de las consultas con esta configuración. Para ello, escribiré sudo dnsmasq -d -q -c dhcp.config Y presiono Intro. Podemos ver en el resultado que dnsmasq
+está a la escucha de las consultas DHCP en la interfaz eth_srv gracias a lo establecido
+en el archivo de configuración. Ahora, ejecutemos
+un cliente DHCP en una segunda terminal. Abriré la segunda terminal. Ahora, en la segunda terminal,
+escribiré sudo dhclient -i eth_cli y -v para "verbose". Estamos usando el cliente DHCP,
+que es muy habitual en Linux. Le estamos indicando que se ejecute
+en la interfaz eth_cli con la marca -v para ver todo el resultado de lo que sucede. Antes, en el curso de redes, explicamos
+todo el proceso con el que el cliente DHCP obtiene una concesión DHCP. Aquí vemos los paquetes
+intercambiarse y cómo el cliente obtuvo la dirección IP 192.168.1.80. También vemos que el cliente DHCP espera
+renovar la dirección antes de que expire. Veamos cómo luce nuestra interfaz ahora. Ingresaré ip address show eth_cli. Nuestra interfaz eth_cli
+obtuvo con éxito una dirección IP. Ahora, veamos lo que dnsmasq imprimió
+cuando se realizó la consulta. Vemos el mismo intercambio de paquetes
+que hubo para el cliente. Pero dnsmasq también muestra que ahora
+conoce el nombre del host de la máquina con la dirección 192.168.1.80 porque dnsmasq
+también posee capacidades de DNS. Por lo tanto, también lo compartirá
+como respuesta confiable a consultas locales. Ahora, escribiré dig @localhost instance-1. Así, vimos cómo dnsmasq
+puede actuar no solo como servidor DNS sino también como servidor DHCP. Esta configuración sirvió de simulación
+para mostrarte qué puedes hacer con dnsmasq. Como ya se mencionó, en la práctica,
+esto se haría en máquinas independientes físicas o virtuales. Para probar una configuración como esta,
+lo harías en una red independiente de la red de producción. Recuerda, nunca pruebes en producción. Abordamos muchos temas en este módulo. Conociste todos los servicios
+necesarios para una infraestructura de TI. Además, aprendiste sobre los servicios
+de infraestructura física como el acceso remoto y la virtualización,
+que mejoran la eficiencia de tu organización. Incluso conociste los servicios de red
+esenciales, como DNS y DHCP, y viste un panorama general de los requisitos
+para instalar DNS en una organización y por qué es recomendable.

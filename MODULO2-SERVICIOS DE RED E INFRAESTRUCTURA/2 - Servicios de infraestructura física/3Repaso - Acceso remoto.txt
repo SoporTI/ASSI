@@ -1,0 +1,32 @@
+Otra parte importante
+de los servicios de infraestructura física es la capacidad de comunicarte
+con tu infraestructura desde cualquier lugar. En esta lección, hablaremos de lo necesario para establecer el acceso remoto
+de una organización pequeña. Como administrador de sistemas
+o alguien que trabaja en asistencia de TI querrás poder acceder de forma remota
+a otro servidor o máquina de usuarios para poder resolver problemas
+o hacer mantenimiento desde cualquier sitio. En Linux, la herramienta de acceso remoto
+más popular es OpenSSH. Ya vimos cómo establecer una conexión SSH
+a una computadora remota en el último curso. Hablamos sobre lo que se necesita
+para establecer el SSH pero te mostraré cómo hacerlo con rapidez. Para establecer
+una conexión SSH a otra máquina debes instalar un cliente SSH
+en la máquina desde la que te conectas. Luego, debes instalar un servidor SSH
+en la máquina a la que te conectas. Siempre debes ir a la máquina cliente
+y ejecutar este comando sudo apt-get install openssh-client. Veamos. Descargamos el paquete. Perfecto.
+Parece que ya se instaló el cliente. Luego, debes instalar el servidor openssh
+en la máquina a la que quieres acceder. Recuerda que el servidor SSH solo es un proceso que escucha
+las conexiones entrantes de SSH. Vayamos al servidor
+e instalemos el servidor openssh. Escribiré sudo app-get
+install openssh-server. Perfecto. Parece que mi servidor
+está funcionando bien. Volvamos al cliente y hagamos una prueba. Hago una conexión SSH en la dirección IP
+de mi servidor con mi nombre de usuario. Me solicita mi contraseña, lo que es bueno. Genial. Como puedes ver,
+estoy conectado a mi servidor. Una forma de probarlo es ir al escritorio
+de mi servidor y crear una carpeta. Ahora, si vuelvo a mi servidor,
+que está en esta ventana hago una lista de los archivos. Puedes ver la carpeta de prueba,
+y eso es todo. Podemos establecer una conexión SSH
+en una máquina desde otra máquina. No es tan complicado, ¿o sí? Windows tiene
+herramientas similares para usar. Una herramienta popular para acceder a la CLI
+de forma remota es WinRM o Party. RDP también es popular
+si quieres acceder de forma remota a GUI. La conclusión aquí es que cuando administras
+una infraestructura de TI puedes usar herramientas como el acceso remoto
+para trabajar en tu infraestructura física. Debes hacer algunas configuraciones previas como instalar el cliente SSH los servidores SSH y permitir
+las conexiones de escritorios remotos, etc. Pero valdrá la pena a largo plazo.

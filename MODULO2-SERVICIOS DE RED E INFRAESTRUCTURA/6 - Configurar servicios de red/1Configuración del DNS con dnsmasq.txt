@@ -1,0 +1,31 @@
+En las grandes implementaciones corporativas quizás tengas distintos programas para todos los servicios de redes
+que hemos abordado en este módulo. En instalaciones más pequeñas,
+se recomienda tener una solución centralizada
+para manejar todos los servicios. Analicemos dnsmasq un programa que brinda DNS DHCP, TFTP y PXE
+como servicios en un solo paquete. Con él, podremos configurar de forma práctica estos servicios, incluso si no resulta tan complicado como otras soluciones de red. Primero, instalaremos dnsmasq
+en esta máquina. Ingresaré sudo apt install dnsmasq. Después de instalar dnsmasq se habilitará de inmediato con la funcionalidad más básica. Brinda una memoria caché
+para consultas de DNS. Esto significa que podrás hacer
+consultas de DNS y que tu máquina recordará las respuestas. Así, tu máquina no solicitará ningún servidor DNS externo
+cada vez que hagas una consulta. Para verificar esta funcionalidad usaremos el comando dig que permite hacer consultas de DNS
+y ver las respuestas. Hagamos una consulta a nuestro servidor DNS,
+que ejecuta un host local, con la dirección de www.example.com. Para ello, ejecutaremos
+dig www.example.com @localhost. La parte posterior al signo @ indica el servidor DNS que deseamos usar. Esta es la respuesta a nuestra consulta. Nuestro servidor DNS nos comparte la dirección IP para el dominio example.com. ¿Cómo sabemos que a esta consulta en verdad la respondió el servicio
+que ejecuta la máquina? Ejecutaremos el servicio
+en el modo de depuración para obtener más información sobre lo que sucede en segundo plano. Aunque no es la forma más común de ejecución es útil para comprender lo que sucede. Para ello, interrumpiremos el servicio masivo
+de DNS en ejecución para iniciarlo en el modo de depuración. Ahora, ingresaré sudo service dnsmasq stop. Luego, ingresaré sudo dnsmasq el marcador d y, luego, el marcador q. Al ingresar d y q le indicamos a dnsmasq que lo ejecute en el modo de depuración y que registre las consultas que ejecutemos. Al iniciarse, grabará
+las opciones de compilación que se hayan habilitado y los archivos de configuración empleados. Ahora, realizaremos otra consulta
+con el valioso comando dig. Si volvemos a ejecutar el comando obtendremos la misma respuesta y veremos el resultado de la depuración
+en la consola de dnsmasq. Ahora, veamos mi segunda consola. Para ello, ingresaré dig www.example.com @localhost. Aquí nos muestra que nuestro servicio dnsmasq recibió
+la consulta la envió al servidor DNS configurado y la respondió con la máquina original. Si la consulta se hace
+con el mismo host otra vez veremos que,
+en lugar de consultarle al otro servidor DNS dnsmasq responderá con la consulta del caché. Ahora, en mi segunda consola ingresaré otra vez dig www.example.com @localhost. Si hago clic en Ingresar, por ahora dnsmasq funcionará
+como un simple servidor en DNS de caché pero podemos lograr que haga mucho más. Por ejemplo, podemos darle
+una lista con nombres de servidores según varias IPs y lograr que el servicio les brinde respuestas fundamentadas. Quizás recuerdes que, al tratar de resolver un nombre de host según una IP,
+es posible que haya servicios que almacenen la información
+del mapeo de datos para luego brindar respuestas fundamentadas mientras que otros servidores solo enviarán y asignarán las consultas al servidor con esta información. El formato de estos archivos es igual
+al del archivo host para directorios ETC. Creé este archivo donde se enumera cada host interno que me gustaría resolver. Para ello, ingresamos cat myhosts. Como ven, el formato es muy sencillo. Solo hay que detallar la IP asociada a cada host. Usamos el parámetro h para indicarle a dnsmasq que deseamos incluir esta lista
+en la información ejecutada. Cancelaré esto con "clear" e ingresaré sudo dnsmasq -d -q -H myhost. Ahora que nuestra lista se cargó hagamos una consulta con dig. En mi segunda consola ingresaré dig oxygen.local @localhosts. Como dnsmasq es confiable para este host no se puede enviar la respuesta a nadie. También se detalla el archivo del cual obtienes la información, yo. Por último, analicemos el resultado obtenido cuando solicitamos información
+que no está disponible. Ingresaré dig hydrogen.local @localhost. Como respuesta, obtuvimos los servidores confiables
+o los servidores raíz pero no pudo encontrar ningún resultado. ¿Y qué nos indicó el dnsmasq en ejecución? Como el nombre solicitado no está en la lista de nuestro servidor DNS envía la consulta
+al servidor DNS configurado. La respuesta obtenida fue NXDOMAIN lo que significa que el dominio no existe. Si bien dnsmasq es así de sencillo acabas de ver cómo luce un servidor DNS en acción.
+¿No es genial?

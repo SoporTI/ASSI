@@ -1,0 +1,27 @@
+Otro servicio de red que facilitará
+tu trabajo de asistencia de TI es el DHCP el protocolo
+de configuración dinámica de host. Para recordar cómo funciona, consulta
+las lecciones sobre DHCP del curso de redes. Cuando administras una infraestructura de TI
+y quieres conectar una computadora a una red tienes dos opciones. Puedes conceder una dirección IP estática
+o una dirección IP asignada por DHDP. Si usas la dirección IP estática, debes hacer
+un seguimiento de cada dirección que asignes a una computadora e ingresarla
+manualmente en la configuración de la red. Si habilitas el DHCP, las computadoras
+recibirán una dirección de un servidor DHCP. Obtendrán direcciones IP de forma automática
+y no deberás preocuparte por configurarlas manualmente. Si alguna vez decides ampliar el rango
+de tu dirección IP, no debes cambiar nada en las máquinas cliente,
+ya que eso se lleva a cabo automáticamente. Para configurar un servidor DHCP,
+deberás decidir qué rango de IP puedes usar para asignar direcciones IP. Si quieres integrarlo en DNS, necesitarás
+la dirección de los servidores DNS locales la puerta de enlace que deberías asignar
+y la máscara de subred que se usará. Una vez que instalas el software del servidor
+DHCP, debes configurarlo con estos datos. Los distintos fabricantes
+de software para servidores DHCP tienen diferentes diseños de configuración. Por tanto, debes investigar cuál usar. Hay muchos softwares populares
+para servidores DHCP que puedes usar. Las versiones de Windows Server
+vienen con el servicio de DHCP. Una vez encendido el servidor y los clientes
+listos para recibir las direcciones DHCP en lugar de direcciones IP estáticas, debes
+tener funcionando la configuración de DHCP. En la última lección, hablamos
+sobre cómo el DNS se relaciona con el DHCP. En la configuración de DHCP, podemos
+especificar ubicaciones de servidores DNS. Los dos servicios se sincronizan,
+y cuando el DHCP otorga direcciones nuevas el DNS actualiza su asignación
+de dirección IP automáticamente. Esta fue una descripción muy general
+de cómo se configuran los servicios de DHCP. Espero que entiendas por qué DHCP y DNS
+son servicios de red esenciales para tu organización.

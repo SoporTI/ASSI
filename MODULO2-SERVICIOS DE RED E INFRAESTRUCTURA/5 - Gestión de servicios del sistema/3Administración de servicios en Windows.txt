@@ -1,0 +1,33 @@
+Al igual que Linux, Windows también
+permite al administrador del sistema gestionar los servicios
+que se ejecutan en el sistema. Para este ejemplo, veamos
+el servicio de actualización de Windows. Este servicio se encarga de detectar
+actualizaciones de software para el sistema operativo
+u otros programas instalados. Las descarga y las tiene listas
+para que se apliquen al sistema. Obtengamos el estado del servicio
+con el comando get service. Abriré Power Shell y escribo get service. Voy a escribir la forma abreviada
+para el servicio de actualización de Windows. Wuauserv es el nombre abreviado
+del servicio de actualización de Windows. Vemos que el servicio de actualización
+de Windows se está ejecutando y puede obtener más información al respecto
+con la ejecución del siguiente comando que será get-service wuauserv,
+luego format list y asterisco. Esto nos mostrará qué tipo de servicio es
+y cómo está configurado para ejecutarse. Es una buena manera de obtener información
+adicional sobre el servicio que te interesa. Como en Linux, cualquier usuario
+puede consultar el estado del servicio pero solo los administradores pueden
+iniciar o detener un servicio. Si intentas realizar los siguientes pasos
+con el shell de usuario normal no podrás ejecutar los comandos. Intentemos detener el servicio
+y luego verifiquemos el estado. Para esto, abriré
+un Power Shell administrativo y ejecutaré el comando stop service. Desde Inicio, en lugar
+de hacer clic sobre el programa haré clic derecho
+y elegiré Ejecutar como administrador. Sí al control de seguridad. Escribiré lo siguiente service wuauserve get service wuauserve. Se detuvo este servicio. Para volver a ponerlo en marcha,
+ejecutamos el comando start service entonces escribo "start service
+wuauserve" para iniciar el servicio. Y luego escribiré "get service" para mostrar que el servicio
+se está ejecutando. Por último, puedes listar todos
+los servicios registrados en el sistema con el comando get service. También podemos realizar estas
+mismas acciones de forma gráfica con la consola de Management Console. Haré clic allí desde Inicio. Esta consola nos muestra
+todos los servicios en el sistema. Aquellos en ejecución figurarán como
+"Running" en la columna Status mientras que los que no estén en ejecución
+tendrán vacía la columna Status. Podemos ver la utilidad de actualización
+de Windows al final de la lista. La podemos detener con clic derecho y clic en Stop. Y luego clic derecho otra vez
+y presionamos Start. Ya está. Así es como consultas,
+detienes e inicias servicios en Windows.

@@ -1,0 +1,42 @@
+Como administrador de sistemas necesitarás saber cómo consultar el estado
+de un servicio en ejecución y cómo detener iniciar y reiniciar
+los servicios en ejecución. La forma concreta de hacer esto depende
+del sistema operativo que estés usando. Pero los conceptos son los mismos. Analicemos un servicio muy simple,
+Network Time Protocol (NTP). Ya dijimos antes que NTP permite
+a las máquinas sincronizar sus relojes. Las instalaciones de Ubuntu
+incluyen un daemon que se ejecuta en la máquina y se encarga
+de sincronizar el reloj con NTP. Podemos verificar que hay
+un daemon de NTP en ejecución en esta máquina que usa
+el comando de servicio service ntp status. Vemos que hay un servicio NTP,
+y el sistema nos dice que está en ejecución. Este servicio mantiene nuestro reloj
+en hora sin que nos demos cuenta. Si en algún momento detecta
+que el reloj se alteró ajusta la hora en un incremento pequeño. Agregará o quitará 0.5
+milisegundos por segundo hasta que llegue a la hora deseada. Usa incrementos pequeños
+para que los otros servicios que dependen del reloj para desempeñar
+sus tareas no se vean afectados por un ajuste repentino en la hora. En condiciones normales de funcionamiento un reloj de computadora solo vería
+cambios muy pequeños de la hora estándar. Así que estos
+pequeños ajustes tienen sentido. Si el daemon detecta que el tiempo
+cambió más de 128 milisegundos asume que algo más
+está sucediendo y no interferirá. Para probar esto, modifiquemos manualmente
+la fecha del sistema a una fecha del pasado. Voy a escribir sudo, date y darle una fecha concreta,
+2017-01-01 00:00:00. Apretamos Intro. Luego escribimos "date". Fijamos la fecha para el 1 de enero
+de 2017 a las 12:00 a.m. Si verificamos la fecha
+luego de unos segundos seguirá estando fijada
+para el 1 de enero de 2017 unos segundos después de la medianoche. No se ajusta. El daemon de NTP vio el cambio,
+pero como supera el umbral de 128 milisegundos, no modifica el reloj. ¿Cómo hacer que se adapte al presente? Hay una opción en el daemon
+de NTP que permite ajustar el reloj de forma drástica
+cuando está iniciando. Esto se debe a que se espera que el daemon
+se inicie muy pronto en el proceso cuando la máquina se está desarrollando. En ese momento no debería haber ningún
+servicio dependiente del tiempo en ejecución. Si ahora reiniciamos manualmente el servicio,
+veremos que la fecha y hora se ajustan. Escribamos sudo service ntp stop date, sudo service ntp start ingresamos date y luego Intro. Usamos la acción Stop
+para detener el servicio y la acción Start
+para volver a ponerlo en marcha. Inmediatamente luego de iniciar el servicio vemos que la fecha y hora
+vuelven al presente. Usamos el comando sudo
+para detener e iniciar el servicio porque solo el usuario
+puede verificar su estado pero solo un administrador
+puede hacer que se detenga e inicie. Una alternativa disponible en la mayoría
+de los servicios es la acción restart que genera una detención
+seguida de un inicio. A ver qué tal. Primero, fijemos la fecha
+al 1 de enero de 2017 a las 12:00 a.m. y luego reiniciemos el servicio NTP. Escribo sudo, date, y especifico la hora. 2017-01-01 00:00:00 e Intro. Escribimos date, sudo service ntp restart y date. Ya viste cómo verificar el estado e iniciar,
+detener y reiniciar el servicio en Linux. NTP es un servicio muy sencillo,
+pero también puedes usar los mismos comandos para gestionar servicios más complejos.

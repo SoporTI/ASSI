@@ -1,0 +1,29 @@
+Uno de los protocolos de Internet
+más antiguos que aún se usa es el protocolo NTP. Se usa para mantener sincronizado el reloj
+en las máquinas conectadas a una red. Quizás viste el NTP implementado
+en tu vida personal si alguna vez fuiste a un aeropuerto. Los aeropuertos usan sistemas
+de relojes sincronizados y muchos usan NTP. Esto se debe a que la información que ves
+en la pantalla de salidas y llegadas debe coincidir con la hora que el equipo
+de control aéreo tiene para sus aviones. Si tan solo el NTP pudiera resolver
+los retrasos en el aeropuerto… En el mundo de TI, las máquinas deben tener una hora precisa
+en toda la red por muchas razones. Hay algunos servicios de seguridad,
+como Kerberos y protocolos de autenticación de red que dependen
+de que la hora sea coherente en toda la red. Es importante mantener el horario coherente
+y preciso en toda la flota de la empresa. No puedes depender solo del hardware
+para mantener un horario coherente así que debes configurar un servidor NTP. Hay distintas formas
+en que un especialista en asistencia de TI o un administrador de sistemas puede hacerlo. Puedes usar
+un servidor NTP local o uno público. Para configurar un servidor NTP local puedes instalar un software para servidores
+NTP en tu servidor administrado. Luego, debes instalar
+clientes NTP en tus máquinas y decirles a esas computadoras
+con qué servidores NTP sincronizar la hora. Esta es una buena opción porque entonces puedes administrar
+todo el proceso de extremo a extremo. La otra forma de configurar NTP
+es usar un servidor NTP público. Estos son administrados por otras
+organizaciones a las que tus máquinas cliente se conectan
+para lograr un horario sincronizado. Esta es una forma impresionante de usar NTP sin tener que ejecutar
+un servidor NTP dedicado. Pero si tienes
+una flota grande de miles de máquinas es mejor ejecutar tu propio servidor NTP. Otra práctica recomendada
+es ejecutar tu propio servidor NTP y, luego, que ese apunte
+a un servidor NTP público. Gracias a esto, no es necesario conectar
+todos tus clientes a un servidor NTP público ni debes medir la sincronización del horario. Ya sea que ejecutes tu propio servidor NTP
+o uses uno público NTP es un servicio de red importante
+que deberías integrar a tu propia flota.

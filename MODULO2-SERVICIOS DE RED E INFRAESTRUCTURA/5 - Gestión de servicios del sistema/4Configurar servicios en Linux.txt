@@ -1,0 +1,48 @@
+Además de saber consultar
+el estado de los servicios de interrupción y arranque como administrador del sistema debes saber configurar los servicios
+para cubrir las demandas de tu organización. Por ejemplo,
+si ejecutas un servidor DNS tendrás que configurar
+las zonas DNS que desees administrar. Si ejecutas un servidor web,
+tendrás que configurar los distintos sitios y las aplicaciones web
+que te gustaría habilitar. En general, debes implementar
+cualquier política específica de seguridad y de respaldo en todos tus servicios. Los detalles dependerán en gran medida
+del sistema operativo y del servicio. Pero hablemos de los conceptos básicos
+que debes saber para todos los servicios. La mayoría de los servicios están
+disponibles ni bien los instalas. Son programas incluidos
+en los valores predeterminados y son útiles para comenzar a funcionar
+de forma segura y de inmediato. Pero no todos los servicios brindan
+valores predeterminados correctos para todos. En algunos casos, tendrás que editar
+los archivos de configuración antes de que el servicio se active. En Windows, la mayoría de las configuraciones
+se almacenan en el registro. Puedes modificarlo con asistentes gráficos
+o con un comando de servicio. En Linux, los archivos de configuración de los servicios instalados se ubican
+en el directorio /etc. Si bien algunos programas pueden incluir
+editores gráficos de configuración en general, debes editar los archivos
+de configuración con un editor de texto. Probemos con un servidor FTP sencillo
+llamado vsftpd. Un servicio que se habilita
+por defecto cuando lo instalas. Para continuar, ingresaré sudo apt install vsftpd para instalar el servicio. Tras instalarlo,
+el servicio ya estará en ejecución. Puedes consultar el estado
+del servicio si ingresas service vsftpd status
+y ver si está en funcionamiento. Esto significa que el servicio
+ya está en funcionamiento. También puedes verificar el estado
+si te conectas al servidor FTP con un cliente FTP. Para hacerlo, ingresaré lftp local host. Lftp es un programa de clientes FTP
+para conectarse a un servidor FTP. Al pedir que se conecte a un localhost,
+trataremos de conectarnos a un servidor FTP ejecutado en ese localhost. Tratemos de ejecutar el comando
+para enumerar los elementos del directorio vigente. Ahora ingresaré ls y, luego, exit. La falla se debe a la falta
+de un nombre de usuario y una contraseña los cuales no hemos detallado. Es lógico que la función predeterminada
+del servidor FTP sea bloquearse. Para habilitar conexiones anónimas tendremos que hacerlo de forma explícita. Modifiquemos el archivo de configuración
+para permitir conexiones anónimas. Para ello, editaré
+el archivo de configuración de este servicio ubicado en /etc/vsftpd.config y cambiaré la configuración de habilitación
+de No a Yes (Sí). Ingresaré sudo vim /etc/vsftpd.config. Luego, se abrirá el archivo con errores para modificar la configuración
+de conexiones anónimas de No a Yes. Guardaré el archivo de configuraciones. Cuando cambiamos el valor de configuración
+para conexiones anónimas de No a Sí le decimos al programa del servidor FTP
+que queremos habilitarlas. Ya cambiamos lo necesario,
+pero aún no terminamos. Si tratamos de conectarnos de nuevo,
+ls seguirá fallando. Ls... falló. Ingresaré exit. Esto también sucederá con otros servicios,
+ya que la mayoría lee las configuraciones al iniciarse y, luego, las guardan
+en la memoria mientras se ejecutan. Para que nuestro servicio
+vuelva a leer la configuración debemos ordenar que se actualice otra vez. Esta actualización significa que el servicio
+lee otra vez el archivo de configuración sin tener que parar y reiniciarse. De esta forma, las conexiones vigentes
+no se interrumpirán, las nuevas conexiones usarán
+una nueva configuración. Hagamos esto para nuestro servicio FTP. Ingresaré sudo service, vsftpd reload. Una vez hecho esto,
+trataremos de conectarnos de nuevo y esta vez, al ejecutar Is,
+no habrá ningún error. ¿Lo ven? Funcionó.

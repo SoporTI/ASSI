@@ -1,0 +1,12 @@
+Hay muchos servicios de infraestructura de TI
+que hacen funcionar una empresa. En una empresa más pequeña, una sola persona
+podría estar a cargo de todos los servicios. En las más grandes,
+los administradores de sistemas podrían gestionar solo un servicio. En este curso, analizaremos
+lo que necesitarás para configurar estos servicios como si fueras
+la única persona de TI de la empresa. También describiremos los servicios
+en la nube que puedes usar si quieres que otra empresa ejecute tus servicios. Recuerda que, como ya mencionamos,
+los servicios en la nube son aquellos a los que se accede
+a través de Internet, como Gmail. Podemos acceder a una cuenta de Gmail
+con cualquier dispositivo informático si estamos conectados a Internet. Al final de este módulo, conocerás
+en detalle los servicios que necesitarás para tener una infraestructura de TI
+operativa en tu empresa.

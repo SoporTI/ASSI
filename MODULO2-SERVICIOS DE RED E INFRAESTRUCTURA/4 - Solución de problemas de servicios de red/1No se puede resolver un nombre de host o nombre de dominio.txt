@@ -1,0 +1,35 @@
+En ocasiones, desempeñarás el rol
+de asistente de TI y no podrás resolver u obtener la dirección IP
+del nombre de un sitio web. Este problema podría ser
+difícil de identificar. Podrías pensar
+que no está funcionando la conexión de red. Sigamos adelante y entremos
+a google.com desde nuestro navegador web. Parece que no podemos ingresar a google.com. Repasemos algunas
+de las herramientas que aprendimos en la clase de redes que pueden ser útiles. En primer lugar, si no puedes
+resolver un nombre de dominio verifica que tu conexión de red
+esté funcionando. Puedes hacer una verificación rápida
+y hacer ping a un sitio web que sepas que está disponible. Lo conveniente
+es hacer ping a www.google.com. Es raro que Google se caiga,
+pero puede suceder. En mi terminal,
+escribiré ping www.google.com. Parece que obtenemos respuestas. Pasemos a aislar otro problema, el DNS. Para verificar que tu servidor
+de DNS te está dando una dirección correcta para google.com,
+puedes usar nslookup. Recuerda que nslookup nos proporciona
+el servidor de nombres de un host o el nombre de dominio. Haré eso en mi terminal. A partir de aquí, podemos descartar
+si el DNS es un problema verificando que el nombre de host
+apunta a un servidor de nombres. Si copiamos la dirección IP o los resultados
+y los pegamos en el navegador web debería resolver el nombre del sitio web
+si el DNS no está funcionando. Hagamos eso. Voy a copiar la dirección IP no autorizada. Abro mi navegador web. No funciona. ¿Qué pasa? Parece que mis configuraciones
+de DNS no están funcionando bien. Veamos otra vez mis resultados de ping. En mi terminal, voy a hacer ping
+a www.google.com. Veo que verifica una dirección IP
+diferente de la que tengo aquí. Si voy a esta dirección IP,
+no me lleva a ningún sitio. Copio esta dirección IP. Recuerda que cuando se realiza
+una consulta del DNS tu computadora primero verifica
+el archivo de host. Si accedo a mi archivo de host,
+veo que tengo una entrada para www.google.com y dirige a una dirección IP falsa. Si quito esta línea donde dice 127.1.1.3 guardo ese archivo de configuración
+y luego reinicio mi navegador. Si busco www.google.com, ya lo tenemos. Estamos ahí, y la configuración DNS
+crack debe aplicarse a www.google.com. En algunas situaciones el DNS
+puede ser complicado de manejar ya que puede haber
+muchos factores contribuyentes. Pero, como en cualquier situación
+de solución de problemas recuerda seguir aislando el problema
+hasta llegar a la causa raíz. Con el tiempo y la experiencia,
+aprenderás mucho más sobre el DNS y cómo solucionar problemas
+en situaciones reales.
