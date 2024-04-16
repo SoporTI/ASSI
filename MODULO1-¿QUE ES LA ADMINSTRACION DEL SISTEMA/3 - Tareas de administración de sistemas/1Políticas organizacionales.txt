@@ -1,0 +1,31 @@
+En una empresa pequeña, suele ser tarea
+del administrador del sistema decidir qué políticas de computadora usar. En empresas más grandes, con más de
+cien empleados, esta tarea suele recaer en el director de seguridad
+de la información. Pero en negocios o tiendas más pequeños,
+como dice la jerga TI el administrador del sistema debe pensar
+con cuidado en la seguridad de la computadora y si permitir o no el acceso
+a ciertos usuarios. Hay pocos problemas de política que suelen
+surgir en la mayoría de los entornos de TI que deberías conocer. ¿Los usuarios deberían poder
+instalar software? Mejor no. Se puede correr el riesgo de que un usuario
+instale por error software malicioso. ¿Los usuarios deberían tener contraseñas
+complejas con ciertos requerimientos? Sin dudas es una regla de oro crear
+una contraseña compleja que tenga símbolos, números y letras. Una buena pauta para la longitud
+de la contraseña es procurar que tenga un mínimo de ocho caracteres para que sea
+más difícil de descifrar. ¿Los usuarios deberían poder acceder a sitios
+web no laborales, como Facebook? Es una decisión personal. Algunas empresas
+prefieren que sus empleados solo usen computadoras y redes laborales
+estrictamente con fines comerciales. Pero muchas permiten otros usuarios para que
+el empleado pueda publicitar el negocio o los bienes en plataformas
+de redes sociales estén al día con eventos actuales y más. Es una política que tú y los líderes
+de la organización pueden resolver juntos. Si entregas un teléfono corporativo
+a un empleado, ¿debes ponerle una contraseña? Por supuesto. La gente pierde sus teléfonos
+móviles todo el tiempo. Si se pierde o roba un dispositivo,
+al menos debe estar protegido con contraseña para que nadie pueda ver con facilidad
+los correos electrónicos corporativos. Son solo algunas de las preguntas
+sobre políticas que pueden surgir. Cualquiera sea la política elegida,
+debe documentarse en algún lugar. Si administras sistemas, será tu tarea
+documentar las políticas y los procedimientos de tu empresa y más. Puedes guardar esta documentación
+en un sitio wiki interno un software de servidor de archivos
+o donde sea. Lo importante aquí es que la documentación
+de las políticas esté disponible para los empleados,
+así las aprenden y mantienen.

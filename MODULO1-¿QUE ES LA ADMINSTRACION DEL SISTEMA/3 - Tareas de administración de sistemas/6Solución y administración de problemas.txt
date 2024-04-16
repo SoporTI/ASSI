@@ -1,0 +1,37 @@
+Hablamos mucho sobre la solución
+de problemas en un curso anterior pero vale la pena volver a mencionarlo. Al administrar una infraestructura de TI,
+debes solucionar problemas continuamente y buscar soluciones
+para tus necesidades de TI. Esto quizá te ocupe la mayor parte del tiempo
+como especialista en asistencia de TI. Podría implicar la máquina de un solo
+empleado, un servidor o un servicio que no funciona con normalidad. Algunos colegas que empiezan la carrera
+de asistencia de TI profundizan sus conocimientos para ser
+administradores de sistemas. Pasan de trabajar con una a muchas máquinas. En mi caso, di el salto durante mi pasantía
+como especialista en asistencia de TI en la universidad,
+en un laboratorio de semiconductores. El laboratorio terminó cerrando,
+y necesitaban dar de baja el entorno. Lo que empezó como un puesto
+de asistencia en ayuda de TI pasó a ser de administrador de asistencia. Esa fue mi gran oportunidad
+para incursionar en Active Directory subredes y la toma de decisiones,
+que es una parte central de este trabajo. Los administradores de sistemas también
+deben solucionar y priorizar problemas a mayor escala. Si el servidor que manejan
+deja de brindar servicios a 1000 usuarios y alguien tuviera
+problemas con una impresora ¿Qué crees que debería tratarse primero? Cual sea el caso, hay dos habilidades
+fundamentales para lograr una buena solución. ¿Sabes cuáles son? La primera es solucionar problemas,
+hacer preguntas, aislar el problema seguir los rastros y leer los registros. Son las mejores formas
+de resolver el problema. Quizá tengas que leer registros
+de varias máquinas o de toda la red. Hablamos sobre los registros centralizados
+en el último curso sobre sistemas operativos y cómo convertirte en usuario avanzado. Como sea, la segunda habilidad muy importante
+que vimos es el servicio al cliente. Ser empático, usar el tono de voz adecuado
+y saber manejar situaciones complejas. Estas habilidades son fundamentales
+para cualquier rol de TI. En algunas empresas los administradores
+de sistemas deben estar disponibles siempre. Si falla un servidor o una red a la noche,
+deben estar disponibles para arreglarlo. No te preocupes. Los administradores de sistemas
+no deben estar despiertos y disponibles 24/7. Pueden supervisar su servicio
+y recibir alertas en caso de problemas. ¿Cómo puedes controlar
+la solución de problemas? Una norma típica del sector
+es usar un sistema de tickets o errores. Allí los usuarios pueden solicitar ayuda y tú
+puedes controlar la solución de problemas a través del sistema de tickets. Esto permite organizar y priorizar problemas
+y documentar los pasos de la solución. En el curso presentaremos tipos de servicios
+que los administradores deben mantener y sus responsabilidades en una organización. Compartiremos prácticas
+para solucionar problemas sobre la administración de sistemas. Cuando trabajas como
+especialista en asistencia de TI puede que debas administrar sistemas. Es útil pensar en cada aspecto
+de la gestión de una infraestructura de TI de una organización. Cuanto más preparado estés, mejor.

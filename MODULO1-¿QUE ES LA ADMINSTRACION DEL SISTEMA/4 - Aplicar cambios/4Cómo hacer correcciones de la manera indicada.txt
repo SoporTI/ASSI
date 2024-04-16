@@ -1,0 +1,20 @@
+Como especialista en Asistencia de TI con frecuencia,
+deberás ocuparte de solucionar problemas. El problema
+podría estar en la computadora de un usuario un servidor de tu propia infraestructura un fragmento de código en la nube o en un punto intermedio. Así que, ¿cómo lo solucionas? Digamos que estás lidiando con un problema porque lo encontraste o alguien te lo informó. Antes de comenzar a solucionarlo asegúrate de poder recrear el error para poder probar tu solución y asegurarte de que el problema desapareció después de aplicar la solución. A esto se lo llama caso de reproducción y significa que creas una hoja de ruta
+para volver a rastrear los pasos que llevaron
+al usuario a un resultado inesperado como ver una página de error. Cuando busques un caso de reproducción deberás responder tres preguntas. ¿Qué pasos tomaste para llegar a este punto? ¿Cuál es
+el resultado inesperado o incorrecto? ¿Cuál es el resultado esperado? Digamos que intentas solucionar un problema en el que un usuario
+no puede acceder a la página de un sitio web. El caso de reproducción sería navegar al sitio
+que falla con un navegador web. El resultado incorrecto
+es una página de error mientras
+que el esperado es un sitio web visible. Una vez que tengas
+los pasos necesarios para recrear el resultado inesperado y que sepas cuáles
+deberían ser los resultados correctos podrás intentar
+solucionar el problema subyacente. Recuerda hacer esto siempre en la instancia de prueba,
+nunca en la de producción. Asegúrate de documentar
+todos los pasos y hallazgos. Contar con esta documentación podría ser invaluable si tuvieras que lidiar con problemas similares de nuevo. Tu yo futuro te lo agradecerá. Después de aplicar la solución vuelve a trazar los mismos pasos que tomaste
+para llegar a la experiencia incorrecta. Si la solución funciona deberías llegar a la experiencia esperada. En nuestro ejemplo de la página puedes verificar
+la solución si visitas el sitio. Después de aplicar la solución necesaria deberías ver el contenido del sitio web en lugar de la página de error. Hemos avanzado mucho y abordado muchos aspectos diferentes de las responsabilidades
+del administrador de sistemas incluso cómo aplica cambios de forma segura
+con la cantidad correcta de esfuerzo. A continuación,
+practicarás estos conceptos con Qwiklabs.

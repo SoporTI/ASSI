@@ -1,0 +1,30 @@
+Comencemos por definir
+qué se entiende por producción. En contextos de infraestructura llamamos así a las partes de infraestructura en las que se ejecuta cierto servicio y que sirven
+para la producción de sus usuarios. Si alojas un sitio web el servicio
+que ofrece el contenido del sitio web a los usuarios
+son los servidores de producción. Dentro de tu empresa, el servicio que valida las contraseñas de los usuarios son los servidores
+de autenticación de producción. Tú entiendes. Digamos que debes realizar un cambio importante
+en tu infraestructura de producción. Podría ser agregar un nuevo servicio cambiar la configuración
+de un servicio existente actualizar el sistema operativo o, tal vez,
+apagar el servicio mientras se ejecuta. ¿Cómo haces eso? La clave
+para realizar estos cambios de forma segura es ejecutarlos
+siempre primero en un entorno de prueba. Con frecuencia, el entorno de prueba es una máquina virtual con la misma configuración
+que el entorno de producción pero que, en realidad,
+no brinda servicios a ningún usuario. Así,
+si hay un problema al implementar el cambio podrás solucionarlo
+sin que lo note el usuario. Si estás a cargo
+de un servicio importante que debes mantener en funcionamiento
+durante un cambio de configuración recomendamos que tengas una máquina secundaria o de reserva. Esta máquina será exactamente igual a la de producción pero no recibirá tráfico de usuarios reales
+hasta que la habilites para ello. En este caso,
+una vez que hayas probado los cambios en el entorno de prueba y estés listo
+para implementarlos en producción primero, aplícalos en la máquina secundaria. Una vez que se hayan aplicado los cambios usa la máquina de reserva y la principal y, luego, aplícalos a la otra máquina. En el caso de servicios incluso mayores cuando tengas
+muchos servidores que ofrezcan el servicio tal vez debas usar versiones canary. De forma similar
+al canario que usan los mineros de carbón para detectar
+gases tóxicos al ingresar a las minas usarás
+un pequeño grupo de servidores para detectar los posibles problemas de los cambios más grandes
+que quieres aplicar en el sistema. Una vez que verifiques que funciona correctamente en esas máquinas lo implementas en el resto de la flota. Así, si surge un problema con el cambio solo un subgrupo de usuarios
+se ve expuesto a él. Puedes revertirlo
+antes de que afecte a todos. Ahora, digamos que debes realizar un pequeño cambio
+en tu infraestructura de producción. ¿Deberías continuar y realizarlo en producción? No, siempre debes probarlo primero en tu infraestructura de prueba. No importa cuán pequeño pueda parecer siempre puede salir mal. Ya sea que la infraestructura necesite máquinas principales y secundarias
+o grupos con versiones canary depende del tamaño del servicio y de cuán importante es que no falle. Incluso en los servicios más pequeños no debes realizar cambios
+directamente en producción. Usa siempre una instancia de prueba y solo implementa el cambio en producción después de verificar que funciona.

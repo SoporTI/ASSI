@@ -1,0 +1,22 @@
+Antes mencionamos que deberías probar siempre
+tus cambios antes de implementarlos. Documentar lo que haces y tener una forma de revertir al estado anterior. La cantidad de tiempo
+y esfuerzo que inviertes en cada uno
+de estos pasos depende del riesgo que existe. Siempre debes tener una instancia de prueba
+para probar los cambios. Pero, tal vez, no necesites un servidor secundario si a nadie
+le importa el tiempo de inactividad. ¿Cómo decides
+cuánto tiempo y esfuerzo invertir? Podemos evaluar el riesgo si consideramos
+cuán importante es el servicio para la infraestructura y cuántos usuarios se verían afectados si este fallara. Algunos servicios son fundamentales. Si falla
+el sistema de autenticación centralizado nadie podrá acceder. Si no se puede acceder
+al sistema de facturación la empresa no podrá recibir pagos. Si se pierden las copias de seguridad no tienes
+medidas de protección frente a un desastre. Pero no todos los servicios
+son fundamentales. Un sitio informativo no es tan importante
+como uno de comercio electrónico. Un sistema
+de tickets internos no es tan importante como una aplicación externa
+de asistencia al cliente. La infraestructura necesaria
+para una nueva instalación no es tan importante como la que se usa para acceder a las máquinas existentes. En general,
+cuantos más usuarios utilicen los servicios mayor será la necesidad de garantizar que los cambios no interrumpan nada. Cuanto más importantes sean los servicios para las operaciones de tu empresa más trabajarás para que funcionen. Puedes tener un acuerdo de usuario sobre las expectativas
+de disponibilidad de un servicio. Por ejemplo, en muchas empresas el mantenimiento se realiza
+los fines de semana para no interrumpir. En estos casos, se acepta que el servidor
+de archivos principal no funcione un sábado mientras se hacen cambios. También puedes usar estos criterios para establecer prioridades
+al solucionar un problema. Si el problema impide que las personas trabajen buscar una solución debería tener prioridad frente a solucionar
+una molestia menor que puede solucionarse.

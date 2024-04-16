@@ -1,0 +1,50 @@
+El administrador del sistema está a cargo
+de los servicios de TI de su empresa. Los empleados necesitan estos servicios de TI
+para poder ser productivos. Eso abarca correo electrónico, almacenamiento
+de archivos, ejecución de un sitio web y más. Estos servicios se deben
+almacenar en algún lugar. No aparecen de la nada.
+¿Se te ocurre dónde se almacenan? Si la respuesta es en servidores, acertaste. Hablamos sobre servicios en un curso anterior
+y aprendiste que el término "servicio" puede tener múltiples significados. En un curso, vimos cómo un servicio
+tiene contenido web que presta servicios a otras computadoras. En otro curso, vimos cómo el servicio puede
+ser un software que realiza cierta función. En este video, hablaremos sobre servicios
+más en detalle, pues en muchos casos los administradores del sistema mantienen
+todos los servidores de la empresa. Si eres especialista en soporte de TI
+y haces tareas de administración de sistemas podrías realizar este tipo de tareas. Un servidor es un software o una máquina que ofrece servicios
+a otro software u otra máquina. Por ejemplo, un servidor web almacena
+y ofrece contenido a clientes por Internet. Se puede acceder al servidor web
+por un nombre de dominio como google.com. Un servidor de correo electrónico
+brinda servicios de correo a otras máquinas y un servidor SSH brinda servicios SSH
+a otras máquinas, y así sucesivamente. Las máquinas que usan los servicios
+prestados por un servidor se llaman clientes. Los clientes solicitan los servicios de
+un servidor y, a su vez, los servidores responden con estos servicios. Un servidor puede brindar servicios
+a múltiples clientes a la vez y un cliente puede usar múltiples servidores. Cualquier computadora puede ser un servidor. Se puede iniciar un servidor web en una
+computadora doméstica que podría dar servicios
+a mi sitio web personal en la Internet. Pero no quisiera hacer eso porque debo
+dejar la computadora prendida constantemente para que el sitio web
+esté siempre disponible. Los servidores industriales suelen funcionar
+las 24 horas, los 7 días de la semana y no funcionan con hardware básico,
+como mi computadora portátil doméstica. Funcionan con un hardware
+muy potente y fiable. El hardware del servidor
+puede tener muchas formas distintas. Pueden ser torres que se erigen y se parecen bastante
+a las computadoras fijas que vimos. Esas torres se pueden guardar en un armario
+o apoyar en una mesa si lo deseas. Pero ¿qué sucedería
+si necesitas 10 servidores? Las torres empezarían
+a ocupar demasiado espacio. En vez de eso, se pueden usar servidores
+en estantes, que son horizontales y se suelen montar en un estante de servidor
+de 2.30 m de ancho. Si se necesitara aún más espacio,
+se pueden usar servidores blade que son incluso
+más delgados que los estantes. Hay otros factores de forma
+en los servidores pero estos son los más comunes. También puedes personalizar el hardware
+del servicio según los servicios. Por ejemplo, en un servidor de archivos,
+querrás más recursos de almacenamiento para poder almacenar más archivos. ¿Qué hay
+de la conexión a nuestros servidores? Al trabajar en una organización de TI chica,
+puede que manejes varios servidores. No quieres tener un monitor, un teclado
+y un mouse para cada servidor, ¿o sí? Por suerte, no hace falta gracias a algo
+que aprendimos en un curso anterior. Podemos conectarnos a ellos
+con algo llamado SSH. Aún así, siempre debes tener
+un teclado y un monitor a mano. A veces, al trabajar, la red puede
+tener problemas y SSH no es una opción. La práctica industrial típica es usar
+lo que se denomina conmutador KVM. KVM significa en inglés
+teclado, video y mouse. Un conmutador KVM se parece
+a un concentrador que se puede conectar a múltiples computadoras y se las puede controlar
+con un teclado, un mouse y un monitor.

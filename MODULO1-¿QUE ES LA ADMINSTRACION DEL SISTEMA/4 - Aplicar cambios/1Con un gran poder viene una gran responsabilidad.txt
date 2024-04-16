@@ -1,0 +1,35 @@
+Cuando tienes
+derechos administrativos sobre algo, ya sea una máquina, una flota de 100 máquinas o un servicio en la nube
+con miles de usuarios, debes tener cuidado y usar estos derechos con responsabilidad. Lo más importante es evitar usarlos para tareas para las que no son necesarios. Por ejemplo, no deberías explorar en la Web
+como usuario administrador. Intenta minimizar el tiempo dedicado a una sesión administrativa. Haz lo que debas hacer y cuando termines cierra la sesión. En los sistemas Linux, con frecuencia, usamos el comando sudo
+para ejecutar comandos como administrador. Cuando ejecutas sudo
+por primera vez en una máquina aparece un mensaje como este. Estos principios se aplican
+a cualquier derecho de administrador independientemente del sistema operativo o servicio del que estés a cargo. Analicemos más en detalle qué significa esto. Respeta la privacidad de los demás. No uses tus derechos
+de administrador para acceder a información privada
+a la que no debes acceder. Tener acceso al sistema
+de archivos de información almacenada en el directorio principal de un usuario no significa
+que debas mirar sus archivos personales. Ser administrador
+de un servidor de correo electrónico no significa que debas leer
+el correo electrónico de los demás. El hecho de que puedas
+hacer algo no significa que debas hacerlo. Aunque tengas un motivo empresarial para acceder a cierta información asegúrate de respetar los procesos o las políticas
+apropiados para acceder a ella. No debes usar
+tus derechos de administrador para omitir roles. Piensa antes de escribir. Cuando usas tus derechos de administrador tus acciones pueden tener consecuencias mucho mayores que cuando te comportas
+como un usuario normal. Piensa
+en lo que estás haciendo y no te apures. Puedes cometer errores como borrar
+un conjunto de archivos incorrecto reiniciar la máquina incorrecta o interrumpir la conexión
+que usas para administrar una máquina remota si no tienes cuidado. Puedes entrenarte para hacer esto si escribes los pasos
+que planeas tomar antes de llevarlos a cabo. Esto ayuda de dos formas. Te permite planificar con anticipación y documentar lo que hiciste. Documentar lo que hiciste es fundamental
+cuando usas los derechos de administrador. Enumerar los comandos
+que ejecutaste te permite repetir exactamente el mismo proceso en el futuro y solucionar
+los problemas que puedan aparecer. En Linux, hay un comando llamado script. Podemos usarlo
+para registrar un grupo de comandos ya que se emiten junto con sus resultados. En Windows PowerShell, hay un comando equivalente
+llamado Start-Transcript. El resultado de estas herramientas es útil para automatizar procedimientos. De manera similar,
+podemos usar la herramienta Record My Desktop para grabar la interacción con la aplicación gráfica. El último principio del comando sudo es que un gran poder
+conlleva una gran responsabilidad. Igual de sugestivo,
+pero el punto es importante. Cuanto más puedes hacer
+con los derechos de administrador más errores puedes cometer. Puedes minimizar el impacto de cualquier error, y algunos son notables si te aseguras de revertir rápidamente
+tus cambios cuando algo sale mal. Puedes hacer esto si haces una copia del estado antes de cambiarlo. Si mantienes tu configuración en un sistema de control de versiones o si documentas los pasos que debes tomar para regresar al estado anterior. Regresar
+al estado anterior se llama reversión. Algunos comandos son
+más fáciles de revertir que otros. Por ejemplo, si cambias la configuración de verdadera a falsa la reversión la regresará a verdadera. Pero si borras un archivo de forma
+que no se guarde una copia de seguridad la reversión
+podría ser difícil o, incluso, imposible. Antes de realizar un cambio piensa por un momento cómo se vería una reversión y asegúrate de tener copias de la información que se podría perder.

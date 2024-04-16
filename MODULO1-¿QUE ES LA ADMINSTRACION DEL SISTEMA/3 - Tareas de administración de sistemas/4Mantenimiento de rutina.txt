@@ -1,0 +1,13 @@
+Cuando administras máquinas para una empresa no solo las configuras y te olvidas de ellas. Debes actualizarlas y mantenerlas
+constantemente para que ejecuten los softwares de seguridad más recientes. Cuando lo haces para una flota de máquinas,
+no debes instalar las actualizaciones de inmediato a medida que aparecen.
+Eso llevará demasiado tiempo. Para actualizar
+y administrar software con eficiencia se hace lo que se llama
+"actualización por lotes". Es decir, alrededor de una vez al mes,
+actualizas todos los servidores con los parches de seguridad más recientes. Debes tener tiempo para dejar los servicios
+sin conexión, aplicar la actualización y verificar que la nueva actualización
+funcione con el servicio. Tampoco debes aplicar una actualización
+cada vez que haya un software nuevo. Pero es común usar la actualización por lotes
+para las actualizaciones de seguridad y del sistema sumamente esenciales. Una buena práctica es mantener protegido
+el sistema con la instalación habitual de los parches de seguridad más recientes. Estar al día con las medidas
+de seguridad siempre es una buena idea.

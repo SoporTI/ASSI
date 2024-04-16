@@ -1,0 +1,70 @@
+Antes de comenzar quiero felicitarte
+por haber llegado hasta aquí con el programa. Tomémonos un momento
+para pensar en las habilidades que aprendiste hasta aquí: los aspectos básicos de la TI, desde cómo funcionan
+los objetos binarios hasta la importancia de la asistencia al usuario en TI e,
+incluso, cómo crear tu propia computadora. Aprendiste los aspectos básicos
+de las redes informáticas y cómo funciona en realidad Internet. Y, por último, cómo navegar
+los sistemas operativos Windows y Linux administrar procesos y software en la línea
+de comandos como un usuario avanzado. Excelente hasta aquí. Antes de profundizar en la administración
+de sistemas e infraestructura aprovecho para presentarme
+y para volver a hacerlo ante quienes
+quizás me recuerden del curso 1. Me llamo Devan Sri Darren,
+trabajo en TI desde hace 10 años. Soy ingeniero corporativo
+de operaciones en Google en donde enfrento
+los desafiantes y complejos problemas de TI. Si hago memoria, mi primera experiencia
+con la tecnología comenzó cuando tenía unos nueve años y mi padre trajo
+la primera computadora a casa. Recuerdo que sostenía un disquete y me decía que incluía un juego. Para su sorpresa logré, de alguna manera, copiar el juego
+del disquete al disco duro de la computadora. Aunque ahora pueda parecer
+una tarea sin importancia, el dispositivo era muy novedoso
+para nosotros en ese entonces. Claro que me encantaban los juegos
+que podía jugar, pero lo que en verdad amaba era juguetear con la máquina e intentar
+lograr que hiciera lo que yo quería. Aunque quizás ese disquete despertó mi pasión
+por la tecnología, fueron mis primeras experiencias laborales las que comenzaron
+a dar forma a mi carrera de TI. Uno de mis trabajos era en venta minorista
+de muebles de bebé y otro en la oficina postal ayudando a los clientes a enviar
+paquetes y era el único miembro de TI. Puede resultar extraño que trabajar
+en venta minorista inspirara mi carrera pero descubrí que en verdad
+disfrutaba comunicarme con los clientes e intentar comprender
+lo que necesitaban para ofrecer una solución. Mi primera experiencia de trabajo directo
+en TI fue en la universidad como pasante
+de especialista en Asistencia de TI. A partir de ahí, trabajé como consultor de TI
+para desmantelar un entorno de TI completo. Esa fue la primera vez que trabajé directamente
+con una infraestructura de TI grande y salí de mi zona comodidad
+como estudiante universitario. Menciono estos primeros trabajos por algo. Estas experiencias ayudaron
+a dar forma a mi carrera en TI. En ese momento,
+sabía que quería dedicarme a la tecnología pero me costaba
+identificar hacia dónde enfocarme. Comenzar a trabajar
+en Google como periodista de TI me permitió experimentar
+diferentes áreas de la tecnología. Me permitió
+descubrir qué trabajos no quería hacer y pude identificar
+exactamente aquello que sí quería hacer. En verdad
+me encanta la infraestructura de TI. Este programa se diseñó para ayudarte
+a prepararte para roles de asistencia técnica de asistencia de escritorio o para responder
+consultas, pero no termina ahí. En este curso, vamos a descubrir una red
+aún mayor de posibilidades en TI al enseñarte las habilidades necesarias para administrar
+las computadoras de una organización. Si trabajas en una organización pequeña
+tal vez debas hacerlo desde el primer día. De lo contrario, ampliar tu conjunto
+de habilidades te permitirá destacarte en el campo
+y prepararte para ir más allá en tu carrera. En este curso, partiremos de lo aprendido
+en el curso de sistemas operativos y te enseñaremos las habilidades
+de administración de sistemas. En general, la administración
+de sistemas es el campo de la TI responsable de mantener sistemas de procesamiento
+confiables en un entorno multiusuario. Aunque las responsabilidades
+de la administración de sistemas pueden superponerse con otros roles de la TI,
+quienes se dedican a esto se llaman administradores de sistemas. Son los que tienen
+un amplio conjunto de roles y responsabilidades que incluyen la configuración de servidores,
+el monitoreo de la red, el aprovisionamiento o la configuración
+de nuevos usuarios en las computadoras, etc. Piensa en el administrador de sistemas
+como un generalista en tecnología. Se ocupa de muchas cosas diferentes
+para que la organización funcione. En realidad, es parecido al trabajo
+del especialista en asistencia de TI. Debes aplicar un conjunto diverso
+de habilidades de tecnología en diferentes situaciones para solucionar
+los problemas de una organización. Como especialista en asistencia de TI las tareas de administración de sistemas
+pueden ser parte del trabajo. Así que, presentaremos las habilidades
+y el conocimiento necesarios para administrar organizaciones y sistemas
+para que tus habilidades estén completas. Al final de este curso aprenderás los servicios
+que se usan en la infraestructura de TI. También aprenderás sobre software básico
+de usuarios y cómo administrar los usuarios y las computadoras de una organización
+con servicios de directorio. Por último, aprenderás las habilidades
+necesarias para respaldar los datos de tu organización
+y recuperarte ante un desastre. Es momento de comenzar, así que vamos.

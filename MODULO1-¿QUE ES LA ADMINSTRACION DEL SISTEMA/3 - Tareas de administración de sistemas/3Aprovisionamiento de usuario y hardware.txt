@@ -1,0 +1,48 @@
+Otra tarea de los administradores del sistema
+es administrar usuarios y el hardware. Los administradores del sistema
+deben poder crear nuevos usuarios y darles acceso a los recursos de la empresa. Por otro lado, también tienen que quitar
+usuarios de una infraestructura de TI si estos dejan la empresa. Y no solo tienen
+que preocuparse por las cuentas de usuario. Los administradores del sistema se encargan
+también de las máquinas de usuarios tienen que corroborar que un usuario pueda
+iniciar sesión y que la computadora tenga el software necesario que el usuario
+necesita para ser productivo. Los administradores del sistema también deben
+corroborar que el hardware que aprovisionan o instalan para los usuarios esté,
+de alguna forma, estandarizado. En un curso anterior, hablamos sobre crear
+la imagen de una máquina con la misma imagen esta práctica de tratar
+con entornos de usuario está estandarizada industrialmente. Los administradores del sistema no solo deben
+estandarizar los ajustes en una máquina también deben averiguar el ciclo de vida
+del hardware de una máquina. Suelen considerar el ciclo de vida del
+hardware de una máquina en sentido literal. ¿Cuándo se creó, cuándo se usó primero?
+¿Se compró nuevo o era usado? ¿Quién le hacía antes el mantenimiento? ¿Cuántos usarios lo
+usaron en la organización actual? ¿Qué sucede con la máquina si alguien
+necesita una nueva? Son todas buenas preguntas al considerar
+la tecnología de una organización. Los administradores del sistema no deberían
+tener una computadora de diez años. O quizás pueden. Incluso eso es algo
+sobre lo que deben decidir. Hay cuatro principales etapas
+en el ciclo de vida del hardware. Compras. Es la etapa en la que se compra
+el hardware que usará un empleado. Implementación. Es cuando el hardware se instala para que el empleado
+pueda trabajar. Mantenimiento. La etapa en que se actualiza
+el software y se arreglan los problemas del hardware, si ocurren y cuando ocurren. Retiro. En esta última etapa, el hardware
+se vuelve inutilizable o ya no es necesario. Y debe retirarse adecuadamente
+de la flota. En una organización pequeña, un ciclo de vida
+de hardware típico sería así. Primero, se contrata a un nuevo empleado,
+RR. HH. te pide brindarle una computadora y te solicita que instales
+su cuenta de usuario. Luego, le asignas una computadora
+del inventario o pides una nueva si hace falta. Cuando asignas el hardware, puede hacer falta
+etiquetar la máquina con un adhesivo para poder hacer un seguimiento de a qué
+inventario pertenece en la organización. Luego, creas una imagen de la computadora
+con la imagen base. y nombras la computadora
+con el nombre de host estandarizado. Esto ayuda a administrar las máquinas. Respecto del nombre, hablamos de usar
+un formato, como nombre de usuario/ubicación pero se pueden usar otros estados de host. Después, se instala el software
+que necesita el usuario en la máquina. Luego, el nuevo empleado empieza,
+y optimizas el proceso de configuración dando instrucciones de cómo iniciar sesión
+en la máquina nueva cómo recibir correo electrónico, etc. Con el tiempo, si el hardware
+de la computadora falla o tiene un problema lo examinas y piensas los pasos a seguir. Si está muy vieja, hay que averiguar
+cómo reciclarla y dónde obtener nuevo hardware. Por último, si el usuario deja la empresa,
+tendrás que quitar los accesos a los recursos de TI y limpiar la máquina para poder reasignarla a alguien más
+llegado el momento. Instalar software y configurar los ajustes
+de una nueva computadora puede llevar mucho tiempo. En una pequeña empresa, no lo haces
+con una frecuencia que haga una diferencia. Pero en una empresa más grande,
+un proceso largo no basta. Hay que aprender formas automáticas
+de aprovisionar máquinas nuevas para que la tarea solo lleve minutos,
+en lugar de horas.

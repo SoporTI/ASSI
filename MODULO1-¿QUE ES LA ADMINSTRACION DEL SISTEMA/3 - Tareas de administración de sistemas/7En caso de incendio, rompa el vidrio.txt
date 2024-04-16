@@ -1,0 +1,17 @@
+Cambiemos un poco de rumbo
+y hablemos sobre desastres. Quieras o no, en algún momento
+algo dejará de funcionar. No importa cuánto planifiques. Esto sucede en pequeñas y grandes empresas.
+Es tanto un problema como una oportunidad. No puedes responder por todo,
+pero puedes estar preparado para recuperarte. ¿Cómo? Es muy importante respaldar los datos
+de la empresa periódicamente en algún lugar preferiblemente,
+alejado de la ubicación actual. ¿Qué ocurre si un tornado destruye el sitio
+y se pierden las copias de seguridad? No tendrías un sitio donde trabajar,
+ni hablar de recuperar los datos y que la gente vuelva a trabajar. Más adelante en el curso, hablaremos más
+sobre los métodos que puedes usar para respaldar los datos de tu organización
+y recuperarte ante un desastre. Intentaremos no complicarlo
+por el momento. Hasta ahora, aprendiste mucho sobre los roles
+y las tareas de un administrador de sistemas. Algunas parecen demasiado trabajo,
+algunas incluso dan miedo. Estar a cargo de mantener
+la disponibilidad de los datos no es fácil pero es un puesto satisfactorio en TI,
+y ya estás desarrollando tus habilidades de AS o administrador de sistemas
+aprendiendo las bases del soporte de TI.

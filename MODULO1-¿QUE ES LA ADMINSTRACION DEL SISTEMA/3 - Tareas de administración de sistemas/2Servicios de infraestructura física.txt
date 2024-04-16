@@ -1,0 +1,15 @@
+Hablamos un poco sobre los servicios
+que se pueden usar en una empresa como almacenamiento de archivos
+correo electrónico, contenido web, etc. Pero hay muchos otros servicios
+de infraestructura que debes conocer. Como especialista en soporte de TI
+que administra sistemas serás responsable, en tu empresa,
+de los servicios de infraestructura de TI. Te adelanto que hay muchos de ellos. Como siempre, procura volver a ver
+cualquier lección si necesitas más tiempo para asimilar el material. Roma no se hizo en un día
+ni tampoco un especialista en soporte de TI. ¿Qué pasa con obtener acceso a la red?
+Es un servicio que debe administrarse. ¿Y con asegurar la conexión
+a sitios web y otras computadoras? Adivinaste. Es otro servicio
+que debe administrarse. Administrar servicios no es solo instalarlos,
+sino también actualizarlos a diario. solucionar vulnerabilidades e incompatibilidades
+con la computadora de tu empresa. Más adelante en este curso, veremos en detalle
+los servicios de infraestructura que se pueden encontrar en un puesto
+de especialista en soporte de TI.

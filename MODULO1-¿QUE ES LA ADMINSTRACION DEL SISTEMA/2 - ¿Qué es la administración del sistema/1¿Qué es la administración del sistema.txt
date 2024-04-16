@@ -1,0 +1,25 @@
+Antes de conocer los detalles de lo que significa
+la administración de sistemas debemos hablar de qué son estos sistemas. Las organizaciones no funcionan solas. Los empleados necesitan computadoras y acceso a Internet
+para comunicarse con los clientes. Los sitios web de la organización
+deben estar listos y funcionar los archivos deben poder compartirse, etc. Todos estos requisitos constituyen la infraestructura de TI de una organización. La infraestructura de TI
+abarca el software, el hardware la red y los servicios
+requeridos para que una organización opere en un entorno de TI empresarial. Sin una infraestructura de TI los empleados no podrían trabajar y la empresa se desmoronaría incluso antes de comenzar. Las organizaciones recurren a alguien como el administrador
+de sistemas para administrar la infraestructura de TI. Los administradores de sistemas son los héroes anónimos de la organización. Trabajan
+en segundo plano para asegurarse de que la infraestructura
+de TI de la empresa funcione siempre. Luchan constantemente para evitar los desastres de TI. Observa todo el esfuerzo que realizan. Demuéstrales cierto agradecimiento y celebra el día internacional de agradecimiento
+al administrador de sistemas. Sí, es real. Con total seriedad tienen muchas responsabilidades diferentes. Cualquier empresa
+que tenga presencia de TI necesita un administrador de sistemas
+o alguien que se ocupe de ellas. El rol
+del administrador de sistemas puede variar en función del tamaño de la organización. A medida que una organización crece necesitas equipos
+de administradores de sistemas. Sus responsabilidades pueden separarse en roles diferentes con cargos como administradores de red y de base de datos. Las empresas como Facebook y Apple no recurren
+a una sola persona para ejecutar la TI. Pero las empresas más pequeñas con frecuencia recurren a una sola persona para que administre
+la infraestructura de TI de toda la empresa. En este curso,
+nos enfocaremos en cómo solo una persona como tú, puede por sí sola
+administrar la infraestructura de TI. Aprenderás las habilidades necesarias
+para administrar una organización de menos de 100 personas
+como único profesional de TI. A medida que escales
+a organizaciones más grandes también deberás elevar tus conocimientos
+de administración de sistemas. Deberás adquirir habilidades que te permitan automatizar flujos y administrar configuraciones o ajustes de computadora automáticamente. Ahora, enfoquémonos en la administración
+de sistemas de una organización pequeña. En las siguientes lecciones vamos a hablar en detalle sobre las responsabilidades
+del administrador de sistemas y de cómo eso se relaciona con el rol del especialista
+de soporte de TI que administra los sistemas.

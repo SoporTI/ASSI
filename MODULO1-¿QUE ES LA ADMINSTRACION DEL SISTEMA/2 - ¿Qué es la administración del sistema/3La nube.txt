@@ -1,0 +1,48 @@
+Oh, la nube, la mágica y maravillosa nube
+de la que escuchas en las noticias mueve datos a través de las maravillas
+blancas y esponjosas en el cielo. La magia de la nube dispersa pizcas de datos
+por todo el mundo en gotas muy pequeñas. No, la nube no funciona así. Pero te sorprendería saber
+cuántas personas creen que es así. Sin duda has escuchado del término “nube”
+en las noticias o por otras personas. Tus fotos están almacenadas en la nube
+y tu correo electrónico también. La computación en la nube es el concepto de que puedes acceder a tus datos,
+usar aplicaciones o almacenar archivos en cualquier lugar del mundo,
+siempre que tengas conexión a Internet. Pero la nube no es mágica. Solo es una red de servidores
+que almacenan y procesan nuestros datos. Quizás ya escuchaste el concepto
+“centro de datos”. Un centro de datos es una instalación
+que contiene cientos o miles de servidores. Las empresas con grandes cantidades de datos
+deben almacenar su información en lugares como los centros de datos. Las grandes empresas, como Google y Facebook,
+suelen tener sus propios centros de datos ya que tienen miles de millones de usuarios
+que siempre necesitan acceso a sus datos. Las empresas pequeñas podrían hacerlo pero suelen alquilar partes
+de un centro de datos para lo que necesiten. Cuando usas un servicio de nube los datos normalmente se almacenan
+en un centro de datos o en varios en un lugar
+lo suficientemente grande para almacenar la información de millones
+o miles de millones de usuarios. Es fácil ver por qué la nube
+se ha vuelto una forma popular de computación durante los últimos años. Ahora, en lugar de tener terabytes
+de almacenamiento en tu laptop puedes subir los datos a un servicio
+de almacenamiento de archivos como Dropbox que almacena los datos en una ubicación
+administrada, como un centro de datos. Lo mismo se aplica a tu organización. En lugar de administrar tus servidores,
+puedes usar servicios de Internet que se encargan de todo,
+como las actualizaciones de seguridad hardware del servidor, actualizaciones
+rutinarias del software y más. Pero todas estas opciones
+tienen algunas desventajas. La primera es el costo. Cuando compras un servidor,
+pagas el hardware por adelantado. Así, puedes configurar tus servicios,
+como un almacenamiento de archivos a un costo posiblemente muy bajo
+porque tú lo administras. Cuando usas servicios de Internet,
+como Box o Dropbox que ofrecen almacenamiento de archivos
+en línea el costo inicial puede ser menor,
+pero, a largo plazo, los costos aumentarían ya que se paga una cantidad fija
+todos los meses. Cuando compares el costo de los servicios,
+siempre recuerda cuánto podría costarte a ti una suscripción por cada usuario
+en tu organización. Considera el costo en comparación
+con mantener tu propio hardware a largo plazo y, luego, toma la mejor decisión
+para tu organización. La segunda desventaja es la dependencia,
+ya que tus datos dependen de las plataformas. Si hay un problema con el servicio alguien más es responsable
+de que vuelva a funcionar. Eso podría costarle a tu empresa
+una gran pérdida de productividad y datos. Independientemente del método que elijas eres responsable de los problemas
+que surjan cuando haya contratiempos. Si Dropbox tiene un problema
+con los datos importantes de tus usuarios es tu problema,
+y tienes que solucionarlo a toda costa. Para prevenir que ocurra una situación así,
+considera respaldar algunos datos esenciales en la nube y en un disco físico. De esa forma, si un sistema falla,
+tendrás otra forma de resolver el problema. Ya sea que elijas tener servidores físicos
+o usar servicios en la nube debes considerar estas situaciones
+cuando proporciones servicios a tu empresa.
