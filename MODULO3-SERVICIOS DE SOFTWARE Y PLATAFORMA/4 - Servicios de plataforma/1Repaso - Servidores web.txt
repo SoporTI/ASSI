@@ -1,0 +1,42 @@
+Con los servicios de plataforma,
+los desarrolladores usan una para compilar e implementar apps
+de software sin necesidad de mantener el SO el hardware del servidor, las redes, etc.
+para usar las herramientas de la plataforma. Un servidor web en el que implementamos
+las apps web o el software de desarrollo que usamos para codificar apps,
+son ejemplos de servicios de plataforma. Hoy en día, la mayoría de las empresas
+tienen presencia digital. Ya sea un sitio web que promocione su negocio
+o incluso un sitio web que sea su negocio las empresas que ejecutan servicios web
+almacenan sus servicios en un servidor web. Un servidor web almacena y entrega
+contenido a clientes a través de Internet. Puedes acceder a servidores web
+con un nombre de dominio, como google.com. Un servidor web almacena por sí mismo
+barras web y ejecuta un servicio HTTP o un servidor HTTP
+que procesa solicitudes HTTP. Recuerda que HTTP es la forma en que la Web
+da formato a páginas web y las transfiere. Puedes considerar al servidor web el servidor
+físico que almacena los archivos web y el software del servidor HTTP. Cuando el navegador web realiza una solicitud
+para explorar una página web desde una URL envía una solicitud HTTP
+que procesa el servidor HTTP. Luego, el servidor HTTP envía una respuesta
+HTTP con el contenido solicitado. Existen muchos softwares
+de servidores HTTP populares pero el que más se usa es Apache HTTP Server,
+más conocido como Apache. Apache es gratis y de código abierto. Ayuda a entregar un gran porcentaje
+de las páginas web en Internet. Veamos cómo un servidor web
+entrega contenido a la Web. Voy a instalar el software del servidor web
+Apache en mi computadora Linux. No es necesario que entiendas
+las especificaciones de la instalación. Solo quiero que veas lo fácil
+que es ejecutar un servicio web. Así que instalaré Apache. Escribo sudo apt-get install apache 2 luego escribo la marca Yes
+para aceptar todos mis paquetes. Perfecto. Ahora el servicio del servidor web
+se está ejecutando en la máquina. Ya podemos empezar a alojar contenido web. La máquina en la que estamos alojando
+el contenido es esta máquina de aquí. Recuerda que la computadora
+tiene una dirección IP asociada a sí misma 127.0.0.1 o a un nombre de host
+del host local. El host local se reserva por este motivo. Por tanto, no es posible obtener el nombre
+de dominio host local. Ahora que sabemos
+la ubicación de las máquinas escribámosla en el navegador. Aquí está, el contenido del servidor
+web local que se ejecuta en la máquina. Los archivos que vemos vienen
+con la instalación predeterminada de Apache. Si quisiéramos subir nuestro propio
+contenido web, podríamos navegar hacia el directorio donde está almacenado
+y reemplazarlo por nuestro contenido web. Recuerda: como este contenido
+está alojado en la máquina local necesitaremos usar el DNS para avisar a todo
+el mundo que nuestro servidor web existe. Este fue un resumen
+del funcionamiento de los servidores web. Los administradores de sistemas no se encargan
+de crear el contenido entregado pero quizá deban asegurarse
+de que esté disponible. Si eres especialista en asistencia de TI
+y debes administrar un servidor web deberías conocer bien su funcionamiento.

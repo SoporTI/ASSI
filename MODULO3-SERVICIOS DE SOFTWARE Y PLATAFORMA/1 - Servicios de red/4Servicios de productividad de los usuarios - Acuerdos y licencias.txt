@@ -1,0 +1,23 @@
+En cualquier organización el software que necesitan los empleados
+para trabajar es el que debe proporcionar el especialista en asistencia de TI
+que gestiona la infraestructura informática. Según la organización, es posible
+que debas conseguir para los usuarios programas de desarrollo de software,
+procesamiento de texto, editores gráficos software para finanzas, etc. Sea cual sea el software proporciones,
+debes considerar ciertos aspectos al usarlos en un entorno comercial
+que quizá no se te hayan ocurrido mientras usabas un software similar. Cuando usas software lo haces según el acuerdo de licencia
+para el desarrollador. Por ejemplo, cuando usas
+software de código abierto el acuerdo de licencia suele indicar
+que es libre de usar, compartir y modificar. Cuando el software se usa como consumidor,
+los acuerdos pueden indicar que solo una persona concreta puede usarlo. En un entorno empresarial o comercial casi todos los distribuidores
+tienen un acuerdo independiente. En casi todos los casos,
+puedes adquirir diez licencias y diez personas cualesquiera
+de la empresa pueden usarlas. Si alguien abandona la empresa
+o ya no necesita el software puedes tomar sus licencias
+y dárselas a alguien más de la empresa. Cuando analices las licencias de software,
+es importante revisar los términos y condiciones, y avanzar
+con la mejor opción para la empresa. Todo se complica un poco más cuando
+se trata de servicios de software en la nube. Quizá debas lidiar con algunas
+de las mismas estipulaciones y pensar en la posibilidad de adquirir
+funciones agregadas para negocios y empresas como la asistencia al cliente dedicada. Sin importar cómo proporciones software ya sea instalando software en cada máquina
+o usando servicios de software en la nube hay algo que debes tener en cuenta. El software que se usa como consumidor no es el mismo
+que el que se usa como empresa.

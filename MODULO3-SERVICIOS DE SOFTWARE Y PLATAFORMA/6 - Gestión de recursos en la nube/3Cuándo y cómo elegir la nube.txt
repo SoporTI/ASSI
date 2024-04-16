@@ -1,0 +1,27 @@
+Como especialista en asistencia de TI,
+deberás decidir cuándo conviene usar un servicio en la nube
+o tu propio hardware físico. Ya vimos esto, pero analicemos en detalle
+qué hay que tener en cuenta para ello. Usar una infraestructura en la nube
+no requiere una gran inversión inicial. Es una buena opción si no sabes
+por cuánto tiempo la necesitas. Si estás configurando una infraestructura
+temporal o probando algo que podría no durar un servicio en la nube
+podría ser la mejor opción. Usar una infraestructura en la nube tiene sentido
+si la demanda varía mucho en el año. Si operas un sitio web que recibe
+mucho tráfico durante una temporada pero mucho menos durante el resto del año no deberías invertir tanta infraestructura
+solo para que esté inactiva casi todo el año. Otro motivo por el cual elegir la nube
+es la ubicación geográfica. Si tus usuarios, los empleados de tu empresa
+o los usuarios externos de tus servicios están distribuidos por todo el mundo tener todos los servidores
+a nivel local no cumplirá sus necesidades. Conviene recurrir a un proveedor que tenga
+centros de datos en las ubicaciones donde quieres entregar servicio
+o cerca de ellas. Supongamos que decides que tus casos de uso
+encajan con el modelo de la nube. ¿Cómo decides cuáles son los proveedores
+de servicios en la nube que debes usar? Analiza tus necesidades específicas,
+compara los servicios que ofrecen los diversos proveedores y determina
+cuál se adapta mejor a tus necesidades. Casi todos los proveedores
+de la nube ofrecen pruebas gratis así que es útil probarlas
+y ver si cumplen tus necesidades y ver qué tan bien tu infraestructura
+empresarial se integra en los proveedores. Por último, la tecnología
+en esta área evoluciona con rapidez. Los proveedores de servicios en la nube
+ofrecen más servicios y soluciones cada año para garantizar que estés al día
+con los cambios más recientes en el área antes de tomar una decisión. Eso es todo. Ahora sabes qué debes tener en cuenta cuando quieras trasladar
+tus servicios a la nube.

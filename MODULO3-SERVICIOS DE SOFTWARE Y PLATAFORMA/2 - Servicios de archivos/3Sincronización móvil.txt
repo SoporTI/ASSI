@@ -1,0 +1,48 @@
+Lo bueno de los dispositivos móviles
+es que puedes llevarlos a cualquier lado. Sin embargo, el riesgo es que contienen
+mucha información difícil de reemplazar. Reconozcamos que los dispositivos móviles
+pueden ser muy fáciles de perder. Piensa en todos los datos. Información personal como correos
+electrónicos, fotos, videos calendarios, datos de salud, de ubicación
+o tu progreso de Candy Crush. Son cosas que no quieres perder. En este video, veremos algunas formas
+de proteger tus datos valiosos incluso si tu dispositivo móvil
+se daña, se pierde o te lo roban. ¿Cómo hacemos esto? Para cada tipo de datos importantes
+en tu dispositivo querrás asegurarte de que los datos
+estén sincronizados con otra ubicación. Si sincronizas datos, te aseguras
+de que los datos son los mismos en dos o más lugares. ¿Cómo funciona? Si una cita del calendario
+solo está almacenada en tu dispositivo necesitas tener el dispositivo
+contigo para ver la cita. Además, si pierdes el acceso al dispositivo,
+pierdes todos los detalles de la cita. Entonces no sabrás a qué hora tenías que ir
+a reunirte con tu amigo para tomar un café. Pero, si usas un calendario
+que sincroniza tus datos, todo está bien. Un calendario conectado
+a una cuenta en línea sincronizará cualquier cambio de horario o cita nueva
+con una ubicación central en la nube. Si inicias sesión en el calendario
+en otro dispositivo pero con la misma cuenta,
+verás el mismo conjunto de citas. Como especialista en asistencia de TI es importante que entiendas
+qué datos en qué aplicaciones son fundamentales para tu organización como también lo que es fundamental
+para los usuarios finales que asistes. La mayoría de las organizaciones
+se preocuparán por datos empresariales como correos electrónicos, calendarios
+e información de contacto. También puedes tener aplicaciones que gestionan
+documentos, fotos, videos y más. Tu desafío es asegurarte
+de que si el dispositivo se pierde todavía puedes recuperar los datos. La mejor forma de hacer esto,
+de la que podrías ser responsable en tu rol como asistente de TI, es asegurarte
+de que los datos críticos empresariales estén sincronizados en al menos dos lugares. Por suerte, muchas apps
+para dispositivos móviles se sincronizan automáticamente. En algunos casos, las apps ya usan la nube
+como su fuente de datos canónica. Por ejemplo, si ingresas a una cuenta para tus apps
+de correo electrónico y calendario probablemente obtendrán
+todos sus datos de servidores en la nube o de la infraestructura de TI local
+de tu organización. Si pierdes tu teléfono,
+puedes ingresar a la misma cuenta en un dispositivo diferente
+y obtener exactamente los mismos datos. Con una app como esta, no perderás
+ningún dato si el dispositivo se daña se pierde o lo roban. Es genial, ¿cierto? Algunas apps se pueden configurar
+para que cada cierto tiempo sincronicen o realicen
+copias de seguridad de datos en un servicio de almacenamiento en la nube. Esto significa que podrías perder algunos
+datos si pierdes el acceso a un dispositivo. Pero la pérdida se limitará
+al tiempo transcurrido desde la última copia de seguridad. Otras apps podrían almacenar
+sus datos solo en dispositivos locales y no hacer copias de seguridad
+de sus datos en la nube. En ese caso, sincronizarás tus datos en otra ubicación
+si algo le pasa a tu dispositivo. Quizás recuerdes de un video anterior
+cómo cada app en tu dispositivo tiene una ubicación específica
+donde puede almacenar datos. Tanto iOS como Android admiten copias de seguridad
+de los datos de esta aplicación en la nube. Estos SO móviles no solo hacen copias
+de seguridad de los datos de las aplicaciones sino también de tus dispositivos,
+cuentas y configuraciones.

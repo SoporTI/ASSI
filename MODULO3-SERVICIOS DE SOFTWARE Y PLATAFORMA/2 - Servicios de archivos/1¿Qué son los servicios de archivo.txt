@@ -1,0 +1,12 @@
+En esta lección, repasaremos algunos
+de los servicios de archivos que podemos usar para ser productivos como organización. Los empleados necesitan
+poder compartir archivos entre sí ya sea para colaborar
+o para intercambiar información. En el último curso, hablamos
+sobre las carpetas compartidas en Windows pero en esta lección, veremos formas más
+escalables y eficientes de compartir datos. Servicios de almacenamiento de archivos. Estos servicios permiten almacenar archivos
+de forma centralizada y gestionar el acceso entre archivos en grupos. Puedes configurar un servidor
+de almacenamiento de archivos que permitirá acceder a un directorio compartido
+para modificar, agregar archivos y mucho más. La otra forma de mantener
+un servicio de almacenamiento de archivos es con un proveedor de almacenamiento
+de archivos en la nube. Hay muchos proveedores
+que ofrecen almacenamiento de archivos seguro y fácil de gestionar.

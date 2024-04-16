@@ -1,0 +1,40 @@
+Los últimos servicios de software
+que veremos son los servicios de seguridad. La seguridad es fundamental
+para todas las organizaciones. Está integrada en casi todos los aspectos
+de un servicio de infraestructura de TI. Profundizaremos en esto
+en el último curso de seguridad de TI. Por ahora, recuerda que hay muchos protocolos
+de seguridad diferentes que se usan para distintos fines, como mantener
+los datos encriptados, la autenticación, etc. Si administras un servidor web
+que entrega contenido a otros usuarios debes avisarles que, cuando acceden
+a tu sitio web, mantienes su interacción contigo lo más segura posible. Supongamos que tienes una cuenta bancaria
+en línea a la que estás accediendo. Lo más probable es que la URL
+empiece con HTTPS. Recuerda que HTTP significa
+"Protocolo de transferencia de hipertexto" que se usa para formatear
+y transferir contenido web por Internet. Cuando ingresas una URL,
+ves que el HTTP va antes que todo lo demás. HTTPS, o Protocolo
+de transferencia de hipertexto seguro es la versión segura de HTTP. Garantiza que la comunicación
+entre tu navegador y el sitio web sea segura gracias a la encriptación. HTTPS también se conoce
+como HTTP/TLS o HTTP/SSL. Esto se debe a que existen dos protocolos
+que permiten proteger los servidores web. El primero es el Protocolo de seguridad
+de la capa de transporte, o TLS que es el más popular para mantener
+protegidas las comunicaciones por una red. TLS se usa mucho para mantener protegida
+la navegación web, pero también se puede usar en muchas otras aplicaciones. El segundo protocolo es el Protocolo
+de capa de conexión segura, o SSL. Es una forma de proteger la comunicación
+entre un servidor web y un cliente pero es bastante antiguo e inseguro,
+por lo que quedó obsoleto a favor del TLS. Puede que su nombre se siga usando para referirse al protocolo TLS,
+como SSL/TLS. Ambos protocolos
+suelen usarse de forma indistinta. De hecho, la versión 3.0 de SSL
+era la versión 1.0 de TLS. Pero las nuevas funciones y actualizaciones
+de TLS lo hicieron más seguro que SSL. Entonces, si estás gestionando el sitio web
+de una organización en un servidor ¿cómo habilitas TLS en el servidor
+para que el sitio pueda usar HTTPS? Necesitas obtener un certificado
+digital de confianza de una entidad llamada "autoridad de certificación". La autoridad de certificación otorga
+un certificado a tu sitio web que dice que confía en que tú
+controlas el servidor web y verifica que eres quien dices ser. Una vez hecho eso, puedes instalar
+el certificado en tu servidor web. De ese modo,
+cuando los usuarios visiten tu sitio verán el HTTPS en la URL,
+en lugar de solo HTTP. Piensa en los certificados como una forma
+de verificar que algo es confiable. La seguridad es una parte integral de la TI,
+y los ingenieros de seguridad no son los únicos responsables de ella. Todos deberían tener presente
+la seguridad, y todas las capas de tu infraestructura deben tener
+una capa de seguridad incorporada.

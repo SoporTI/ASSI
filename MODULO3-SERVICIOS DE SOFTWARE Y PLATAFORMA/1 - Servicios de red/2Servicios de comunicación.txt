@@ -1,0 +1,32 @@
+Los servicios de software
+incluyen una amplia variedad de funciones. Aquí veremos las principales. Primero están los servicios de comunicación que permiten a los empleados
+de una empresa comunicarse entre sí. Luego, los servicios de seguridad,
+que suman una capa de protección de seguridad a la infraestructura de TI. También veremos los servicios
+de productividad para usuarios y ciertos aspectos de la gestión de software
+que debes tener en cuenta cuando trabajas. Hay muchos softwares
+para la comunicación interempresarial como el correo electrónico
+o la comunicación telefónica. Son servicios de comunicación importantes. Pero aquí solo veremos el software
+que se usa para la comunicación instantánea. La comunicación instantánea cambió
+drásticamente la forma en que nos comunicamos tanto de forma personal como laboral. Podemos conversar con distintas personas
+en tiempo real con apps de chat. Quizás uses Facebook Messenger
+en tu dispositivo para chatear con amigos. En un entorno empresarial, existen métodos
+similares de comunicación instantánea. El primero es Internet Channel Relay, o IRC,
+un protocolo para mensajes de chat. ICR opera en un modelo cliente-servidor,
+por lo que se pueden usar muchos softwares cliente de IRC
+para conectarse a un servidor IRC. IRC se usó mucho en los 90
+para facilitar todo tipo de chats como los grupales, individuales y más. No se usa tanto hoy en día debido
+a la oleada de mensajes de chat instantáneo de las redes sociales. Pero, si piensas configurar un IRC,
+es una alternativa gratis para otras aplicaciones de chat. Las opciones de pago son otro
+método de comunicación instantánea. Hay otras aplicaciones de chat
+mucho más sofisticadas y avanzadas que ofrecen asistencia empresarial. Algunas opciones
+populares son HipChat y Slack. También existen otros protocolos de comunicación
+llamados "protocolos OpenSim" que se usan mucho y se integran
+en distintas aplicaciones de comunicación. Uno de los protocolos
+de comunicación más populares es XMPP o Protocolo extensible
+de mensajería y presencia. Es un protocolo de código abierto
+para aplicaciones de mensajería instantánea y servicios de redes sociales. XMPP incluso se usa en aplicaciones
+de Internet de las cosas, entre otras. Algunas aplicaciones populares y gratis
+que usan XMPP son Pigeon y ADM. La comunicación instantánea
+es una forma ideal de fomentar la colaboración en equipo y la eficiencia. Cuando gestionas una infraestructura de TI,
+debes considerar un servicio de comunicación para implementar en tu organización. Seguro te lo agradecerán, incluso a través
+de la comunicación instantánea.

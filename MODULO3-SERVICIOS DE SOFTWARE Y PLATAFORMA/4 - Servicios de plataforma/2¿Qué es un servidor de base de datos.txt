@@ -1,0 +1,19 @@
+Cuando ejecutas un servicio que opera
+en la Web, necesitas un servidor web que entregue páginas a clientes
+que así lo soliciten, como ya vimos. Pero quizá también necesites
+almacenar información. ¿Pensaste qué sucede con tu información
+cuando creas una cuenta para un sitio web? ¿Dónde se almacena esa información? ¿En una carpeta en un servidor web? Si es así, tienes que dejar de usar
+ese servicio de inmediato. La información de clientes, como artículos
+de noticias, videos, cantidades grandes de texto o archivos de audio
+suelen almacenarse en una base de datos. Las bases de datos permiten almacenar,
+consultar, filtrar y gestionar muchos datos. Cuando compiles un producto web, quizá
+almacenes los datos en una base de datos. El servicio de base de datos consiste
+en un software de base de datos en ejecución desde el que puedes leer y escribir. Los sistemas de bases de datos comunes,
+como MySQL y PostgresSQL se usan en el desarrollo de aplicaciones
+y contenido web, y en el análisis de datos. Para estos sistemas, se suele requerir
+un conocimiento de los lenguajes o las sintaxis especiales para poder analizar
+y filtrar grandes cantidades de datos. Administrar una base de datos
+puede ser demasiado complejo y perder datos valiosos
+podría costarle caro a la empresa. Existe toda una especialización laboral
+dentro de la TI que se ocupa de las bases de datos como esa:
+los administradores de bases de datos.

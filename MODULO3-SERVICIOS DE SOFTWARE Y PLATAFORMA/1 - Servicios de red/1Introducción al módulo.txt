@@ -1,0 +1,13 @@
+Bienvenido nuevamente. En el último módulo,
+aprendimos sobre la infraestructura física y los servicios de red
+que se usan en una organización de TI. En esta lección, veremos los otros servicios
+que componen una infraestructura de TI el software y los servicios de plataforma. Los servicios de software
+son los que usan los empleados para realizar las tareas laborales diarias. Estos incluyen aplicaciones
+como procesadores de texto navegadores de Internet, clientes de correo
+electrónico, chats de clientes, etc. Los servicios de plataforma
+ofrecen una plataforma para programar compilar y gestionar apps de software. Así, los desarrolladores no tienen que lidiar
+con el mantenimiento del SO ni de otros servicios necesarios
+para usar las herramientas de la plataforma. Cuando administras la infraestructura de TI,
+es importante que implementes servicios de software para facilitar
+la productividad de los usuarios. Según el tipo de empresa que administres,
+necesitarás gestionar servicios de plataforma para los desarrolladores de software.

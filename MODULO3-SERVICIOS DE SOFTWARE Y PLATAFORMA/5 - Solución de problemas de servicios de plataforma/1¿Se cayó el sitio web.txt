@@ -1,0 +1,41 @@
+Los servidores web y los servidores
+suelen ser propensos a averiarse. Como con toda máquina, arreglar un servidor
+web podría implicar muchas variables. En esta lección, no veremos un caso
+concreto de solución de problemas pero sí algunas herramientas sencillas
+de solución de problemas que puedes usar para diagnosticar un servidor o navegador web
+defectuoso, el "código de estado HTTP". Cuando queremos ingresar a google.com nuestro navegador envía una solicitud HTTP
+al servidor HTTP en el servidor web. Luego, obtenemos una respuesta HTTP. A veces, esta respuesta
+devuelve el contenido que deseamos. Casi siempre, devolverá un mensaje
+de estado de la respuesta. Los códigos de estado HTTP son códigos
+o números que indican algún tipo de error o mensajes de información generados
+cuando intentamos acceder a un recurso web. Conocer los códigos de estado HTTP
+habituales resulta útil para solucionar un error de un sitio web. Suelen brindar información útil
+que puede ayudar a aislar la causa raíz. Este es un código de estado HTTP común
+que quizá conozcas, el temido 404 not found. Un error 404 indica que la URL
+introducida no dirige a nada. Veamos qué sucede si escribo google.com/asdf. Obtengo este mensaje de error. La URL solicitada /asdf
+no se encontró en este servidor. Eso es justo lo que esperaba que ocurriera. Escribí una dirección que sabía
+que no existía, y el sitio web lo confirmó. ¿Pero cómo sé que es un código de error 404? Según el sitio web, los mensajes de error
+HTTP pueden aparecer directamente en la página a la que intentas acceder. Sin embargo, para asegurarte completamente,
+puedes ver la propia respuesta HTTP. Para ello, tendremos que trabajar un poco. Hoy en día, los navegadores tienen
+herramientas incorporadas que ayudan a diagnosticar problemas
+del propio navegador o sitio web. Como estoy usando Chrome utilizaré las herramientas
+para desarrolladores de Chrome. Hagámoslo. Haré clic aquí. Voy a Más herramientas y hago clic
+en Herramientas para desarrolladores. Se abrirán
+las herramientas para desarrolladores en paralelo en el navegador web. Estas herramientas son un gran recurso
+para probar y depurar problemas de un sitio web o navegador. Solo queremos ver
+el código de respuesta HTTP. Para ello, voy a ir a la pestaña Red
+y actualizo la página. Si intento ir a google.com/asdf veré la solicitud que hice
+en el lado izquierdo. Si hago clic ahí,
+el código de estado dice 404 not found. Muy claro, ¿cierto? Los códigos de estado HTTP que empiezan con 4xx indican un problema
+del lado del cliente. El cliente intentó hacer algo que yo no pude,
+como escribir una URL incorrecta acceder a algo sin autorización, etc. Los otros códigos de estado HTTP comunes
+que puedes encontrar empiezan con 5xx. Estos errores indican
+un problema del lado del servidor. El servidor web que aloja este contenido
+web está experimentando problemas y a lo mejor haya algunos
+administradores investigándolo. Los códigos de estado HTTP
+indican más que solo errores. También indican cuándo
+la solicitud tuvo éxito que se indica con los códigos
+que empiezan con 2xx. Los códigos de estado HTTP dicen
+mucho sobre un problema del sitio web. Si encuentras alguno que no conoces,
+tan solo búscalo. Posiblemente te diga
+con exactitud cuál es el problema.

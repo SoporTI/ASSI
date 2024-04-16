@@ -1,0 +1,47 @@
+Un servicio de comunicación que seguro
+usas hoy en día es el correo electrónico. El correo electrónico se usa
+para una gran variedad de comunicaciones. En un entorno empresarial es importante que, como administradores
+o especialistas en asistencia de TI podamos configurar servicios
+de correo electrónico para la empresa. Para ello, debes tener un nombre
+de dominio configurado para la empresa que puedas usar como dominio
+de tu correo electrónico como devin@example.com. Cuando envíes o recibas un correo
+electrónico, debes usar esta dirección. Hay dos formas de configurar
+el correo para una empresa. La primera es ejecutar
+tu propio servidor administrado. En este caso, configuras el software
+del servidor de correo electrónico en un servidor. Luego, creas un registro de DNS
+para el servidor de correo. Existen distintos registros de DNS. El registro A se usa para nombres de host,
+pero para servidores de correo electrónico se usa MX para el registro
+de intercambio de correo. Configurar el servidor de correo electrónico
+puede ser uno de los servicios más difíciles para los administradores. Tienes que lograr que el correo funcione proteger tu dirección de correo del spam,
+filtrar virus y más. Una alternativa a configurar
+tus propios servidores de correo electrónico son los proveedores de servicios
+de correo electrónico, como Google Workspace. Permiten crear bandejas de entrada
+de correo electrónico y más con el pago de una cuota mensual
+para cada usuario de la organización. Esto te vincula al cliente
+de correo web de Gmail y te permite acceder al correo electrónico desde cualquier lugar. Mientras estés conectado a Internet,
+sea cual sea la opción que elijas deberás conocer las diferencias
+entre los protocolos de correo electrónico al crear las cuentas de correo. Existen muchos protocolos de correo
+electrónico, pero solo resumiremos los más comunes: POP3, IMAP y SMTP. El Protocolo de oficina postal o POP3
+es un protocolo de correo electrónico que descarga correos de un servidor
+de correo electrónico a tu dispositivo local y luego borra el correo
+del servidor de correo. Si quieres recuperar
+tu correo electrónico a través de POP3 solo puedes verlo desde un dispositivo. Hay algunos motivos para usar POP3
+como protocolo de correo electrónico. Para mantener el almacenamiento del correo
+por debajo de determinada cuota POP3 es una buena opción. Otra ventaja de POP3 es la privacidad. Tu correo electrónico solo puede
+verse desde tu dispositivo local. Si te preocupan las limitaciones
+de almacenamiento y la seguridad deberías tener en cuenta POP3,
+en lugar de IMAP. Hablando de ello, IMAP o Protocolo
+de acceso a mensajes de Internet sirve para descargar correos electrónicos
+del servidor de correo a varios dispositivos. Conserva tus mensajes
+en el servidor de correo electrónico. Este protocolo es uno de los más conocidos
+para recuperar correos electrónicos. Por último, tenemos el Protocolo
+para transferencia simple de correo (SMTP) un protocolo que se usa
+para enviar correos electrónicos. Mientras que POP3, IMAP y otros protocolos
+se pueden usar para recuperar correos hay un solo protocolo
+para enviar correos electrónicos, SMTP. Hay muchos protocolos de correo
+electrónico que pueden implementarse según el software de correo electrónico. El servicio de correo
+electrónico es fundamental. Las empresas necesitan comunicarse
+con clientes y socios comerciales y contactarse a nivel interno. Si trabajas en un rol de especialista
+en asistencia de TI y te encargas de tareas de administración de sistemas, deberás
+considerar los pros y contras de un servidor de correo dedicado
+y de un servicio de correo en la nube. Decisiones y más decisiones.

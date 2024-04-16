@@ -1,0 +1,38 @@
+En el último curso, dijimos
+que hay pocos sistemas FAT que se pueden usar en todos los sistemas operativos principales. FAT32 es un sistema de archivos conocido
+compatible con los SO Windows, Linux y Mac. Pero tiene muchas limitaciones para los datos
+que pueden almacenarse en un volumen. ¿Qué sucede si hay varios usuarios
+que quieren compartir archivos entre sí? Necesitan almacenar el archivo en algún sitio
+y poder recuperarlo a través de una red. El sistema de archivos de red,
+o NFS, permite hacer esto. Es un protocolo que permite que los archivos
+se compartan a través de una red. El sistema de archivos
+es compatible con todos los SO principales. La forma más fácil de configurar
+un servidor NFS es con un entorno de Linux. Puedes instalar el software del servidor NFS y modificar los archivos de configuración
+para los directorios a los que deseas permitir el acceso compartido. Una vez que lo hagas, el servicio NFS
+se ejecutará en segundo plano en el servidor. En cada máquina cliente
+que quiera acceder al servidor solo tienes que montar el sistema
+de archivos como lo harías con cualquier otro excepto que debes usar el nombre de host,
+en lugar de un dispositivo de disco físico. Desde allí, accedes al directorio compartido
+como harías con cualquier carpeta de tu PC. NFS es una buena solución
+para compartir archivos dentro de una red. Pero como todo en una red, el uso excesivo
+ralentizará el sistema de archivos. Aunque NFS funciona
+con todos los SO principales sigue habiendo problemas
+de interoperabilidad con Windows. Si tu flota se compone
+principalmente de máquinas Windows quizá debas considerar usar algo como Samba. Los servicios de Samba
+son similares a los de NFS. Puedes compartir servicios de archivos
+de forma centralizada. Además, todos los SO principales pueden usar
+un recurso compartido de archivos Samba. El único motivo por el que podrías considerar
+Samba sobre NFS es porque funciona mejor con sistemas operativos Windows. También incluye otros servicios
+que se pueden integrar en tu organización como los de las impresoras. Ten cuenta que puedes escuchar
+el término Samba o SMB, pero son distintos. SMB es un protocolo que implementa Samba. Dato curioso: cuando creas
+una carpeta compartida de Windows en realidad, se usa el protocolo SMB. Samba en sí es un paquete de servicios
+de software para servicios de archivos. Existen muchos otros servicios
+de almacenamiento de archivos. Una solución accesible para el hardware
+de almacenamiento de archivos es usar un almacenamiento conectado
+a la red, o NAS, pronunciado "NAS". En vez de configurar un servidor dedicado,
+como harías con otros servicios. Los NAS son computadoras optimizadas
+para el almacenamiento de archivos. Suelen venir con un SO simplificado para solo
+entregar archivos a través de una red. También tienen
+mucho espacio de almacenamiento. Sea cual sea el método que elijas el almacenamiento y la gestión
+centralizada de archivos es importante para la infraestructura de TI
+de cualquier organización.

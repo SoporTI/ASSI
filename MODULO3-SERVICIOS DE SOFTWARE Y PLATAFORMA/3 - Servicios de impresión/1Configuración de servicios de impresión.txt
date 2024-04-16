@@ -1,0 +1,38 @@
+Aunque el mundo avanza
+cada vez más hacia el espacio digital todavía hay aspectos de nuestra vida
+que requieren el viejo y querido papel. Muchas organizaciones aún usan impresoras,
+y como especialista en asistencia de TI debes administrarlas,
+como harías con cualquier otro dispositivo. Si tienes una impresora en casa, es probable
+que la conectes directo a la computadora. Puede que incluso imprimas
+a través de tu red doméstica con Wi-Fi. Algunas organizaciones pequeñas pueden
+librarse de este sacramento de la gestión. Pero la mayoría de las grandes organizaciones
+tienen muchas impresoras que gestionar y grandes cantidades
+de información que imprimir. Para gestionar las impresoras, debes tener
+un lugar donde hacerlo de forma centralizada. Quizá uses impresoras comerciales
+que también brindan información sobre diagnósticos,
+como nivel bajo del tóner. Además de administrar impresoras de forma
+centralizada, deberás implementar software de controladores de impresora para que los usuarios impriman
+desde sus equipos. Hay diferentes maneras
+de administrar impresoras. Su configuración depende de cuántas haya
+y de cuántas personas trabajen en la empresa. En una empresa pequeña con menos
+de 100 empleados, configurar una o dos impresoras comerciales
+debería ser más que suficiente. Para configurar un servidor de impresión,
+solo debes instalar un servicio de impresión. La mayoría de los SO de servidores
+ya incluyen el servicio de impresora listo. Por ejemplo, veamos en Windows. En el SO Windows Server, hay servicios
+de impresión y documentos para habilitar. Solo debes agregar las impresoras de tu red
+al servicio e instalar los controladores. Rápido y sencillo, ¿no? En Linux, un servidor de impresión
+común que suele preinstalarse en las máquinas es CUPS o Sistema de impresión común de UNIX. Te mostraré. CUPS permite administrar las impresoras
+desde una URL simple de la web. Una vez configurado el servidor de impresión,
+agregas la impresora a la máquina cliente. Busca el nombre del servidor de impresión,
+conéctate al dispositivo e imprime. Hay muchas formas de optimizar este proceso. Cuando empieces a conocer
+los servicios de directorio verás cómo configurar reglas en las máquinas
+para que las impresoras y sus controladores se instalen automáticamente
+en una computadora cliente. Otra forma de administrar impresoras
+es con un proveedor de servicios en la nube. Esto permite gestionarlas
+a través de un navegador web. También permite que los usuarios
+impriman a través de un navegador web por lo que no deben configurar
+nada en sus máquinas. La configuración
+de las impresoras es sencilla aunque depende del servicio
+de impresión que elijas. Aprendimos mucho sobre servicios
+de software en la infraestructura de TI desde servicios de comunicación importantes
+hasta la seguridad y, ahora, la impresión.

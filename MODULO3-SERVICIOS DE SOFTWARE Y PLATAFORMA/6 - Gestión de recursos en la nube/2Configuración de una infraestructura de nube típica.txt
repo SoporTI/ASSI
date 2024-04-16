@@ -1,0 +1,26 @@
+Supongamos que tienes un servidor web
+que proporciona un sitio web. En una configuración típica
+para este servicio que se ejecuta en la nube una serie de máquinas virtuales
+entrega este mismo sitio web. Un balanceador de cargas garantiza que cada VM
+reciba un número balanceado de consultas. Siempre que haya una
+solicitud para tu sitio web se elegirá una VM distinta
+para entregar la respuesta. Estos tipos de servicios se suelen configurar
+para iniciar más máquinas virtuales cuando hay muchas consultas y para apagar algunas de las VMs
+cuando disminuye el número de consultas. Esta capacidad se llama
+"ajuste de escala automático". Permite al servicio aumentar
+o reducir su capacidad según sea necesario mientras que el propietario del servicio
+solo paga por las máquinas que se usan en un momento determinado. Como algunas máquinas se apagarán
+cuando la demanda sea menor sus discos locales también desaparecerán,
+y deben considerarse efímeros o de corta duración. Si necesitas persistencia de datos,
+debes crear recursos de almacenamiento independientes para conservar los datos
+y conectar el almacenamiento a las VMs. Las VMs que operan sitios o servicios web
+suelen estar conectadas a una base de datos que también se ejecuta en la nube. Esta también recibe la entrega de varias
+máquinas detrás de un balanceador de cargas pero este proceso lo administra el proveedor
+de la nube y no afecta al usuario de la nube. Para garantizar que el servicio funcione,
+puedes configurar la supervisión y la alerta. Así, puedes detectar y solucionar
+cualquier problema de tu servicio antes de que los usuarios se den cuenta. La mayoría de proveedores de la nube
+incluyen soluciones de supervisión y alerta en sus servicios. Puedes configurar
+cuándo y cómo recibir alertas si en la supervisión
+se detectan problemas de rendimiento. Puede parecer complicado
+configurar recursos en la nube pero la mayoría de los proveedores
+facilitan este proceso.

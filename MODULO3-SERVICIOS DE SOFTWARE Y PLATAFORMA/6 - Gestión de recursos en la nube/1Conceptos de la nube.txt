@@ -1,0 +1,49 @@
+Ahora que sabes más
+sobre los servicios que puedes alojar en un proveedor de la nube hablemos de cómo tu organización
+puede aprovechar al máximo la nube. Como mencionamos en lecciones anteriores cuando decimos que un servicio
+se está ejecutando en la nube queremos decir
+que se está ejecutando en otro lugar ya sea en un centro de datos
+o en otros servidores remotos. Estos centros de datos
+alojan una gran variedad de máquinas y se usan diferentes tipos de máquinas
+para diversos servicios. Por ejemplo, algunas máquinas pueden tener
+una unidad de estado sólido local SSD para un mayor rendimiento mientras que otras pueden
+depender de unidades virtuales montadas a través de la red
+para reducir costos. Cuando usas software como servicio o SaaS el software ya está
+preconfigurado y el usuario no se encuentra profundamente involucrado
+en la configuración de la nube. Si eliges una solución de correo
+electrónico en la nube como Gmail una solución de almacenamiento
+en la nube como Dropbox o un paquete de productividad en la nube
+como Microsoft Office 365 solo hay una pequeña cantidad de opciones
+que puedes seleccionar o personalizar. El proveedor de la nube gestiona
+todo lo relacionado con el servicio para ti incluida la decisión
+de si las VMs están alojados la garantía de que tiene capacidad suficiente
+para cumplir tus necesidades el retroceso con la misma frecuencia
+y fiabilidad, y mucho más. Por otro lado, cuando usas
+infraestructura como servicio o IaaS estás alojando
+tus propios servicios en la nube. Necesitas decidir cómo quieres
+que sea la infraestructura en función de lo que quieras que ejecute. Por ejemplo, tendrás que decidir cuál de todos
+los tipos de máquinas disponibles usarás y qué tipo
+de almacenamiento necesitarán. Consejo profesional: empieza poco a poco y después selecciona instancias
+más potentes según sea necesario. Cuando configuras recursos de la nube
+necesitas considerar las regiones. Una región es una ubicación geográfica
+que contiene varios centros de datos. Cada uno de estos centros de datos
+se denomina zona y cada zona es independiente de las demás. Si alguno falla por alguna razón,
+los otros estarán disponibles y los servicios se pueden migrar sin afectar
+visiblemente a los usuarios. Por lo general, los grandes proveedores
+de nube ofrecen sus servicios en diferentes regiones del mundo y la región que elijas dependerá sobre todo
+de dónde se encuentren tus usuarios. Los proveedores de nube más pequeños
+pueden ofrecer menos regiones pero puede que sean los únicos proveedores
+con disponibilidad en tu ciudad o país. No importa dónde se encuentre
+exactamente el centro de datos pero los usuarios pueden experimentar
+más latencia si está a una mayor distancia. También puedes oír sobre nubes públicas,
+privadas e híbridas. La nube pública es lo que llamamos servicios
+en la nube proporcionados por un tercero. El nombre hace referencia
+a que los proveedores de la nube ofrecen sus servicios al público. Cuando tu empresa
+es propietaria de los servicios y del resto de tu infraestructura,
+ya sea in situ o en un centro de datos remoto,
+la llamamos nube privada. Y la nube híbrida es una mezcla
+entre la nube pública y la privada. Algunas cargas de trabajo se ejecutan
+en servidores pertenecientes a tu empresa mientras otras se ejecutan
+en servidores pertenecientes a terceros. El truco para sacar el máximo partido
+de la nube híbrida es garantizar que todo se integre sin problemas para que puedas acceder, migrar
+y gestionar datos sin problemas y sin importar su alojamiento.
