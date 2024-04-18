@@ -10,3 +10,6 @@ Al final de este curso, podrás:
 - elegir y administrar las herramientas que usará tu organización.
 - hacer una copia de seguridad de los datos de tu organización y saber cómo recuperar su infraestructura de TI en el caso de un desastre.
 - utilizar el conocimiento de administración de sistemas para planificar y mejorar los procesos para entornos de TI.
+
+> [!IMPORTANT]  
+> Faltan los videos de cada modulo.
