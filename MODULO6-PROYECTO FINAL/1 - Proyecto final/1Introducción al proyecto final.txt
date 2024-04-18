@@ -1,0 +1,33 @@
+Llegaste al final del Curso cuatro: Administración de sistemas
+y servicios de infraestructura de TI. Felicitaciones. Abordamos mucho material en este curso
+y, con suerte, habrás ampliado tu conjunto de habilidades de TI para poder
+brindar soporte a pequeñas organizaciones de 100 usuarios y máquinas. Tomémonos un momento
+para repasar lo que lograste hasta aquí. Aprendiste sobre las muchas responsabilidades
+que implica la administración de sistemas. Independientemente de que ese rol sea
+como administrador de sistemas o especialista en asistencia de TI,
+incluye muchas tareas importantes. Estas abarcan desde determinar
+las políticas de TI de la organización como definir requisitos anteriores hasta ejecutar hardware de aprovisionamiento
+del ciclo de vida para los usuarios realizar mantenimiento
+al software de las flotas de máquinas o trabajar con los usuarios y ejercitar
+tus habilidades de resolución de problemas. Las responsabilidades de la administración
+de sistemas también incluyen administrar los servicios de la infraestructura de TI. Abordamos los diversos servicios
+de infraestructura de TI que constituyen el entorno de TI de las organizaciones. Aprendiste sobre servicios
+de infraestructura física, como trabajar con servicios de hardware del servidor
+y virtualizados, y cómo acceder a ellos con métodos de conexión remotos. También aprendiste sobre los diversos
+servicios de red de una organización y porqué DNS y DHCP
+son fundamentales para una empresa. Revisaste los servicios de software y las diferencias entre usar el software
+en una configuración personal y comercial. Incluso aprendiste sobre el software
+para diferentes comunicaciones que se usa junto con servicios esenciales,
+como almacenamiento e impresión rápidos. Además, abordaste los servicios de plataforma
+habituales y cómo funciona el servicio web. El último servicio de infraestructura de TI
+que aprendiste fue el servicio de directorio. Abordamos la administración centralizada
+de usuarios y activos de TI de la empresa. También aprendiste y practicaste dos
+de los servicios de directorio más comunes: Active Directory y openLDAP. Por último, aprendiste
+cómo proteger los datos de tu organización ante desastres. Aprendiste a crear copias
+de seguridad de datos críticos y un plan de recuperación ante desastres a reunir las piezas después del desastre y a aprender con un post mortem. Ahora, es momento de poner
+a prueba los nuevos conocimientos adquiridos. Evaluarás la infraestructura de TI
+de tres empresas ficticias, pero muy reales y programarás
+consultas de administración de sistemas. Asegúrate de pensar en algunas de las mejores
+prácticas que aprendiste como las copias de seguridad de datos,
+el análisis costo y beneficio la habilitación
+y deshabilitación de servicios, etc. Buena suerte en la evaluación, sé que puedes.
