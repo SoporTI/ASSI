@@ -1,0 +1,35 @@
+Todos tuvimos alguna vez un accidente o cometimos un error.
+Simplemente somos humanos. Como especialista en asistencia de TI es importante que te prepares para accidentes o errores desastrosos. Quizá una sobrecarga eléctrica quemó
+el disco duro en un servidor de base de datos
+o se borró la carpeta equivocada. Estas cosas suceden
+y debes prepararte para ellas. Aquí entra en juego
+el plan de recuperación ante desastres. Se trata de una recopilación de procedimientos documentados y planes sobre cómo reaccionar y controlar
+una emergencia o desastre desde la perspectiva operativa. Esto incluye lo que debería hacerse antes durante y después del desastre. El objetivo del plan es minimizar la interrupción de las operaciones
+empresariales y de TI mantener el tiempo de inactividad de los sistemas al mínimo y evitar pérdidas de datos significativas. A pesar del nombre un plan de recuperación
+ante desastres abarcará medidas preventivas y de detección además del enfoque
+de recuperación luego de un desastre. Las medidas preventivas abarcan
+los procedimientos o sistemas listos que minimizarán de forma proactiva el impacto de un desastre. Esto incluye copias regulares y sistemas redundantes. Lo que se haga antes de un desastre y que pueda reducir el tiempo de inactividad del evento se considera preventivo. Por ejemplo,
+para que la infraestructura o los servicios de red y esenciales tengan fuentes de energía redundantes a menudo se alimentan de varias fuentes de energía, como baterías. Está diseñado para minimizar
+el tiempo de inactividad causado por una falla o un corte
+en el suministro eléctrico. Esa sería una medida preventiva. Las medidas de detección deben alertarte a ti y a tu equipo de que ocurrió un desastre
+que puede afectar las operaciones. Claro que debes estar al tanto de un desastre para tomar medidas y reducir el impacto en tu organización. La notificación a tiempo de un desastre es esencial ya que algunas medidas del plan de recuperación
+ante desastres pueden ser urgentes para asegurar que no se pierdan datos
+ni haya daños en los equipos. Si hay un corte de electricidad, por ejemplo los sistemas esenciales deberían recurrir
+a las baterías pero esta energía solo mantendrá a los sistemas en línea por un período corto. Para evitar la pérdida
+o el daño de datos potenciales estos sistemas deberían apagarse antes de que pierdan toda su energía. Por eso muchos de los sistemas
+que brindan asistencia a las fuentes de energía redundantes también mandan alertas
+de eventos de pérdida de energía. Otras cosas que deberían
+supervisarse para evitar los desastres inesperados incluyen las condiciones ambientales en las salas del servidor o las redes. Los sensores de inundaciones pueden alertarte del agua que entra a la sala del servidor. Los sensores de temperatura y humedad alertan sobre las temperaturas muy altas o los niveles subóptimos
+de humedad en el aire. Pueden alertarte de un enfriamiento fallido
+en la sala del servidor. Los detectores de humo y las alarmas
+de incendios son muy importantes. Recuerda que no solo la tecnología es necesaria
+para que una empresa siga operativa también debes tener
+al personal trabajando allí. Los detalles de la evacuación del edificio suelen ser tarea
+de la administración del edificio. Pero como especialista de asistencia de TI
+que seguro trabajará muy cerca de algunos miembros de este equipo en la entrega de energía los sistemas de calefacción y enfriamiento, y la evacuación en caso de incendio deberías poder configurar un alojamiento provisorio para trabajar de forma eficaz. Sería tan simple como enviar a todos a casa ese día y que trabajen desde allí pero debes prepararte para esta situación de antemano
+y tener un plan para asegurarte de que todos puedan trabajar desde casa con eficacia. Por último,
+las medidas correctivas o de recuperación son las que se llevan a cabo
+luego del desastre. Estas medidas incluyen pasos como restaurar datos perdidos desde las copias o reconstruir y reconfigurar los sistemas dañados. Una vez que se detectó el desastre y se tomaron medidas para evitar una interrupción o minimizar la inactividad se debe empezar a restaurar la operación completa de todo lo afectado. En general, un desastre eliminará un sistema que es parte de un par redundante
+o un esquema de replicación lo que evitará
+la interrupción completa del servicio. Pero eso significaría que no estarán preparados para otro desastre. Cuando un sistema
+en un par redundante sufre una falla se llama punto único de fallo. Esto es porque ahora solo se necesita una falla para apagar todo el sistema. No es una situación que quisieras atravesar. Ya abordamos los elementos generales de un plan de recuperación ante desastres. Tómate unos minutos para recuperarte y acompáñame en el siguiente video.

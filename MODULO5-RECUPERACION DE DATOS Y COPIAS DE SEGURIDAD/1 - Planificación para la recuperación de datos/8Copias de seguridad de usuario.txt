@@ -1,0 +1,24 @@
+Como especialista en asistencia de TI
+que colabora con los usuarios de la organización, el tema de las copias
+de seguridad de sus datos surgirá. Ya explicamos cómo crear copias de seguridad
+de los datos operativos más importantes pero ¿qué hay de las hojas de cálculo
+y los PDF en la laptop de Carly? Ella quiere asegurarse de no perderlos
+si se la roban. Si bien es importante tener
+una copia de seguridad de la infraestructura y de los sistemas esenciales,
+también hay que pensar en los usuarios y sus archivos. Crear copias de seguridad confiables
+para los dispositivos de clientes es más difícil
+que para los de infraestructura. Es posible que se deban hacer
+copias de seguridad de muchos más dispositivos de clientes
+que de infraestructura. Además, hay laptops, celulares y tablets
+que no están siempre en la oficina. Una solución para las copias de los usuarios
+es usar un servicio en la nube para guardar y respaldar archivos
+en todas las plataformas y dispositivos. Por ejemplo, Dropbox, Apple iCloud y Google Drive son recursos sencillos
+y sin complicaciones. Planificar y configurar estas copias es fácil
+frente a las de una infraestructura. Facilitan que los usuarios
+configuren los archivos o las carpetas que desean respaldar y, luego, garantizan su sincronización
+con el almacenamiento en la nube. Como especialista en asistencia de TI,
+esto es muy importante. Cuando los usuarios vuelquen accidentalmente
+una taza de café sobre sus laptops te buscarán para que los ayudes a salvar
+sus hermosas fotos familiares. Que los usuarios tengan
+un sistema de copia de seguridad eficaz y fácil de usar para sus archivos es una gran forma
+de evitar esta situación.

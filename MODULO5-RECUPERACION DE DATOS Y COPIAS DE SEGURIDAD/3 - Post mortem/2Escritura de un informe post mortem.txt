@@ -1,0 +1,30 @@
+Ahora que conocemos
+los beneficios de un post mortem veamos en más detalle qué incluye uno. Un post mortem típico de un incidente comienza con un pequeño resumen solo un párrafo breve
+que resume el incidente. Debe incluir cuál fue el incidente cuánto duró cuál fue el impacto y cómo se solucionó. Ten en cuenta la zona horaria al enumerar horarios
+y fechas en el post mortem. Indica siempre claramente la zona horaria para ser muy preciso. Luego, necesitas
+un cronograma detallado de los eventos clave. Este debe incluir todo lo que ocurrió durante el evento como cuándo comenzó
+y cuándo las personas involucradas recibieron una notificación o lo detectaron. Las acciones que se tomaron para intentar solucionar la situación
+también deben identificarse. Estas pueden incluir horarios y fechas junto con las zonas horarias
+y quién hizo qué cosa. El cronograma debe resumir las acciones que se tomaron para solucionar la interrupción y restaurar los servicios para indicar la finalización del evento. Luego,
+una explicación bien detallada y sincera de la causa raíz detectada. Esta debe explicar en detalle lo que provocó el problema. Podría ser algo como un cambio de configuración implementado sin realizar las pruebas correctas
+o un comando mal escrito. Recuerda que no
+se pretende culpar o avergonzar a nadie sino ser sinceros con lo que salió mal para poder aprender de ello. Si la causa se originó
+a partir de la falta de pruebas eso podría indicar áreas para mejorar en la verificación de tareas. Si se originó
+a partir de un comando mal escrito esto podría revelar la necesidad
+de automatizar los procesos manuales. A continuación, debe
+documentarse una explicación más detallada de los esfuerzos
+por alcanzar la solución y recuperación. Esto es similar al cronograma que mencionamos antes y debe incluir fechas horarios y zonas horarias. Pero debe ser más detallada en cuanto a los pasos que se tomaron para recuperarse, las razones y el razonamiento detrás de las acciones y cuál fue el resultado de cada paso. Incluir las razones ofrece a quienes leen el informe más contexto
+sobre cómo se desarrolló el evento. Por último, cierra el informe con una lista de acciones específicas que deberían tomarse para evitar que ocurra la misma situación. Debe incluir las acciones y esfuerzos para mejorar también la forma de responder. Sería útil seguir pasos para mejorar el tiempo de respuesta
+de supervisión. Cuando crees una lista de cosas para mejorar busca algo como mejoras en los sistemas de supervisión. Tal vez,
+la investigación del incidente reveló una brecha en la visibilidad de los sistemas fundamentales
+o, al investigar la causa, resulta que el sistema de automatización
+no funciona como se espera. Aunque el alcance de un informe post mortem no incluye la generación de soluciones para estas brechas deben enumerarse áreas para mejorar. Gracias a estos descubrimientos nuevas partes
+pueden empezar a abordar las deficiencias. Algo que, a menudo, se pasa por alto en un post mortem es lo que salió bien pero esto es igual de importante
+que analizar lo que salió mal. Durante el análisis posterior al incidente también es bueno destacar lo que salió bien. Esto incluye sistemas a prueba de fallas o error
+que funcionaron según lo previsto y evitaron una interrupción mayor o minimizaron su gravedad. Esto permite demostrar la efectividad de los sistemas que tenemos. Para algunas personas, como
+las de Finanzas, esto es una buena noticia. Justifica los costos asociados con estos sistemas al demostrar claramente un beneficio tangible. Esto es importante
+para cualquier sistema preventivo ya que, con frecuencia, quienes no comprender por completo sus beneficios los consideran un costo innecesario. Estos ejemplos de sistemas que evitan o reducen el impacto de las interrupciones dejan muy claro los beneficios. Con suerte,
+ahora tienes una mejor preparación para aprender
+de los errores que cometas en tu carrera y de los que ocurran
+porque eres un ser humano y, después de todo, asúmelos aprende de ellos
+y hazlo mejor la próxima vez. Eso es así en TI en el trabajo y en la vida.

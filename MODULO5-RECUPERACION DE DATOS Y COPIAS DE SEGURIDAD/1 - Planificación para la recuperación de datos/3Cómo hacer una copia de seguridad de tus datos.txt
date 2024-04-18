@@ -1,0 +1,44 @@
+Deseas proteger tu compañía
+de una pérdida grave de datos. Buena idea.
+Pero ¿por dónde comenzarías? Repasemos algunos aspectos clave sobre las copias de seguridad
+y un plan de recuperación. Lo primero que hay que saber
+es el tipo de datos que deseas proteger. En un mundo ideal solo deberías crear
+copias de seguridad de los datos que son imprescindibles para tus actividades
+y que no puedes encontrar en otro lugar. Esto incluye correos electrónicos,
+bases de datos de ventas hojas de finanzas,
+configuraciones de servidores y bases de datos. ¿Y qué hay con el directorio de descargas
+de tu laptop? ¿En verdad no es necesario
+proteger todas esas imágenes de gatos? A lo mejor no. Las copias de seguridad tienen lo suyo. Cada archivo adicional que respaldas
+ocupa un poco más de espacio en el disco por lo que aumentan los costos generales
+de tus copias de seguridad. Una vez que sepas qué datos respaldar,
+debes calcular la cantidad total de datos que tienes. Pero no basta con pensar cuáles son, en este momento,
+los requisitos de almacenamiento. Como tu organización seguirá creciendo
+también necesitarás más copias de seguridad. Asegúrate de contemplar
+el crecimiento a futuro y elegir una solución con flexibilidad suficiente para cubrir bien
+el aumento de las copias de seguridad. Puedes crear copias de seguridad locales
+en sistemas locales o crear copias externas
+en sistemas remotos. Ambos métodos tienen ventajas y desventajas
+y pueden ayudar a reducir riesgos diferentes. La ventaja de una copia de seguridad local es la disponibilidad física
+cercana de los datos. Por eso, el acceso es mucho más rápido. No necesitarás
+demasiado ancho de banda de salida porque no enviarás datos
+fuera de tu red interna. Si restauras los datos
+con las copias de seguridad el proceso llevará muy poco tiempo
+porque los datos están al alcance. ¿Y si de repente se incendia el edificio? Habremos perdido los sistemas que respaldamos
+y los servidores con las copias de seguridad. ¡Cielos! Perdimos todo. Por eso, las copias de seguridad
+remotas son mejores. Se trata de crear copias de seguridad
+de los datos importantes y enviarlas a sistemas remotos
+de otra instalación física. Así, tendrás que controlar un servidor
+de respaldo en una oficina diferente o un servicio de copias de seguridad
+en la nube. Pero hay ventajas. Con estas copias remotas,
+estamos mejor preparados ante catástrofes que puedan acabar
+con los datos de toda una oficina. Pero, al enviar datos a otro sitio
+debes transmitirlos fuera de tu red por lo que debes considerar factores
+como la encriptación y el ancho de banda. La copia de seguridad se enviará
+mediante tu conexión a Internet. Según cuántos datos envíes a otro lugar
+y qué tan rápida sea la conexión esto puede llevar mucho tiempo. Otro aspecto importante es la encriptación
+de las copias de seguridad. Como estas copias a menudo incluyen
+datos empresariales confidenciales es crucial manejar los datos con seguridad y almacenarlos para evitar
+cualquier acceso no autorizado. Al enviar datos a otro lugar
+es fundamental asegurarse de transmitirlos de manera segura,
+de ser posible, encriptados mediante TLS. Pero eso no es todo. Los datos de las copias de seguridad
+que almacenes deberían estar encriptados en reposo. Es otra medida de seguridad recomendada.

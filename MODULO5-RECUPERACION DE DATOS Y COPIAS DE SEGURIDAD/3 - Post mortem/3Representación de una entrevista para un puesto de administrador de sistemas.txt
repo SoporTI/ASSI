@@ -1,0 +1,34 @@
+- Hola, soy Rob. - Y yo soy Candace. - Felicitaciones por completar este curso. Como llegaste hasta aquí,
+nos gustaría adelantarte cómo sería una entrevista
+sobre los aspectos técnicos de este curso. - Esperamos que te hagas una mejor idea
+sobre qué esperar en tu próxima entrevista. Recuerda seguir aprendiendo y practicando. - Supongamos que me presento
+y te pido que implementes unas aplicaciones en mis usuarios de Windows. En total, hay cerca de 100 máquinas
+en las que instalarlas. Instalaremos una aplicación en una mitad;
+la otra, en la mitad restante. ¿Cómo podemos hacerlo? - Primero, debería saber si las máquinas
+se gestionan con Active Directory. - Sí, supongamos que tenemos
+un dominio de Active Directory. Antes de implementar el software,
+hablemos un poco sobre Active Directory y por qué es útil para estos entornos. - Active Directory organiza usuarios, grupos
+y permisos informáticos para limitar ciertos recursos del entorno empresarial. También se usa para implementar
+software y controlar el entorno. - Acabamos de configurar Active Directory ¿cómo lo usamos
+para implementar el software? - Como implementaremos
+este archivo para muchos usuarios primero deberíamos probarlo. Necesito saber si este es un archivo MSI. - Sí, es un archivo MSI.
+Estoy de acuerdo con probarlo. Explícame cómo lo harías. - Debes replicar la aplicación
+para ambos conjuntos de usuarios. ¿Sabes si estos usuarios
+pertenecen a distintas UO? - Sí, supongamos que hay
+una UO de ventas e ingeniería y hay que apuntarlas
+a su propia aplicación. - Entonces debemos crear cuentas de prueba
+y añadirlas a las UO específicas o podemos usar usuarios piloto. Otra forma de probar este proceso es con la creación de un grupo
+para los usuarios piloto y luego podemos crear una nueva política
+de grupo que permita instalar la aplicación cuando arranque la computadora. - ¿Y dónde almacenamos el archivo MSI? - En una unidad de red compartida,
+si tenemos una. Si no, se puede crear una. - Genial. Supongamos que hicimos todo esto
+y probamos ambos paquetes. Sabemos que funcionan bien. ¿Ahora qué? - Deberíamos enviar comunicaciones
+a los usuarios objetivo fuera del horario laboral
+para que no sea disruptivo. También deberíamos compartir con los usuarios
+nuestro contacto de asistencia. Si tienen un problema, pueden comunicarse
+con alguien y obtener ayuda de inmediato. - Genial.
+Sí, creo que es un plan acertado. En este caso, vimos algunas habilidades
+para entrevistas que ya analizamos como hacer preguntas de seguimiento
+y definir los términos mencionados. Además, vimos que responder preguntas
+técnicas no está relacionado con problemas técnicos. También debemos tener presente
+el factor humano como implementar un plan de comunicación. Eso es todo por ahora.
+Nos vemos al final del curso siguiente.

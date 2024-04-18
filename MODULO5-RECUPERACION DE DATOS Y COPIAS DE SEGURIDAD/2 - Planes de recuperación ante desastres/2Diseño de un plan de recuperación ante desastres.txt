@@ -1,0 +1,85 @@
+¿En qué consiste exactamente un plan
+eficaz de recuperación ante desastres? Depende. No hay una solución única para todos los
+planes de recuperación ante desastres. Los mecanismos elegidos y los procedimientos
+establecidos dependerán mucho de las especificaciones
+de tu organización y entorno. Pero podemos empezar con los tres
+tipos de medidas con más detalle. También veremos algunos ejemplos para que te hagas una idea
+de lo que puedes pensar. Una manera de saber qué hay que planificar
+es hacer una evaluación de riesgos. Se trata de analizar el funcionamiento y las características de los equipos
+en detalle. Una evaluación de riesgos permite
+dar prioridad a determinados aspectos de las organizaciones que corren
+más peligro si se produce un imprevisto. La evaluación de riesgos pueden ser
+ideas de escenarios hipotéticos y análisis de estos eventos para entender de qué forma impactarán
+en la organización y las operaciones. Cuando analices medidas preventivas presta atención a los sistemas
+a los que les gusta la redundancia. Si son fundamentales
+para permitir las operaciones deberían tener un repuesto
+redundante por si acaso. Asegúrate de tener una copia de seguridad
+sólida y un sistema de recuperación además de una buena estrategia. Lo ideal sería disponer de copias de
+seguridad automatizadas periódicas en sistemas de copia de seguridad ubicados
+tanto dentro como fuera de las instalaciones. También es esencial que los procedimientos
+de recuperación de datos estén bien documentados y actualizados. La recuperación de datos ante desastres
+es algo que rara vez tendrás que hacer. Es importante que te asegures de que estos
+procedimientos estén actualizados ya que los sistemas cambian
+y evolucionan a lo largo de su vida útil. Las redundancias no deben limitarse
+solo a los sistemas, todo lo que sea crítico para las operaciones debe ser
+redundante siempre que sea posible. Esto incluye el suministro eléctrico,
+los sistemas de comunicación los enlaces de datos y el hardware. Piensa en el impacto que tendría
+un desastre en tus operaciones diarias que afectara a cada uno de estos aspectos. ¿Qué le pasaría a tu red si el edificio
+se quedara sin electricidad? ¿Puedes seguir trabajando cuando la línea
+de datos de fibra óptica del edificio resulta dañada
+por una obra en construcción cercana? Tu central de llamadas para la oficina
+acaba de estallar en llamas. Esto último es un poco exagerado,
+pero creo que me entiendes. Otra medida preventiva importante
+que debe evaluarse y verificarse es la documentación operativa. Asegúrate de que los procesos operativos
+estén documentados y sean accesibles como la instalación y configuración de
+sistemas críticos en infraestructuras. Cualquier paso o detalle de configuración
+específico que sea necesario para restaurar el 100% de la funcionalidad de los sistemas y
+servicios básicos debe documentarse bien. También es importante
+que esta documentación esté actualizada. Una manera efectiva de hacerlo
+es verificar con regularidad que los pasos documentados
+realmente funcionen. No querrás encontrarte en una situación
+en la que tengas que reconfigurar un sistema tras un incidente
+y notes que la documentación es errónea. Cuando analices las medidas de detección,
+asegúrate de tener un sistema integral que detecte y alerte con rapidez cortes
+de servicio o condiciones ambientales raras. Si el tiempo de actividad y la disponibilidad
+son importantes para tu organización es probable que tengas dos conexiones a
+Internet, una principal y otra secundaria. Lo ideal es que supervises
+el estado de conexión de ambos vínculos ya que deben configurarse
+para que, ante una falla, realicen una conmutación por error automáticamente y también querrás saber cuando esto ocurra. Así investigarás por qué se cayó el enlace
+y trabajarás para recuperarlo al instante. La manera de pensar en el diseño de medidas
+de detección es evaluar qué es lo más crítico para el funcionamiento
+diario de la organización. ¿Qué servicios de infraestructura y
+acceso son absolutamente vitales? Esos son los que debes monitorear,
+no debes estar atento solo a interrupciones o fallas totales. Por supuesto, hay que vigilarlas,
+pero también hay que vigilar las condiciones que indican que es probable
+que se produzca un problema. Si podemos evitar
+un fallo catastrófico mediante una alerta de un servidor sobrecalentado
+antes de que falle, sería mucho mejor, ¿no? Por eso, hay que vigilar las condiciones del
+servicio y de los equipos de infraestructura como la temperatura, la carga
+de la CPU y la carga de la red. Para un servicio, la supervisión de las tasas de error
+y las solicitudes por segundo te darán una idea
+del rendimiento del sistema. Debes investigar cualquier pico inusual
+o aumento inesperado. Estos sistemas de alerta temprana
+te permiten evitar un desastre antes de que se detengan las operaciones. Y, por supuesto, es necesario probar estos
+sistemas, simular las condiciones en las que los sistemas de monitoreo están
+diseñados para detectar algo; asegúrate de que los umbrales de detección disparen
+las alertas como se supone que deben hacerlo. Estas pruebas no se limitan
+a los sistemas de monitoreo sino que también hay que comprobar
+las reacciones y respuestas a estas alertas. Si tus sistemas de supervisión
+activan alertas de forma confiable pero todo el mundo las ignora,
+dejan de ser útiles, ¿verdad? Conviene hacer pruebas ante desastres
+para asegurarse de que los sistemas funcionan y de que sus procedimientos
+para gestionarlos están a la altura. Las medidas correctivas o de recuperación
+incluyen las acciones que se llevan a cabo para restablecer el funcionamiento normal
+y recuperarse de un incidente o interrupción. Esto incluye pasos como la restauración
+de una base de datos dañada a partir de una copia de seguridad o la reconstrucción
+y reconfiguración de un servidor. Tu plan ante desastres debe incluir
+referencias o enlaces a documentación para estos tipos de tareas, todo lo necesario
+para restablecer el funcionamiento normal tras un desastre. Aquí es donde deben estar los pasos
+para restaurar varios sistemas y datos a partir de copias de seguridad. No es necesario que el documento
+de recuperación ante desastres tenga detalles de las operaciones. Los enlaces y referencias son suficientes,
+pero hay que estar listos para una situación en la que los métodos de acceso
+a la documentación no estén disponibles. Imaginemos que guardas toda tu documentación
+operativa en un wiki en un servidor dedicado. ¿Qué pasa cuando ese servidor
+tiene una interrupción? Es importante que la documentación
+crítica esté accesible en caso de emergencia o ante desastres.

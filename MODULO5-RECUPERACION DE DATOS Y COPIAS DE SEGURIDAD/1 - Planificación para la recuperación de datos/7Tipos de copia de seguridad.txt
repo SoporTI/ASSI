@@ -1,0 +1,24 @@
+Hay un último tema fundamental cuando hablamos
+de copias de seguridad, y es probarlas. El campo de la TI está repleto
+de historias trágicas en las que especialistas y administradores
+de sistemas tratan de usar sus copias de seguridad
+para recuperar datos perdidos pero se dan cuenta
+de que estas no son válidas. No solo es vergonzoso, sino aterrador. La conclusión es que
+una copia de seguridad habitual no basta. Solo es la mitad de la fórmula. La otra mitad es tener
+un proceso de recuperación que se pruebe periódicamente. Estos métodos de restauración
+deben registrarse y estar disponibles para que las personas autorizadas
+restablezcan los sistemas si es necesario. No querrás perder tu tiempo libre
+porque tu colega en la oficina no sabe recuperar bases de datos SQL
+a partir de las copias de seguridad. Por supuesto que no. Registra el procedimiento
+y revisa con frecuencia la documentación para asegurarte
+de que sea útil hoy y en el futuro. Este proceso llamado
+prueba de recuperación ante desastres es crucial para lograr
+un buen funcionamiento del sistema. La prueba de recuperación ante desastres debería realizarse con regularidad
+al menos una vez al año. Los distintos equipos,
+incluso los especialistas en TI deberían pasar por simulaciones de desastres. Así, evaluarán qué tan preparada
+está la organización para numerosos eventos imprevistos. Sin importar el caso,
+tus equipos de TI podrán evaluar los procedimientos de emergencia y saber,
+sobre todo, qué funciona y qué no. Estas simulaciones son ideales para detectar
+alguna brecha en la planificación. Si resulta que no tienes protección adecuada
+ante una pérdida de datos en cierta situación es tu oportunidad de saberlo para eliminar
+la brecha sin arriesgarte a perder datos. Parece un beneficio para todos, ¿verdad?

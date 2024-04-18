@@ -1,0 +1,45 @@
+Buscas implementar copias de seguridad
+en tu organización pero ¿cómo elegir entre un sistema
+que puedes manejar por tu cuenta o uno de los tantos disponibles en la nube? Comencemos
+a analizar las ventajas de ambos sistemas. Las copias de seguridad locales
+o autoadministradas son tan sencillas como adquirir
+un servidor NAS comercial cargarlo con un montón de discos duros
+y enviarle datos por la red. Esto sin duda funcionaría, pero no sería
+la mejor solución a largo plazo. ¿Cómo aumentas la capacidad del disco
+si necesitas más espacio? ¿Qué haces con las fallas de un disco duro? Con el tiempo,
+los discos duros presentan fallas. Por cierto, es importante aclarar
+que estas opciones no se excluyen entre sí. No habría problema si quisieras implementar
+copias locales y remotas. De hecho, a menudo se recomienda tener ambas si lo permite
+el presupuesto de tu organización. Otro aspecto que debes considerar al evaluar
+el plan de copia de seguridad en una organización es el período de copiado. ¿Cuánto tiempo necesitas
+conservar las copias de seguridad? La respuesta repercutirá
+en lo que debas almacenar a largo plazo y en el costo general para mantener
+un sistema de copia de seguridad. Un enfoque para equilibrar
+el costo y la conveniencia es almacenar datos antiguos con un mecanismo
+más lento pero más económico. El medio convencional para archivar
+las copias son las cintas de datos. Son muy parecidas a las cintas de audio ya que requieren hacer pasar conjuntos
+de cintas magnéticas por máquinas que permiten registrar los datos
+y recuperarlos desde esa misma cinta. Ese almacenamiento es económico pero no es tan fácil
+ni rápido acceder a los datos guardados como con los discos duros
+o unidades de estado sólido. Este sistema, por lo general, es útil
+para archivar a largo plazo datos que, en teoría, no necesitarás. Si los necesitas, un poco de retraso
+para obtenerlos no es un problema. Hay cientos de soluciones
+de copias de seguridad para elegir. No entraremos en más detalle,
+ya que son muchas pero veremos algunos recursos habituales y brindaremos ejemplos
+de las opciones disponibles como la utilidad de línea de comandos rsync. Rsync no genera en sí copias de seguridad,
+pero se usa mucho para tal fin. Es una utilidad para transferir archivos
+diseñada para enviar y sincronizar datos de manera eficaz
+entre ubicaciones o computadoras. Rsync permite comprimirlos y emplea SSH para transferir de forma segura
+los datos en una red. Con SSH, también se pueden sincronizar
+archivos entre máquinas remotas lo que es muy útil para generar
+copias automatizadas y sencillas. Apple ofrece un recurso propio
+de copia de seguridad para sus SO de Mac llamado Time Machine. Funciona según un modelo
+de copia de seguridad incremental. Time Machine permite restaurar todo un sistema o archivos individuales
+desde la copia de seguridad o incluso restaurar
+un archivo a una versión anterior. Microsoft también brinda un recurso propio
+llamado Backup and Restore. Funciona de dos formas:
+una versión basada en archivos que copia los datos en un archivo comprimido o una imagen del sistema, que guarda
+todo el disco bloque a bloque en un archivo. La copia de seguridad en archivos permite
+hacer copias completas o incrementales. La copia de la imagen del sistema
+admite el modo diferencial que solo copia los bloques del disco que cambiaron
+desde la última copia realizada.

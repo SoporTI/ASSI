@@ -1,0 +1,42 @@
+¿Qué es exactamente la recuperación de datos? Si alguna vez rompiste un celular es posible que hayas perdido, con él,
+algunas fotos geniales. La recuperación de datos es un proceso
+para intentar restablecer los datos perdidos en el celular averiado. Pero esto es solo un ejemplo de intento
+de recuperar datos perdidos de forma inesperada. La recuperación de datos, en general, es
+el proceso para intentar restablecerlos tras un evento inesperado
+en el que se perdieron o dañaron los datos. Quizá se averió cierta pieza
+de un dispositivo con datos un intruso ejecutó acciones maliciosas
+o un malware eliminó datos importantes. Sin importar el motivo,
+el resultado es el mismo. De repente, pierdes datos
+que en verdad te importan y necesitas saber cómo recuperarlos. La forma para recuperar los datos perdidos
+depende de ciertos factores. Uno de ellos es el tipo de datos perdidos. Si un dispositivo se dañó puedes recuperar los datos
+a partir del hardware dañado. Deberías usar un software de recuperación
+y analizar las fallas en los discos duros o las unidades de memoria
+flash para encontrar los datos y extraerlos. Otro factor del que depende
+la recuperación son las copias de seguridad. Si tienes suerte
+o te anticipaste a lo inesperado quizá hiciste una copia de seguridad,
+por lo que puedes restaurar los datos. La recuperación de datos es un paso crucial
+en una organización o un sistema de TI. Los datos son fundamentales
+para las operaciones comerciales y como especialista en asistencia de TI una de tus tareas es
+garantizar la disponibilidad de estos datos y protegerlos de cualquier daño o pérdida. Entonces, si hay algún problema,
+la organización seguirá con sus actividades
+con el mínimo de interrupciones. Por eso es fundamental que seas capaz
+de recuperarte de los eventos inesperados que podrían dañar
+los datos de la empresa. Ante lo inesperado, tu objetivo principal es
+regresar todo a la normalidad sin demoras y reducir al mínimo la interrupción
+de las operaciones de la empresa. Al finalizar este módulo,
+contarás con herramientas y métodos prácticos
+para proteger tus datos. Una de las técnicas principales será
+la de crear eficazmente copias de seguridad. La mejor forma de prever
+una posible pérdida de datos es implementar un plan y un procedimiento
+de recuperación ante desastres bien ideados. Estos planes deben incluir
+crear copias de seguridad con frecuencia de todos y cada uno de los datos necesarios
+en los procesos habituales de tu empresa. Esto incluye los datos de clientes las bases de datos,
+los conflictos de los sistemas los datos financieros, etc. Durante el módulo, aprenderás a diseñar e implementar un plan
+para recuperar tus datos ante un desastre. Por último, aprenderás sobre lo que se conoce
+como <i>post mortem</i> en el sector de TI. Imagina que hubo un problema
+con tus sistemas y seguiste un plan
+de recuperación ante desastres. Puede que, al recuperar los datos,
+encuentres problemas que no contemplaste en tu plan. Un <i>post mortem</i> es una forma de registrar
+los problemas detectados y, lo más importante,
+la forma en que los solucionaste para asegurarte de que no sucederán otra vez. Si no te preparas
+para una pérdida de datos importante tu empresa podría resultar muy afectada.

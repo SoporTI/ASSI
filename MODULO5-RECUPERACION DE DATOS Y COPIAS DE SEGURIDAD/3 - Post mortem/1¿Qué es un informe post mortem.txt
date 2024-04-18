@@ -1,0 +1,31 @@
+Cometer errores es parte de ser humanos. A todos nos pasa de vez en cuando. Y cada error es
+una oportunidad de aprendizaje. Analizamos lo que sucedió y tratamos
+de entender el por qué para evitarlo. Piensa en un niño que aprende que la cocina
+está caliente, la toca una vez y se quema. De inmediato aprenderá que tocar la cocina
+lo lastimará y dejará de hacerlo. Es importante que podamos
+aprender de nuestros errores sino nos quemaríamos todo el tiempo. Ese es el propósito
+de un informe post mortem. Creamos este informe luego de un incidente,
+una interrupción o algún evento en el que hay un error, o cuando finaliza
+un proyecto para analizar cómo salió. Este informe documenta
+en detalle lo que sucedió antes, durante y después
+del evento o proyecto. Intenta destacar
+lo que salió bien y lo que no. El propósito de este informe es
+aprender algo de un evento o proyecto y no castigar a alguien
+o destacar los errores. Claro que habrá algunos errores
+que se abordarán pero la intención no es
+castigar ni avergonzar. Se intenta entender
+la causa raíz de por qué suceden los errores y cómo evitar que vuelvan a suceder. El proceso post mortem aún no termina. Una vez que se escribe el informe,
+debe comunicarse. Este tipo de informe tiene valor más allá
+de las personas inmediatas involucradas en el incidente, la investigación
+y la redacción del informe. Compartir los informes con otros equipos
+de la organización alienta una cultura de aprendizaje de los errores. Demuestra que tu equipo está dispuesto
+a reconocer cuando se equivoca pero no deja que los errores lo detengan. Solo es un buen ejemplo para los demás. Y el contenido del informe podría
+impulsar a otro equipo a que note que tiene
+un problema similar en su infraestructura. Podrías identificar áreas para mejorar que son responsabilidad de equipos
+no involucrados en el incidente. Respecto de estos informes,
+compartir implica que te interesa. Si aceptas los informes post mortem suelen promover una cultura
+en la que está bien cometer errores. Es una actitud saludable
+para cualquier organización. Si las personas temen cometer errores la toma de decisiones será muy conservadora. Es difícil mover los límites y probar cosas nuevas
+si todos temen equivocarse. Pero, si la cultura predominante dice
+que está bien equivocarse mientras aprendamos de esos errores, entonces tendrás
+una organización que tomará riesgos y probará ideas nuevas y emocionantes.
