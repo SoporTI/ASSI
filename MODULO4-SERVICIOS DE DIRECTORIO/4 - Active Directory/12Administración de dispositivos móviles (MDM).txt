@@ -1,0 +1,21 @@
+Veamos cómo configurar políticas
+para dispositivos móviles a través de la administración
+de dispositivos móviles, o MDM. El sistema operativo móvil
+adopta perfiles o políticas MDM que contienen ajustes para el dispositivo. Puedes usar perfiles MDM para muchas tareas. Puedes preconfigurar los ajustes
+del dispositivo para facilitar el proceso a los usuarios finales como instalar apps automáticamente
+y preconfigurar redes inalámbricas. También puedes aplicar ajustes
+de seguridad, como activar la encriptación del almacenamiento del dispositivo
+y exigir el bloqueo de la pantalla. Las soluciones MDM también permiten limpiar
+de manera remota un dispositivo móvil. La limpieza remota es un restablecimiento
+de fábrica que puedes activar desde la MDM central, en lugar de tener
+que hacerlo en persona en el dispositivo. Si roban el dispositivo,
+puedes usar la función de limpieza remota para garantizar que no se roben
+ningún dato personal o confidencial. Al igual que con la política de grupo
+de Active Directory hay una gran cantidad de ajustes
+y políticas que puedes aplicar con la MDM. Los ajustes de las políticas de MDM
+son específicos de cada SO móvil. Pero esas políticas
+se pueden crear y distribuir con un sistema de administración
+de movilidad empresarial, o EMM. Para inscribir un dispositivo
+en la administración de dispositivos móviles deberás iniciar sesión en el sistema de MM. Este enviará las políticas
+de MDM al dispositivo. Hay una gran cantidad de sistemas de EMM
+que pueden administrar políticas de MDM para Android, iOS o ambos.

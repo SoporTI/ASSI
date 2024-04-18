@@ -1,0 +1,88 @@
+Hablemos un poco sobre cómo solucionar
+problemas de directivas de grupo. Un problema habitual
+que deberás solucionar es cuando una directiva
+o preferencia definida por GPO no se puede aplicar a una computadora. Te enterarás de este error de muchas formas. Como
+cuando alguien en tu organización te diga que algo
+en su computadora falta o no funciona. Si usas los GPO para administrar
+la configuración en tus máquinas tal vez haya software
+que debe estar presente. O puede haber
+una unidad de red asignada faltante o varias cosas. El factor común será que algo que debía
+configurarse con un GPO que creaste no estará
+configurado en una o más computadoras. Veamos las tres razones
+más comunes por las que esto podría ocurrir. El primer tipo de error de GPO
+y, posiblemente, el más común se relaciona con la forma
+en que se aplican las directivas de grupo. Según cómo esté configurado tu dominio,
+el motor de directivas de grupo que aplica las configuraciones
+de directivas en la máquina local podría sacrificar
+la aplicación inmediata de ciertos tipos de directivas para acelerar el acceso. Esto se llama
+optimización de acceso rápido. Puede implicar
+que algunos cambios de GPO tomen mucho más tiempo
+del esperado en aplicarse automáticamente. Además, el motor de directivas de grupo
+a menudo intenta acelerar su tarea aplicando solo los cambios a un GPO
+en lugar de aplicar todo el GPO. En estos ejemplos, puedes forzar
+la aplicación de todos los GPO por completo y de inmediato con gpupdate /force. Si quieres una mayor precisión,
+puedes ejecutar gpupdate /force /sync. Agregar el parámetro /sync te permitirá
+cerrar sesión y reiniciar la computadora. Algunos tipos de directivas de grupo
+solo pueden ejecutarse cuando se inicia la computadora
+o cuando un usuario accede por primera vez. Cerrar sesión
+y reiniciar es la única forma de asegurarse de que un GPO actualizado y forzado
+pueda aplicar toda la configuración. Un error de replicación es otra razón por la que un GPO
+podría no aplicarse como se espera. Recuerda que,
+al realizar cambios en Active Directory estos a menudo ocurren
+en un único controlador de dominio. Esos cambios luego deben replicarse
+en otros controladores de dominio. Si la replicación falla,
+entonces diferentes computadoras de tu red tendrán diferentes ideas
+del estado de los objetos de directorio como los objetos de directivas de grupo. La variable de entorno
+del servidor de acceso incluirá el nombre del controlador de dominio
+que usó la computadora para acceder. Recuerda que puedes ver el contenido
+de la variable con este comando en PowerShell que es $env:LOGONSERVER y me muestra DC1. También puedes obtener los mismos
+resultados con el símbolo del sistema que usa %LOGONSERVER%. Saber
+a qué controlador de dominio estás conectado es útil si sospechas
+que hay un error de replicación. En GPMC podemos verificar el estado general
+de la infraestructura de directivas de grupo. Seleccionaré mi dominio
+y observaré la pestaña Estado. En esta pestaña, se resume el estado
+de Active Directory y la replicación
+de los almacenes seguros de tu dominio. Puede mostrar
+los resultados de una prueba reciente así que la forzaré para que ejecute un nuevo análisis
+haciendo clic en Detectar ahora. Queremos ver que todos
+nuestros controladores de dominio aparezcan en controladores
+de dominio con replicación sincronizada. Si es así, podemos estar seguros
+de que no hay problemas de replicación que afecten
+nuestros objetos de directivas de grupo. Si vemos algún controlador de dominio en la lista de controladores
+de dominio con replicación en curso es posible
+que tengamos problemas de replicación. Según el tamaño y la complejidad
+de tu infraestructura de Active Directory y la confiabilidad y el procesamiento
+de los vínculos de red entre los sitios de AD es posible que la replicación
+demore unos minutos en completarse. Si la replicación no se completa
+en un plazo razonable quizás debas solucionar problemas
+de replicación en Active Directory. Si intentas detectar los motivos por los que un GPO determinado
+no se aplica en una computadora primero debes ejecutar
+el conjunto resultante de directivas o RSOP. Usa la Consola
+de administración de directivas de grupo o ejecuta un comando en una computadora
+directamente para generar el informe. El comando gpresult nos ayudará. Si ejecuto gpresult /R puedes ver que obtengo
+un informe de resumen en mi terminal. Te lo mostraré. gpresult /R Se está creando el informe y obtengo este. Si quiero el informe completo
+como el que obtengo de mi GPMC puedo ejecutar gpresult /H FILENAME.html. Escribo gpresult /H y, luego, test.html y obtendré un informe en una página web HTML
+que puedo abrir en mi explorador. Lo buscaré. Con este informe quiero ver algunas cosas. ¿Aparece el GPO que quiero aplicar? ¿Se vincula a una UO donde está
+la computadora que tiene el problema? ¿El GPO que me interesa aparece
+en los GPO aplicados o en los denegados? Si se denegó, ¿cuál fue la razón? ¿Otro GPO prevaleció en la directiva
+de preferencia que intento configurar? Cada GPO puede configurarse
+con una LCA llamada filtro de seguridad. ¿El filtro de seguridad está definido
+para algo más que los usuarios autenticados? Si es así, eso puede indicar que debes estar en un grupo específico
+para leer o aplicar el GPO. Además, cada GPO
+puede configurarse con un filtro de WMI. Un filtro de WMI te permite aplicar un GPO
+basado en la configuración de la computadora. Los filtros de WMI son poderosos pero también caros
+y propensos a configurarse incorrectamente. Esto es porque miran los valores
+del Instrumental de administración de Windows y deciden si aplicar o no una directiva. Por ejemplo, podrías crear
+un GPO que instale un software pero solo si WMI informa
+que hay un hardware específico. Estos filtros son caros porque necesitan
+que el motor de directivas de grupo realice consultas o cálculos
+en cada computadora vinculada a la directiva. Pero el GPO solo se aplica
+a computadoras que coinciden con el filtro. Muchas directivas
+y preferencias pueden configurarse para aplicarse
+a la computadora o para usarse al acceder. ¿Querías definir
+la configuración de una computadora y accidentalmente
+definiste la de un usuario o al revés? Abordamos mucho hasta el momento. Si tienes dudas
+sobre alguno de los conceptos, está bien. Asegúrate de volver a mirar las lecciones. Recuerda que cuanto más trabajes con Active Directory
+y las directivas de grupo más te familiarizarás con ellos. Si usas lo que aprendiste
+sobre estos sistemas y aplicas tus habilidades de investigación,
+podrás solucionar casi todo.

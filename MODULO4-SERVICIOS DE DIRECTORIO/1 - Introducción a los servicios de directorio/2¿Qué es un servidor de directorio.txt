@@ -1,0 +1,55 @@
+¿Alguna vez buscaste un número
+de teléfono en una guía telefónica? ¿O una tienda concreta en el listado
+de un centro comercial? Un servidor de directorios
+ofrece la misma funcionalidad. Este contiene un servicio de búsqueda
+que proporciona asignaciones entre recursos y sus direcciones de red. Se usa para organizar y buscar
+objetos y entidades organizativos que varían entre cuentas de usuario,
+grupos de usuarios, números de teléfono y recursos compartidos de red. En vez de administrar cuentas de usuario
+e información de computadoras a nivel local en cada máquina, toda esa información
+se almacena en un servidor de directorio fácil de acceder y administrar. El servidor de directorio ideal de calidad
+empresarial debe admitir la replicación. Esto significa que los datos del directorio
+del almacén pueden copiarse y distribuirse entre una serie
+de servidores distribuidos físicamente pero aparecer como un almacén de datos
+unificado para adquirirlo y administrarlo. ¿Por qué es importante la replicación? Porque ofrece redundancia ya que dispone
+de varios servicios en simultáneo. Así, habrá una interrupción mínima
+del servicio en caso de que explote uno de los servidores. La replicación además disminuye la latencia
+al acceder al servicio de directorio. Como tienes réplicas del servidor
+de tu directorio en cada oficina puedes responder más rápido
+las consultas del servicio de directorio. El servicio de directorio también
+debe ser flexible para crear fácilmente tipos de objetos nuevos
+según cambien tus necesidades. Se debe poder acceder a la información en la base de datos
+del servidor del directorio desde una variedad de tipos de SO y desde las áreas designadas
+de la red corporativa. Los servicios de directorio
+son útiles para organizar datos y facilitar su búsqueda en una organización. Para eso, se usa un modelo jerárquico
+de objetos y contenedores. Los contenedores se denominan
+"unidades organizativas" o UO y pueden contener objetos
+o más unidades organizativas. Su estructura organizativa es similar
+a la de un sistema de archivos. Las UO son carpetas que pueden
+contener archivos u objetos individuales para servicios de directorio. Las UO también pueden
+contener carpetas adicionales. Las ventajas de administrar
+esta estructura son bastante evidentes. ¿Cómo harías para mantener tu biblioteca de música organizada
+si no hubiera subcarpetas? Una locura. Esta estructura jerárquica puede aplicarse
+para transmitir información adicional sobre lo que está almacenado en su interior. Toma como ejemplo
+tu estructura de directorios. Puedes tener una UO llamada Usuarios,
+que contiene todas las cuentas de usuario. Dentro de ella, podría haber UO adicionales
+que representen la estructura del equipo real de tu organización. La UO de usuarios podría contener más UO,
+como Ventas, Ingeniería, Marketing que incluyen objetos de cuentas de usuario
+para quienes pertenecen a estos equipos. Esta estructura se puede usar
+para transmitir las diferencias entre estos subvalores de los usuarios. Por ejemplo, podríamos imponer
+requisitos de contraseña más estrictos a los miembros de Ingeniería
+sin afectar a Ventas ni Marketing. Los submiembros heredan
+las características de su UO superior. Cualquier cambio aplicado en la UO
+de usuarios de nivel superior afectaría a todos los subvalores, incluso
+los de Ventas, Marketing e Ingeniería. Quien tenga las responsabilidades
+de un administrador de sistemas ya sea un administrador o un especialista
+en asistencia de TI, se encargará de la instalación, la configuración y el mantenimiento
+del servidor del directorio. Esto incluye el propio SO en el que se ejecutaría
+el servicio de directorio. Aquí intervienen las tareas
+estándar de administración del SO como instalar actualizaciones
+y configurar servicios estándar. Otras responsabilidades son instalar y configurar
+el propio servicio de directorio. En definitiva, instalar el servicio
+y configurar todo servicio relacionado. Si se usan varios servidores
+en una configuración de replicación esto también debe configurarse. Es muy probable que la jerarquía
+y la estructura general del propio directorio dependan de que las diseñe
+e implemente el administrador de sistemas. Con esto, vimos una descripción general
+de lo que es un servicio de directorio.

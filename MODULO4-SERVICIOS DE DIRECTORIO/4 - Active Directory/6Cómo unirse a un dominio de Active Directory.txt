@@ -1,0 +1,45 @@
+Si tus responsabilidades incluyen
+administrar sistemas podrías tener que unir máquinas
+al dominio de Active Directory. Recuerda de la introducción a AD
+que las computadoras pueden unirse o vincularse a Active Directory. Unir una computadora
+a Active Directory implica dos cuestiones que AD conoce la computadora
+y que aprovisionó una cuenta para ella. Y que la computadora conoce el dominio
+de Active Directory y se autentica con él. Aquí accedí a una computadora con Windows
+que no está unida a un dominio. Se llama equipo de grupo de trabajo. El nombre proviene de los grupos de trabajo
+de Windows, una colección de computadoras independientes que trabajan juntas. Estos grupos no se administran
+de forma central y será cada vez más difícil
+administrarlos a medida que crezca la red. Necesitamos la administración
+y autenticación central en la red. Unamos esta computadora al dominio. Analicemos la GUI de esto
+y, luego, PowerShell. Voy a hacer clic en Equipo
+y en Propiedades del sistema. Como ves, esta computadora
+está en un grupo de trabajo. Lo que debemos hacer es unir
+esta máquina al dominio. Para ello, haré clic
+en Cambiar configuración. Hago clic en Cambiar. En la ventana para cambiar
+el nombre de equipo y el dominio verás que la computadora puede ser miembro
+de un dominio o de un grupo de trabajo pero no de ambos a la vez. Seleccionaré Dominio aquí. Escribiré nuestro nombre de dominio,
+que es example.com. Cuando haga clic en Aceptar,
+la computadora buscará en la red un controlador de dominio
+para mi dominio de AD. Cuando lo encuentre, me pedirá un nombre
+de usuario y una contraseña para autorizar que la computadora se una al dominio. Ingreso mi nombre de usuario
+de administrador de dominio y mi contraseña. Aquí dice que ya está listo. La máquina ahora está unida a mi dominio. El controlador de dominio crea una cuenta
+de computadora en el dominio para este equipo que vuelve a configurarse para usar
+los servicios de autenticación de AD. Esto requerirá un reinicio. Pasemos a Active Directory Administrative
+Center para saber cómo se ve allí. Estoy en la ventana de Active Directory,
+haré clic en Equipos. Bien. Allí está. Veo la computadora
+en el contenedor de equipos. Mi computadora nueva ahora usará este dominio
+de Active Directory para la autenticación. Puedo usar la directiva de grupo
+para administrar esta máquina. También podemos unir computadoras
+al dominio desde PowerShell. Tengo esta computadora aquí
+que también necesita unirse al dominio. Usemos la CLI esta vez. Ahora voy a escribir
+Add-Computer y -DomainName 'example.com' y -Server. Y lo conectaré a dc1. Fue bastante sencillo. Ahora me vuelve a solicitar mis credenciales. Listo. De forma predeterminada,
+este comando no reiniciará la máquina para completar la unión al dominio. Si agrego el parámetro restart,
+el comando también se encargará de ello. Un último dato. Con los años, surgieron
+varias versiones de Active Directory. Nos referimos a estas versiones
+como "niveles funcionales". Un dominio de Active Directory
+tiene un nivel funcional que describe las funciones que admite. Si administras Active Directory debes saber cuáles son tus niveles
+funcionales de dominio y bosque y quizá algún día debas
+actualizar el bosque o el dominio de Active Directory
+para admitir nuevas funciones. Veamos las propiedades de este dominio. Este dominio es una versión de 2016. También podemos hallarlo
+desde PowerShell así escribiré Get-AdForest y, luego, Get-AdDomain. ¿Ves las propiedades
+de los modos de dominio y de bosque? Ahora que sabes cuál es
+el nivel funcional de tu dominio puedes averiguar qué funciones de AD admite.

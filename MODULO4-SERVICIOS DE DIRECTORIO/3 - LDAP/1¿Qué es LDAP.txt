@@ -1,0 +1,19 @@
+Antes de pasar a los servicios de directorio hablemos sobre el protocolo subyacente
+de los servicios de directorio, LDAP o Protocolo ligero de acceso a directorios. LDAP permite acceder a los datos de servicios
+de directorio como a través de una red. Dos de los servicios de directorio
+principales de LDAP son Active Directory y OpenLDAP, de los cuales hablaremos
+en las lecciones siguientes. En LDAP, puedes ejecutar
+muchas tareas diferentes. Puedes agregar una nueva entrada a la base
+de datos del servidor de directorio por ejemplo, crear un nuevo objeto
+de usuario llamado Christie. Puedes borrar entradas de la base de datos
+del servidor de directorio, modificarlas y mucho más. Con "entrada", nos referimos
+al formato de entrada de LDAP o a la notación de LDAP para cualquier
+registro del servicio de directorio. Una entrada de LDAP
+es un conjunto de datos para describir algo. Mira este ejemplo. No te preocupes por entender lo que dice. El formato de las entradas de LDAP tiene
+un nombre de entrada único, indicado con dn o nombre distinguido, y luego los atributos
+y valores asociados a esa entrada. CN es el nombre común del objeto. En este caso, como es una persona,
+el nombre es Devan Sri-Tharan. OU es la unidad organizativa, como un grupo. En este caso, usamos Sysadmin. DC es el componente del dominio por lo que example.com se divide
+en example y, luego, en com. Como dije, no es necesario
+recordar estos atributos. Puedes consultarlos en la lectura siguiente. La clave aquí es que la notación LDAP
+se usa para las entradas de los servicios de directorio
+a fin de describir atributos con valores.

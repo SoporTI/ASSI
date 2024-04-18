@@ -1,0 +1,86 @@
+¿A qué nos referimos
+con categoría de grupo y ámbito de grupo? Si observas la ventana Grupo nuevo,
+verás dos configuraciones obligatorias que dejamos como predeterminadas,
+Tipo de grupo y Ámbito de grupo. Entonces, ¿qué son? Existen dos categorías
+de grupos en Active Directory. La más común y la única que abordaremos
+en este módulo se llama Grupo de seguridad. Estos grupos pueden contener
+cuentas de usuario, de equipo u otros grupos de seguridad. Los grupos predeterminados
+que mencionamos antes, como usuarios y administradores
+de dominio, son grupos de seguridad. Se usan para otorgar
+o denegar acceso a recursos de TI. Supongamos que creas el grupo
+Recursos Humanos y le otorgas acceso a una foto compartida específicamente
+para miembros de Recursos Humanos. El otro tipo de grupo
+se llama Grupo de distribución. Un grupo de distribución
+solo agrupa cuentas y contactos para comunicaciones por correo electrónico. No puedes usar grupos de distribución
+para asignar permisos a los recursos. Podrías usar un grupo de distribución
+en un grupo de seguridad de servicios para crear una lista de correo electrónico
+con personas externas a tu dominio. ¿Y qué es el ámbito del grupo? El ámbito del grupo es la forma
+en que las definiciones de grupos se replican entre dominios. Mantener muchos grupos grandes
+sincronizados en una red enorme es difícil. Así que Active Directory ofrece distintos
+tipos de grupos para administrar eso. En general,
+los ámbitos de los grupos se usan así. Dominio local: se usa
+para asignar permisos a un recurso. Un ejemplo sería crear
+un grupo local de dominio con acceso de lectura a una red compartida
+llamado Lectores de investigación compartida y otro con acceso de escritura llamado
+Escritores de investigación compartida. Global: se usa
+para agrupar cuentas en un rol. El grupo de investigadores
+de nuestro ejemplo es un grupo global. Podrías tener otros grupos basados en roles,
+como ventas o administración. Universal: se usa
+para agrupar roles globales en un bosque. Los grupos de dominio locales o globales
+no se replican por fuera del dominio en el que están definidos,
+pero los universales, sí. En un bosque multidominio, podrías tener
+un grupo global de lectores de investigación compartida en cada dominio o un grupo
+universal de lectores de investigación compartida que contenga
+a cada grupo global como miembro. Los grupos universales se replican
+en todos los dominios de un bosque. Con grupos locales de recursos
+y grupos globales de roles puedes crear membresías
+de grupo muy fáciles de entender. Estas describen con mucha claridad
+el tipo de acceso que cada rol debe tener a cada recurso. Así que puedo agregar administradores
+al grupo Lectores de investigación compartida e investigadores al grupo
+Escritores de investigación compartida. Y eso es muy fácil de entender. Ahora, si agregamos a Kristi
+al nuevo grupo de investigadores puede escribir
+en la carpeta de investigación compartida. No se debe a que su cuenta de usuario
+obtuvo acceso directo a los archivos sino a que ella es investigadora. Bien, agreguemos cuentas de usuario
+a nuestro nuevo grupo de investigadores. Podemos hacerlo
+desde la cuenta de usuario o desde el grupo. Empecemos
+por la cuenta de usuario de Kristi. En Active Directory Administrative Center,
+haz clic con el botón derecho en su cuenta y selecciona Agregar a un grupo. En el campo Escriba los nombres de objeto
+que desea seleccionar escribe Investigadores y haz clic en Aceptar. Eso es todo. ¿Qué hizo ADAC en segundo plano? ADAC usó un comando de PowerShell que toma
+una entidad de seguridad de Active Directory (una cuenta de usuario o grupo de seguridad)
+y la agrega a la membresía del grupo. Permíteme agregarme al grupo
+de investigadores y ver qué ocurre. Haré clic con el botón derecho en el grupo
+Investigadores y luego clic en Propiedades. Y si hago clic en Miembros, puedo ver
+que Kristi es miembro de este grupo. Si hago clic
+en este botón Agregar a la derecha se abrirá un cuadro de diálogo
+similar al que viste antes. Escribiré el nombre de mi cuenta
+y haré clic en Aceptar. Administrador de sistemas,
+y presiono Aceptar. Así como hicimos cambios
+desde el grupo en lugar del usuario ADAC hizo lo mismo en PowerShell. Esta vez,
+usamos el comando de PowerShell para definir o aplicar cambios
+en un grupo de AD existente. Agregamos
+mi cuenta al grupo de investigadores. En realidad,
+no soy un investigador de esta organización. Así que quitemos mi cuenta con ADAC. Esta vez, claro uso el botón Quitar,
+en lugar del botón Agregar, y listo. Como puedes ver, lo único
+que cambió en el comando de PowerShell fue solo el parámetro
+para quitar en lugar de agregar un miembro. La mayoría de las personas
+en una organización tienen más de un rol. En nuestra empresa ficticia,
+los investigadores son parte del departamento de Investigación y Desarrollo. Algunos recursos de red
+se compartirán con todo I+D mientras que algunos solo estarán
+disponibles para los investigadores. Tiene sentido para nosotros crear un grupo
+superior para el departamento de I+D. Creemos un grupo
+de seguridad global para esto. Así que hago clic con el botón derecho
+en Usuarios clic en Grupo nuevo
+y nombramos a nuestro grupo Investigación y desarrollo. En la descripción,
+escribimos todos los miembros del grupo Investigación y desarrollo
+y luego presionamos Aceptar. Ahora, los investigadores son parte
+del departamento de I+D además de ser investigadores. Así que,
+en lugar de agregar cada investigador por separado
+al grupo Investigación y desarrollo podemos agregar
+el grupo investigadores como miembro. Si escribo Investigación y presiono Aceptar,
+obtengo una lista de todos los usuarios y grupos
+que empiezan con Investigación. Seleccionemos Investigación y desarrollo
+para agregar el grupo Investigadores. ¿Qué ocurrió
+en el historial de Windows PowerShell? Recuerda que las cuentas y los grupos
+de usuarios son entidades de seguridad. Así que, con el mismo comando de PowerShell,
+cambiamos la membresía del grupo como hicimos antes. De esta forma, creamos un usuario
+y lo agregamos a nuevos grupos.

@@ -1,0 +1,73 @@
+Hola otra vez. En esta lección,
+aprenderemos más sobre Active Directory o AD el servicio de directorio nativo
+de Microsoft Windows. Active Directory se usa para administrar
+redes de computadoras de forma centralizada desde su lanzamiento con Windows Server 2000. Si hay computadoras
+con Windows en tu organización entonces la canalización de AD
+tiene un papel fundamental. Active Directory funciona
+como OpenLDAP. De hecho, comprende el protocolo de LDAP
+e interactúa con Linux, OSX y otros hosts que usan ese protocolo,
+aunque no tengan Windows. Al usar Active Directory para administrar
+una flota de servidores y máquinas cliente con Windows, hace mucho más
+que solo ofrecer servicios de directorio y autenticación centralizada. También pasa a ser el repositorio central
+de los objetos de directiva de grupo (GPO) que son formas de administrar
+la configuración de las máquinas con Windows. Ahora, analicemos un dominio común
+de Active Directory para ver qué contiene. La administración de Active Directory depende
+de un conjunto de herramientas y utilidades. Usaremos una herramienta llamada Active Directory Administrative Center,
+o ADAC. Usaremos ADAC para ejecutar muchas tareas
+diarias que aprenderás en este curso. Es ideal para completar tareas y aprender cómo funcionan
+los componentes en segundo plano, ya verás. Recuerda que, como todo sistema rápido,
+los servicios de directorio son jerárquicos. Todo lo que ves
+en Active Directory es un objeto. Algunos objetos son contenedores
+que pueden albergar otros objetos. Varios contenedores predeterminados
+se denominan contenedores y funcionan como ubicaciones predeterminadas
+para ciertos tipos de objetos. Hay otro tipo de contenedor llamado
+unidad organizativa, o UO. Imagina que una UO es como una carpeta
+o un directorio para organizar objetos dentro de un sistema
+de administración centralizada. Los contenedores comunes
+pueden albergar otros contenedores pero las UO no pueden albergar otras UO. Es un poco confuso. Para que veas mejor
+la estructura jerarquizada de AD hice clic en este botón del panel izquierdo
+para pasar de ADAC a la vista de árbol. Aquí hay muchos detalles. ADAC indica qué tipo de objeto
+es cada uno y lo describe. No usaremos todos estos,
+pero queremos mencionar algunas partes del directorio
+que se usan con más frecuencia. El primer nodo del árbol es nuestro dominio. El dominio tendrá un nombre breve,
+como example, y el nombre de DNS como example.com. Los objetos, en especial
+las computadoras del dominio recibirán un nombre de DNS
+que reside en la zona del DNS del dominio. Hay un nivel de jerarquía superior
+al de dominio que no se ve aquí. Se trata del bosque. Si analizas la forma lógica de un dominio,
+se asemeja a un árbol. El nombre incluso tiene sentido. Un bosque contiene uno o más dominios. Las cuentas pueden compartir recursos
+entre los dominios de un mismo bosque. En el entorno de ejemplo,
+example.com es el único dominio del bosque. El próximo ejemplo son las computadoras. En este contenedor se crean las nuevas
+cuentas de computadora de AD. Si voy aquí, verás mis computadoras. Las cuentas de computadoras se crean cuando
+una computadora se une al dominio de AD. Lo próximo que analizaremos
+son los controladores de dominio. En este contenedor se crean los controladores
+de dominio de forma predeterminada. Ahora, analizaremos los usuarios. En este contenedor se crean los usuarios
+y los grupos de AD de forma predeterminada. Los servidores que alojan las copias
+de las bases de datos de AD se llaman controladores de dominio, o DC. Los controladores de dominio
+brindan varios servicios en la red. Alojan una réplica de la base de datos
+de AD y objetos de directiva de grupo. Los DC funcionan como un servicio de DNS
+para ofrecer resolución de nombres y descubrimiento de servicios a los clientes. Brindan autenticación centralizada
+a través de un protocolo de seguridad de red llamado Kerberos. Los controladores de dominio deciden
+cuándo las computadoras y los usuarios acceden al dominio. También deciden si tienen
+o no acceso a recursos compartidos como sistemas de archivos e impresoras. Esto permite que los administradores
+de sistemas apliquen cambios en la red de forma rápida y sencilla. Si alguien se une a la organización,
+los administradores de sistemas le crearán una cuenta de usuario y, casi de inmediato todos los dispositivos
+de la red sabrán quién es. Si alguien cambia de puesto o abandona
+la organización, un administrador puede inhabilitar o eliminar su cuenta y, en
+segundos, ajustar el acceso a dispositivos. Es común que la mayoría de los controladores
+de dominio en la red de AD sean las réplicas de lectura y escritura. Esto significa que todos tienen una copia
+completa de la base de datos y que pueden aplicar cambios en ella. Estos cambios se replican en las demás copias
+de la base de datos en otros DC. Por lo general, la replicación es rápida
+y se toma el último cambio casi siempre. No es perfecto,
+pero funciona para la mayoría de las tareas. Algunos cambios en la base de datos de AD
+pueden aplicarse de forma segura en los DC de uno a la vez. Asignamos estos cambios a un único
+controlador de dominio a través de la concesión
+de operaciones maestras únicas flexibles también conocidas como FSMO. Si en tu trabajo administras controladores
+de dominio, deberás saber cómo asignar roles de FSMO
+y recuperarte de las fallas de DC. Para que las computadoras aprovechen
+el servicio de autenticación central de AD deben unirse o vincularse
+a Active Directory. Unir una computadora
+a Active Directory implica dos cuestiones. Primero, que AD conozca la computadora
+y le haya asignado una cuenta de computadora. Segundo, que la computadora conozca
+el dominio de AD y se autentique con él. De aquí en adelante, la computadora podrá
+autenticarse con Active Directory como puede hacerlo cualquier usuario
+que accede a la computadora.

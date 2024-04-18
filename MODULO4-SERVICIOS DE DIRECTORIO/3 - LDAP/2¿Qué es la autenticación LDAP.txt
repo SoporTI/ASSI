@@ -1,0 +1,36 @@
+Si eres de la época de las guías telefónicas,
+recordarás que eran libros grandes y antiguos que contenían el nombre,
+la dirección y el número de teléfono de personas de tu vecindario que habían autorizado
+la publicación de sus datos. Es muy distinto de la guía telefónica o la lista de contactos
+que tienes en tu teléfono celular. Los contactos de tu directorio te dieron
+su número para que solo tú lo tengas. LDAP tiene distintos niveles
+de autenticación para restringir el acceso a ciertos directorios similares a los grandes
+directorios de teléfonos públicos o a los directorios privados
+de los teléfonos celulares. Quizá tienes un directorio que quieres que sea público
+para que cualquiera pueda ver sus entradas, o quizá solo quieres mantener
+los datos privados para el que los necesite. Veremos cómo LDAP realiza
+esta autenticación y qué métodos usa. Ya vimos las operaciones que puedes ejecutar
+con LDAP, como agregar, quitar o modificar entradas de un directorio. Lo que también puedes hacer
+es ejecutar la operación de enlace que autentica los clientes
+con el servidor de directorio. Supongamos que quieres acceder a un sitio web
+que tiene un servicio de directorio. Escribes tus datos
+y contraseña para iniciar sesión. Luego, la información se envía al sitio web. LDAP verificará que la cuenta de usuario
+esté en el directorio de usuarios y que la contraseña sea válida. Si es válida, podrás ingresar a la cuenta. Tus datos deben estar protegidos
+y encriptados cuando se complete el proceso. Existen tres formas
+de autenticación habituales. La primera es la anónima;
+la segunda, la simple y la última, SASL,
+o capa de seguridad y autenticación simple. Con la vinculación anónima,
+en realidad, no te autenticas en absoluto. Según cómo esté configurada,
+cualquiera podría acceder al directorio como una guía telefónica pública. Con la autenticación simple necesitas el nombre de la entrada
+del directorio y la contraseña. Esto suele enviarse como texto sin formato,
+por lo que no es para nada seguro. Otro método de autenticación
+frecuente es la autenticación SASL. Este método puede requerir la ayuda
+de protocolos de seguridad, como TLS que ya conociste, y Kerberos,
+que veremos en breve. La autenticación SASL requiere que el cliente
+y el servidor de directorio se autentiquen con algún método. Uno de los más habituales
+para ello es Kerberos. Kerberos es un protocolo de autenticación
+de redes para validar la identidad de usuarios, proteger la transferencia
+de credenciales de usuarios y más. Kerberos en sí puede ser complejo,
+así que lo retomaremos en el curso de seguridad de TI. Tras completar la autenticación
+con éxito a través del servidor LDAP o el servicio de directorio,
+el usuario podrá utilizar cualquier nivel de acceso que tenga.

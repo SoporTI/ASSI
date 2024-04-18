@@ -1,0 +1,53 @@
+Una de las ventajas clave
+de la autenticación central es que simplifica la administración de contraseñas. ¿Sabías que hasta un 25% de las personas
+olvida su contraseña al menos una vez al día? Ayudar a los usuarios con las contraseñas
+es una tarea común de la asistencia de TI. Cuando un usuario cambia
+su contraseña en Active Directory se cambia en cada máquina
+a la que tiene permitido acceder. Con ciertas excepciones,
+AD no almacena la contraseña del usuario sino que almacena un hash criptográfico
+unidireccional de la contraseña. La idea básica es que las contraseñas
+se puedan convertir en un hash fácilmente pero los hashes no puedan volver
+a convertirse en contraseñas con facilidad. No puedes buscar
+la contraseña del usuario, aunque quisieras. Eso es algo muy bueno. Como regla general, deberías evitar saber
+la contraseña de la cuenta de alguien más. Si hay más de una persona que puede
+autenticarse con el mismo nombre de usuario y contraseña, la auditoría
+se vuelve difícil o hasta imposible. Auditar tu infraestructura en este sentido
+significa analizar quién realiza acciones específicas en tu infraestructura de TI. En una auditoría de seguridad o una situación
+de solución de problemas es importante que solo una persona pueda
+autenticarse con su cuenta. Teniendo en cuenta esto, ¿qué ayuda puedes
+brindar con las contraseñas de las cuentas? El problema más común
+es que la gente olvida su contraseña. En este caso, si tienes responsabilidades
+de administrador del sistema podrías tener autorización
+para restablecerles su contraseña. Esto solo debería hacerse si tienes certeza
+de que la persona que solicita restablecer la contraseña tiene permitido hacerlo. Muchas organizaciones tienen políticas
+y procedimientos que requieren que la solicitud se haga en persona
+o que la persona demuestre que es quien dice ser. Una vez que sabes que el restablecimiento
+está autorizado, ya pasó lo difícil. El resto es sencillo. Imaginemos que Mateo informa que no puede
+acceder a su cuenta porque olvidó su contraseña. En Active Directory Administrative Center,
+que vemos aquí haré clic con el botón derecho
+en su cuenta de usuario. Primero, busquemos su cuenta de usuario hagamos clic con el botón derecho en ella
+y clic en Restablecer contraseña. La contraseña que ingresamos
+será provisoria porque nos aseguraremos de activar la opción para que el usuario
+cambie la contraseña en su próximo acceso. Crearé una contraseña provisoria me aseguro
+de que esté marcada la opción mencionada y presiono Aceptar. Como dije, no queremos saber
+la contraseña del usuario. Así que no le pediré a Mateo
+una contraseña provisoria. Podría decirme una variación
+de su contraseña habitual, y no quiero eso. Algunas organizaciones
+tienen políticas sobre cómo generar y distribuir las contraseñas provisorias. Debes asegurarte de saber si es así. En este ejemplo,
+generaré una contraseña aleatoria y la ingresaré aquí. ¿Qué es esto? Active Directory puede bloquear
+las cuentas de usuarios si ingresan una contraseña
+incorrecta muchas veces. Parece que es lo que le sucedió a Mateo. Una vez que se bloquea una cuenta,
+nadie puede autenticarse con la cuenta hasta que un administrador la desbloquee. Las directivas de contraseñas
+de Active Directory controlan cuántos intentos se permiten
+antes de bloquear la cuenta. Analizaremos las directivas
+de contraseñas cuando veamos los objetos de directiva de grupo (GPO). Volvamos a lo nuestro. Quiero que Mateo
+pueda acceder y cambiar su contraseña. Así que me aseguraré de activar la opción
+Desbloquear cuenta y haré clic en Aceptar. Si observas lo que sucede en PowerShell,
+verás algunos comandos conocidos junto con uno nuevo
+para desbloquear la cuenta de Mateo. Cuando cambias tu contraseña, debes
+proporcionar la contraseña actual y la nueva. Es lo que sucede cuando un usuario
+cambia su propia contraseña. Si restableces una contraseña
+como administrador solo proporcionas la contraseña nueva y tu autorización administrativa anula
+la contraseña existente. Si la persona usó el sistema de encriptación
+de archivos NTFS o la función de EFS para encriptar archivos,
+puede perder acceso a esos archivos si se restablece su contraseña.

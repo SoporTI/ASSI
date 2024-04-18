@@ -1,0 +1,7 @@
+¡Felicitaciones! Ya casi terminas de abordar los servicios
+centrales de infraestructura de TI de las organizaciones. Estás cerca; ya casi. En el último módulo, aprendimos sobre los servicios de software
+de las organizaciones como el de comunicación y el de seguridad y los servicios
+de almacenamiento de archivos. Luego vimos los servicios de plataforma
+relacionados con las organizaciones que compilan un producto de software. Por último, conocimos algunos servidores
+que admiten estas organizaciones como los servidores web y de bases de datos. En este módulo, veremos el último servicio
+principal de la infraestructura de TI los servicios de directorio. Es el comienzo del fin. ¿Todo listo? Comencemos.

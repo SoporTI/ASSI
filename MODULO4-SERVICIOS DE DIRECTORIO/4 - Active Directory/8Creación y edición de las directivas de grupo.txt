@@ -1,0 +1,163 @@
+La herramienta más importante que usaremos para crear y visualizar
+objetos de directiva de grupo se llama Consola de administración
+de directivas de grupo o GPMC. Puedes hallarla en el menú Herramientas del Administrador de servidores o ejecutando gpmc.msc
+en la línea de comandos. Puedes ver que la capa de GPMC es similar a otras herramientas de administración que usamos en Active Directory. A la izquierda,
+está la estructura de Active Directory. GPMC tiene varios contenedores en la GUI. Estos no son
+los contenedores de AD que usaré. Existen interfaces de administración que solo se muestran en GPMC. El contenedor
+de objetos de directiva de grupo tendrá todos los GPO
+que se definan en el dominio. El contenedor de filtros de WMI se usa para definir roles
+de segmentación potentes para tus GPO. Estos filtros usan propiedades de los objetos del Instrumental
+de administración de Windows o WMI para decidir si un GPO debería aplicarse
+a una computadora específica o no. Resultados de directivas de grupo es una herramienta
+de solución de problemas para detectar qué directivas de grupo aplicar
+a computadoras y usuarios en la red. Se usa para comprobar
+las directivas de grupo que ya se aplicaron
+a un equipo o usuario. Por otro lado, la creación de modelos
+de directiva de grupo se usa para predecir qué directiva de grupo se aplicará a una computadora o usuario en la red. Esta herramienta te permite probar
+un cambio en los filtros de GPO, UO o WMI antes de hacer
+cambios reales en Active Directory. Recuerda que los contenedores de usuarios y equipos
+no son unidades organizativas. Los objetos de directiva de grupo solo se pueden vincular
+a dominios, sitios y UO. Si los objetos de usuarios y equipos
+están en contenedores predeterminados solo se los puede segmentar con los GPO vinculados
+a los dominios y los sitios. Es una buena práctica organizar
+las cuentas de usuarios y equipos en UO para que puedan segmentarse
+con directivas de grupo más específicas. Empecemos con los objetos
+de directiva de grupo que no están en GPMC y veamos un GPO que ya existe. En un dominio nuevo de Active Directory
+habrá dos GPO que se crean automáticamente la directiva de control
+de dominio predeterminada y la directiva de dominio predeterminada. La directiva de dominio predeterminada es
+como sabrás, un GPO predeterminado vinculado al dominio. Se aplica a todas las computadoras
+y usuarios en el dominio. La directiva de control
+de dominio predeterminada se vincula a la UO
+de los controladores de dominio y se aplica, como te imaginarás,
+a los controladores de dominio. Aquí vemos un informe de configuración
+de la directiva de dominio predeterminada. Este GPO está diseñado para hacer cumplir
+las decisiones de la directiva que queremos para todo el dominio. Por ejemplo, la directiva de longitud
+mínima de contraseñas impide al usuario
+crear contraseñas muy cortas. La de eventos de acceso
+a la cuenta de auditoría requiere que la computadora cree
+un evento de Windows para cada intento
+de acceso exitoso y fallido. Hay miles de configuraciones
+que pueden controlarse con GPO. Investiga hasta encontrar
+la que debes cambiar en un objeto de directiva de grupo
+para modificarlo como desees. La directiva de grupo ha estado
+en varias versiones de Windows y, a veces, las cosas no están
+donde esperas hallarlas. No desesperes. Hay mucha información
+en línea sobre las directivas de grupo y dónde hallar la configuración. Una sugerencia. Puede resultarte útil
+la referencia de configuración de directivas de grupo que Microsoft lanza
+con cada versión nueva de Windows. Es una hoja de cálculo que detalla
+las directivas y preferencias de GPO disponibles y dónde hallarlas. Ahora intentemos cambiar una configuración
+en la directiva de dominio predeterminada. Antes de empezar
+crearé una copia de seguridad del GPO. Hago clic con el botón derecho
+en la directiva y elijo Copia de seguridad. Creé una copia de seguridad
+del GPO en mi escritorio. En un entorno real, hay que crear una carpeta
+de red que esté bloqueada para que solo tenga acceso
+un administrador de dominio. Puedo agregar una descripción aquí
+para recordarme por qué hice la copia. Luego, completo el asistente y listo. Sé que si cometo un error, puedo restablecer
+la directiva desde la copia. Volveré a hacer clic con el botón derecho
+en la directiva, pero ahora elegiré Editar. Se abrirá
+la directiva de dominio predeterminada en el Editor de administración
+de la directiva de grupo. Puedes ver en el panel de la izquierda
+que el GPO está dividido en dos secciones configuración del equipo
+y configuración del usuario. Cada una está dividida
+en directivas y preferencias. Dentro de este árbol
+de directivas y preferencias está cada configuración individual
+de GPO que GPMC conoce ya sea que se haya configurado o no. Cada GPO tiene acceso a la misma configuración
+que cualquier otro GPO. No hay GPO especiales. Igual, es bueno hacer GPO diferentes y que cada uno se enfoque
+en una necesidad específica. Por ejemplo, podrías tener un GPO para la configuración
+de un grupo de usuarios específico o uno para las directivas de seguridad
+de todo el dominio. Si tienes GPO específicos
+para soluciones específicas puedes vincularlos solo con el equipo o con los usuarios
+que necesiten esa directiva. Ya que trabajas con todo el universo
+de las directivas de grupo en cada GPO puede ser difícil saber desde el Editor
+qué configuración es la que tiene este GPO. Consulta el informe de configuración
+en GPMC para saber más. Se ve diferente. Pero notarás
+que el informe se expone del mismo modo jerárquico
+que el Editor de GPO. Veo que el umbral de bloqueo de la cuenta está configurado
+en cero intentos inválidos de acceso. Veamos la directiva y el Editor de GPO. Usaré un informe de configuración como guía
+para hallar esa directiva en el Editor. Te mostraré cómo. Haré clic con el botón derecho
+en Directiva de dominio predeterminada elegiré Editar y moveré esto a un lado
+para ver la hoja de ruta. Aquí vemos la opción
+Configuración del equipo. Hago clic en Configuración del equipo,
+luego en Directivas, Configuración de Windows Configuración de seguridad y, por último,
+en Directivas de cuenta porque nos interesa
+la directiva de bloqueo. Puedes ver que hay tres directivas
+en la directiva de bloqueo de cuenta. La columna de directiva nos dice
+el nombre de la directiva y la configuración nos dice
+la configuración actual de la directiva. Si no se definió una directiva,
+este GPO no cambiará esa configuración
+en los equipos donde se aplicó. El nombre de la directiva es
+fácil de entender, pero no sé si entiendo todas las consecuencias
+de cambiar esos valores. Si hago doble clic en cualquier directiva se abrirá el cuadro de diálogo
+de las propiedades de esa directiva. ¿Qué es esto? Hay una pestaña
+de explicación aquí. Perfecto. La pestaña Explicación
+nos dirá qué configura la directiva. También podría decirnos
+qué esperar si esa directiva no se define y cuál es
+el valor predeterminado de la directiva si se habilita pero no se personaliza. En la explicación de la directiva
+del umbral de bloqueo de la cuenta veo que, al tenerlo en cero,
+las cuentas nunca se deshabilitarán por intentos de acceso fallidos. No quiero eso en mi dominio,
+así que cambiaré este valor. Bien, es interesante. Parece que esta directiva tiene algunas dependencias
+en otras directivas. Aceptaré estos valores predeterminados
+y ahora veré que se han configurado estas tres directivas
+en la directiva de bloqueo de la cuenta. ¿Cómo guardo los cambios? Cuando presionas
+Aplicar o Aceptar en el cuadro del editor de administración
+de una directiva de grupo el cambio se hace en el GPO de inmediato
+y las computadoras pueden recibir la actualización
+y comenzar a aplicarla. Puede que no sea lo más recomendable. Cuando debes hacer cambios
+en una directiva de grupo de producción deberías probarlos primero. Por ejemplo, estaba jugando
+con una directiva de dominio predeterminada vinculada a todo el dominio. De inmediato logré
+que todas las cuentas de usuario se bloquearan al ingresar
+la contraseña de forma incorrecta una vez. Oh, no. ¿Dónde está
+el botón para deshacer? ¿Sabes qué? No hay uno. No te preocupes. Por eso hicimos una copia de seguridad
+antes de empezar a trabajar en la directiva. Restablezcamos la directiva desde la copia
+y evitemos esta catástrofe inminente. En la consola de administración
+de la directiva de grupo haré clic con el botón derecho
+en la directiva de dominio predeterminada en Objetos de directiva de grupo y seleccionaré
+Restaurar desde copia de seguridad. El asistente recuerda el último lugar
+donde creé una copia de seguridad de un GPO y supone que quiero restablecerlo desde allí. Es muy intuitivo. Ahora, enumera cada una de las copias de GPO
+que están en la carpeta que elegimos. Aquí se enumeran el nombre de la directiva
+y la hora en la que se hizo la copia junto con las descripciones
+que proporcionamos cuando hicimos la copia. Si hago clic en Ver configuración,
+se abrirá mi navegador web con el informe
+de configuración de la copia. Genial. Debo restablecer esta directiva para evitar
+que se bloqueen las cuentas de los usuarios. El cuadro de diálogo del resumen
+muestra lo que estoy por hacer. Vayamos allí. Se ve bien. Haré clic en Finalizar y me aseguraré
+de que la directiva se haya restablecido. Genial. Se restableció la copia de seguridad
+y se deshizo el error. Como viste en este ejemplo,
+antes de hacer cambios en un GPO siempre debes hacer una copia. Pero ¿de qué otra forma
+podría evitar este error? Bien. Podría haber probado mis cambios. Hay muchas formas de hacerlo. Algunas organizaciones tendrán
+prácticas recomendadas establecidas para probar
+los cambios de GPO en sus entornos. Si ese es el caso,
+deberías seguirlas. También deberías seguir
+un proceso de administración de cambios para notificar sobre los cambios que harás
+a las otras personas de la organización. Te mostraré una forma de agregar
+algo de seguridad a los cambios en el GPO. Digamos que tengo un GPO llamado
+"directiva de ejemplo" y quiero hacer cambios
+en la directiva de ejemplo pero quiero probar los cambios primero para asegurarme
+de no romper máquinas de producción. Primero, estableceré una UO de prueba que contenga cuentas de usuarios
+o máquinas de prueba. Si la directiva de ejemplo
+suele estar vinculada a example.com, finanzas y, luego, equipos,
+entonces, puedo crear example.com, Finanzas Equipos, Prueba, y agregar
+máquinas de prueba en la UO de prueba. Esto permite
+que las máquinas de prueba mantengan todos los GPO de producción existentes,
+pero me ofrece un lugar donde vincular un GPO de prueba que anula la producción. Aquí te mostraré cómo hacerlo. Haré clic en example.com, Nuevo luego, en UO
+y escribiré Finanzas y haré clic en Aceptar. Crearé otra UO para mis equipos. Debajo de eso, crearé una UO de prueba para probar el GPO y presionaré Aceptar. Luego, haré una copia del GPO que quiero cambiar y lo llamaré
+Directiva de ejemplo de prueba. Te mostraré cómo hacerlo. Esta es una directiva que tengo. Presionaré Copiar iré a mis objetos de directiva de grupo
+y presionaré Pegar. Usamos los permisos predeterminados
+de los GPO para hacer una copia y presionamos Aceptar. El nombre será algo como copia del maestro. Le cambiaré el nombre a Directiva de ejemplo de prueba
+y presionaré Intro. Ahora, puedo hacer
+los cambios que quiero probar en Directiva de ejemplo de prueba
+y vincularla a mi UO de prueba. Te mostraré cómo la vinculo. Iré a la carpeta Finanzas de la UO seleccionaré Equipos, Prueba,
+y haré clic con el botón derecho en Prueba. Ahora, vincularé un GPO existente,
+que será mi Directiva de ejemplo de prueba y, luego, presionaré Aceptar. Luego de confirmar que los cambios
+se hicieron como yo quería puedo hacer una copia
+de la directiva de prueba e ingresar la copia
+de la Directiva de ejemplo de prueba a la directiva de ejemplo de producción. Esto implica más trabajo para mí
+como administrador de sistemas pero también me beneficia
+tener más seguridad y tranquilidad. Al probar los cambios en una copia
+del GPO en mis máquinas de prueba es más difícil que se rompan
+las máquinas de producción por accidente. Tu organización podría usar una administración avanzada
+de directivas de grupo (AGPM) que es un conjunto de herramientas
+complementarias de Microsoft que te dan capacidades de control
+de revisión adicionales en GPMC. Si usas AGPM en tu organización
+deberías seguir las prácticas recomendadas para el control de versiones
+de GPO con AGPM.

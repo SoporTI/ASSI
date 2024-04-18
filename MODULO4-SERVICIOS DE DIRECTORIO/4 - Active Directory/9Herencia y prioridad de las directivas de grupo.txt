@@ -1,0 +1,101 @@
+Si sigues la práctica
+de crear GPO específicos para abordar determinadas categorías de necesidades,
+puedes terminar con varias directivas vinculadas a muchos niveles
+de tu jerarquía de Active Directory. Es muy habitual que esto ocurra
+en los objetos de directiva de grupo que controlan la configuración de seguridad. Los administradores de sistemas deben proteger la seguridad
+de la infraestructura de TI. Por eso, se recomienda crear
+un GPO muy restrictivo que use directivas de seguridad muy eficaces
+y conservadoras y vincularlo a todo el dominio. Esto ofrece una directiva
+predeterminada segura, pero es posible que algunas computadoras no puedan hacer
+su trabajo con directivas tan conservadoras. El departamento de Finanzas podría
+necesitar las macros de Excel que están deshabilitadas en la directiva
+de seguridad predeterminada. Así que podemos crear GPO que suavicen
+algunas configuraciones o directivas de seguridad en las UO
+que contienen esas computadoras o usuarios. Otro ejemplo sería tener un objeto
+de directiva de grupo que estandarice el fondo de pantalla de escritorio
+de todas las computadoras pero que necesitemos usar un fondo diferente
+en las que sean quioscos de acceso público. En cualquiera de estos casos,
+puede haber cuentas de computadoras o usuario con múltiples GPO asignados
+que se contradigan entre sí por el diseño. Entonces, ¿qué ocurre si hay dos o más objetos de directiva de grupo
+contradictorios en la misma computadora? Cuando una computadora procesa los objetos
+de directiva de grupo que se aplican a ella todas las directivas se aplicarán en un orden
+específico según las reglas de prioridad. Los GPO se aplican según los contenedores
+de la cuenta de computadora y usuario. Los GPO vinculados al contenedor menos
+específico o más grande se aplican primero. Los que se vinculan al contenedor más
+específico o más pequeño se aplican últimos. Primero se aplican
+los GPO vinculados al sitio de AD después, los vinculados al dominio y, luego,
+a las UO, de principales a secundarias. Si más de una directiva intenta
+definir la misma directiva o preferencia entonces prevalece la más específica. Para demostrarlo,
+veamos esta estructura de AD. Como ves,
+en mi estructura, tengo múltiples UO. Tenemos la UO de TI. La UO de ventas. También la UO de investigación. Y tengo sitios
+en Australia, India y Norteamérica. Si tienes
+una computadora en el sitio de India y en example.com, la UO de ventas y la UO
+de la computadora, entonces Active Directory aplicará los objetos de directiva de grupo
+vinculados al sitio de India al dominio example.com, a la UO de ventas
+y a la UO de la computadora, en ese orden. Pero eso no es todo. En realidad, puedes
+vincular múltiples GPO al mismo contenedor. ¿Cómo decide AD en qué orden aplicar los GPO
+si hay más de uno en un contenedor? Cada contenedor tiene un orden de vinculación
+para los GPO vinculados a él. Así que veamos nuestra UO de ventas. La UO de ventas del dominio de ejemplo
+tiene un GPO para asignar unidades de red y un GPO para configurar impresoras de red. El orden de vínculo de cada directiva
+determina qué GPO tiene prioridad. El número mayor corresponde
+al GPO con menor clasificación. Así que su configuración se aplica primero. Primero se aplica la directiva de impresoras
+de red, con el número dos y luego la de unidades de red,
+que tiene el número uno. En caso de que la directiva de unidad de red
+contradiga la de impresora de red prevalece la directiva de unidad. Resumamos hasta este punto. Primero se aplica el vínculo con el número
+más alto en el contenedor menos específico. Y el vínculo con el número de orden más bajo
+en el contenedor más específico es el último GPO que se aplica. Gana el último GPO que modifica
+las configuraciones específicas. En la consola de administración de directivas
+de grupo, vemos las reglas de prioridad. Voy a pasar a la UO de equipos
+en Administración de directivas de grupo. Veo vinculada una directiva de seguridad
+de equipos. Amplío esto. Al cambiar de la pestaña
+Objetos de directiva de grupos vinculados a Herencia de directivas de grupo veo que, en realidad, los objetos en esta UO
+tienen varias directivas aplicadas. La columna Orden de vínculos indica
+qué directiva prevalece en caso de conflicto y la columna Ubicación
+indica dónde se vinculó la directiva. Tal vez notaste que no hay
+ninguna directiva de vínculo de sitio aquí. Eso se debe a que puedes tener computadoras
+de 80 sitios diferentes en la misma UO. Así que los vínculos de GPO basados
+en sitios no se representan en el resumen. Cuando agregas todas las directivas de grupo
+para una máquina específica y les aplicas reglas de prioridad obtenemos el conjunto resultante
+de directivas o RSOP para esa máquina. Al solucionar problemas de directivas
+de grupo, con frecuencia, comparas un informe RSOP con lo que esperas
+que se aplique a esa computadora. Hay muchas formas de obtener un informe RSOP. Ahora usaremos la consola
+de administración de directivas de grupo y veremos
+los otros métodos al solucionar problemas. Veamos qué objetos de directiva
+de grupo se aplicarán cuando uno de nuestros vendedores
+inicie sesión en su computadora. Hago clic con el botón derecho
+en Resultados de directivas de grupo, en GPMC y selecciono Asistente
+para resultados de directivas de grupo. Este asistente me guiará para generar
+un informe del conjunto resultante de directivas
+para la computadora y usuario que elija. La computadora donde ejecuto
+este informe establecerá una conexión remota a esa computadora
+y le solicitará que ejecute el informe. Así, el informe
+estará visible en mi GPMC local. Me gustaría ver ese RSOP cuando Emmet acceda a su computadora, que es Emmetpc01. Voy a presionar Siguiente. Buscaré su computadora,
+así que tildo Otro equipo. Presiono Examinar, escribo Emmetpc01 y presiono Aceptar. El Asistente para resultados
+de directivas de grupo es muy simple. Primero escribo Emmetpc01 como la computadora
+donde quiero ejecutar el informe. De forma predeterminada,
+el asistente solo ejecutará el informe RSOP para la configuración de la computadora. Como también quiero ver la configuración
+de usuario de Emmet, seleccionaré Mostrar la configuración de,
+que ya está seleccionado. Entonces, presionaremos Siguiente. Esto nos llevará al resumen de selecciones
+y presionaremos Siguiente. Y, para generar el informe, presionaremos
+Finalizar. Solo puedes elegir usuarios de esta lista
+que hayan accedido a esta computadora antes. Listo, revisaré mi selección
+en el cuadro de diálogo de resumen. Después, finalizaré el asistente. Tengo un nuevo elemento
+en Resultados de directivas de grupo en GPMC y contiene el informe del conjunto resultante
+de directivas que acabo de solicitar. Excelente, este informe RSOP
+contiene todo lo que necesitamos para comprender qué directivas
+se aplican a una computadora o un usuario. Incluye muchos detalles
+sobre dónde se ubican la computadora y el usuario en AD, cuáles son
+sus membresías de grupos de seguridad, etc. Por el momento, voy a ignorar eso y a enfocarme en las secciones
+de configuración del informe. Esto se parece mucho a la información
+que ves en la pestaña Configuración del GPO pero, en lugar de solo mostrarte
+la configuración modificada por cada GPO puedes ver el efecto
+combinado de todos los GPO aplicados. La columna GPO aplicado
+indica cuál es el GPO que obtuvo prioridad en cada directiva y preferencia. Sorprendente, ¿no? Recuerda que estoy haciendo
+una solicitud remota desde mi consola de administración de directivas de grupo
+a Emmetpc01 para ejecutar el informe. Hay muchas razones
+por las que esto podría no funcionar. Emmetpc01 podría estar
+apagada, desconectada de la red o tener reglas de firewall que me
+impidan ejecutar el informe de forma remota. Si no soy
+el administrador local de la máquina no podré ejecutar el informe. En cualquiera de estos casos, si necesito
+el informe RSOP para solucionar problemas tendré que ejecutar comandos
+de forma local en Emmetpc01.

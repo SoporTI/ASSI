@@ -1,0 +1,40 @@
+En la lección anterior
+vimos en profundidad el servicio popular
+de directorios Active Directory. Aprendiste a agregar
+usuarios, contraseñas grupos y a modificar los niveles de acceso
+a través de directivas de grupo. Actualmente,
+otro servicio popular de directorios es el servicio gratuito y de código abierto OpenLDAP, que son las siglas en inglés
+de protocolo ligero de acceso a directorios. Funciona de forma muy similar
+a Active Directory. Con la notación de LDAP o el formato de intercambio
+de datos de LDAP (LDIF) puedes autenticar, agregar
+o eliminar usuarios grupos, computadoras
+y otras opciones de un directorio. OpenLDAP también es útil
+en cualquier sistema operativo como Linux, macOS
+e, incluso, Microsoft Windows. Pero, como Active Directory es el software de Microsoft
+para los servicios de directorio recomendamos que en Windows uses AD
+en lugar de abrir un LDAP. Es útil saber que OpenLDAP es
+un software de código abierto por lo que se puede usar
+en muchas plataformas. Existen unas cuantas formas de interactuar
+con un directorio de OpenLDAP. Puedes usar una interfaz de línea de comandos y enviar comandos para crear
+y administrar entradas de directorio. También puedes usar una herramienta
+como phpLDAPadmin que brinda una interfaz web
+para administrar tus datos de directorio. Al igual que con la GUI de Active Directory
+de Windows en esta lección
+tendrás un panorama detallado de las tareas que puedes ejecutar con OpenLDAP
+mediante comandos y cómo funcionan. Para comenzar, abriremos
+el paquete de OpenLDAP con este comando. Iré a mi entorno de Linux e ingresaré este comando sudo apt-get install slapd ldap -utils. Después, mi contraseña y aceptar. Después de instalar los paquetes
+te pedirá que ingreses una contraseña de administrador en LDAP. Así que la ingresaré y haré clic en Ok. Después de confirmar tu contraseña,
+haz clic en Ok. Ahora que se instaló,
+reconfiguraremos el paquete slapd
+para definir mejor nuestra configuración. Para ello, ejecutaremos el siguiente comando. Actualizaré esta ventana y ejecutaré sudo dpkg-reconfigure slapd. Nos hará un par de preguntas
+sobre esta instalación. La primera opción es suprimir
+la configuración del servidor OpenLDAP. Rechazaré esta opción. Luego, el nombre del dominio de DNS.
+Es similar a AD de Windows. Este es el dominio de nuestra organización. Usemos example.com
+y, luego, hagamos clic en Ok. Elijamos "example"
+para el nombre de la compañía. La contraseña del administrador
+es la misma que ingresamos antes. Para la base de datos, usemos MDB. ¿Deseas eliminar la base de datos
+al depurar con slapd? Diré que no. Nos pregunta si queremos mover
+la otra base de datos y haremos clic en "Yes". Ahora pregunta si deseamos habilitar
+el protocolo LDAP, versión 2. Diremos que no.
+Listo. Ya está en ejecución el servidor de OpenLDAP. Sí que estamos avanzando.
+Continuemos así.

@@ -1,0 +1,55 @@
+Ahora que ya unimos
+todas estas computadoras a nuestro dominio ¿qué haremos con ellas? En esta lección, veremos cómo usar
+la directiva de grupo de Active Directory para configurar las computadoras
+y el dominio mismo. Como ya mencionamos estos servicios son bases de datos
+que almacenan información sobre objetos. Los objetos representan elementos
+de tu red que quieres poder referenciar o administrar. Uno de estos tipos de objetos en AD es
+el objeto de directiva de grupo o GPO. ¿Qué es el GPO? Es un conjunto de directivas y preferencias aplicables
+a un grupo de objetos en el directorio. Los GPO contienen una configuración
+para cuentas de usuarios y computadoras. Quizás prefieras software
+diferentes para el equipo de marketing el legal y el de ingeniería. Usar directivas de grupo ayudará
+a estandarizar las preferencias de usuarios para cada equipo
+y será más fácil la configuración. Con las directivas de grupo, puedes crear
+secuencias de comandos para acceder y salir,
+y aplicarlas a usuarios y equipos. Puedes configurar el registro de eventos y decirle a la computadora cuáles registrar
+y dónde enviar los registros. Puedes decir cuántas veces alguien puede
+ingresar la contraseña incorrecta antes de que se bloquee la cuenta. Puedes instalar software
+que quieres que esté disponible y bloquear el que no quieres que se ejecute. Tú mandas. Y esto es solo el comienzo. Puedes crear la cantidad
+de objetos de directiva de grupo que quieras pero no servirán hasta que estén vinculados
+a dominios, sitios o UO. Cuando vinculas un GPO,
+todas las computadoras o usuarios del dominio sitio o UO tendrán aplicada esa directiva. Puedes usar otras herramientas,
+como filtros de seguridad o filtros WMI, para que las directivas
+se apliquen de forma más selectiva. Analizaremos eso en un rato. Un objeto de directiva de grupo
+puede contener la configuración de equipos la configuración de usuarios o ambas. Estas se aplican en diferentes momentos. La configuración de equipos se aplica
+cuando este se registra en el dominio de Active Directory. Esto sucederá cada vez que la computadora
+se inicie en Windows salvo que esté desconectada de la red
+en el momento del inicio. La configuración de usuarios se aplica cuando
+la cuenta se registra en la computadora. En cada caso, cuando el GPO está activo,
+se verifica y aplica cada varios minutos. ¿Recuerdas cuando dije que los GPO
+contenían directivas y preferencias? ¿Cuál es la diferencia? La directiva es una configuración
+que se vuelve a aplicar cada varios minutos y no se debería cambiar,
+ni siquiera por los administradores locales. De forma predeterminada, estas directivas
+se volverán a aplicar cada 90 minutos. Esto asegura que las computadoras de la red
+no se desvíen de la configuración que los administradores
+de sistemas definieron. Las preferencias, por otro lado,
+son configuraciones que, en muchos casos están concebidas como una plantilla. Los administradores elegirán la configuración
+que debe ser predeterminada en las computadoras que aplican los GPO. Pero alguien que usa la computadora
+puede cambiar la configuración de lo definido en la directiva,
+y ese cambio no se reemplazará. ¿Cómo hacen las computadoras
+unidas al dominio para obtener los GPO? Cuando una computadora
+o usuario unido al dominio se registra en él
+y contacta a un controlador de dominio este le otorga a la computadora
+una lista de directivas para aplicar. La computadora descarga esas directivas
+desde una carpeta especial llamada SYSVOL que se exporta como recurso compartido en red
+desde cada controlador de dominio. Esta carpeta se replica
+entre todos los controladores del dominio y puede contener secuencias de comandos
+para acceder y salir del equipo. Cuando la computadora descarga sus GPO,
+los aplica a la computadora. Por último, muchas directivas y preferencias en los GPO se representan
+como valores en el registro de Windows. Este registro es una base de datos
+jerárquica de configuración que Windows y muchas aplicaciones de Windows usan para almacenar datos de configuración. El GPO se aplica
+a través de cambios en el registro. El SO y las aplicaciones de Windows leen
+la configuración del registro para determinar su comportamiento. La administración de las directivas
+de grupo es un gran tema. Hablaremos sobre
+los conceptos básicos en este curso. Ahora que entiendes un poco
+sobre los objetos de directiva de grupo veamos cómo usarlos para administrar
+Active Directory y las computadoras unidas.

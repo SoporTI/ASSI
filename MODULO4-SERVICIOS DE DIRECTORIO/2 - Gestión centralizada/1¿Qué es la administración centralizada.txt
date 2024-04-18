@@ -1,0 +1,55 @@
+La tarea de los administradores de sistemas,
+claro está, es administrar sistemas. Estos son responsables de un conjunto
+de sistemas, y deben administrarlos para que estén disponibles
+y cumplan su tarea en la organización. Por ejemplo, como administrador de sistemas,
+podría tener que garantizar que todos los servicios de la red
+estén al día con los parches de seguridad y las actualizaciones de apps. ¿Debería acceder
+a cada servidor que controlo a la vez? ¿Y si debo administrar cuentas
+en dispositivos de usuarios finales? ¿Debería dirigirme al escritorio
+de cada empleado y configurar sus cuentas? Supongo que podría, pero llevaría
+mucho tiempo y quizá sería incongruente. En su lugar, lo que debo hacer
+es usar la administración centralizada. Un servicio central que brinda
+instrucciones a todos los componentes de la infraestructura de TI. Los servicios de directorio
+son uno de estos servicios. ¿Recuerdas que en lecciones anteriores
+creaste las cuentas y les otorgaste acceso a los recursos de tu equipo? Imagina que trabajas en una organización
+que tiene decenas, cientos o incluso miles de computadoras
+y personas que las usan. Posiblemente no puedas configurar
+cada una de ellas por separado. Los servicios de directorio ofrecen
+autenticación, autorización y contabilización centralizada, conocido como "AAA". Cuando se configuran computadoras
+y aplicaciones para servicios de directorio con los servicios de AAA,
+la decisión de otorgar o rechazar el acceso a las computadoras, los sistemas de archivos
+y otros recursos de TI está centralizada. Podrás crear una cuenta de usuario
+y ponerla a disposición de toda la red de una sola vez
+y con facilidad, o algo así. Ahora, avancemos un paso más. Supongamos que tienes un sistema
+de archivos de red al que debe acceder todo el departamento de TI. Podrías configurar el recurso compartido
+de la red e indicarle qué cuentas de usuario recibirán acceso. ¿Y si alguien nuevo se suma
+al departamento de TI? ¿O si alguien lo abandona? En vez de otorgar acceso según tu identidad,
+¿por qué no lo haces según tu función? En muchas organizaciones, el acceso
+a las computadoras y los recursos de red depende de tu rol. Cuando administras el acceso
+a los recursos de una computadora y una red a menudo otorgas o rechazas
+el acceso según los grupos de usuario. Con los grupos de usuario, puedes organizar
+cuentas de usuario de muchas maneras. Puedes crear grupos según
+los edificios en los que trabaja la gente o el rol de una persona de la organización,
+o cualquier otro factor. Lo importante es que uses los grupos
+para organizar las cuentas según cómo los administrarás. Como administrador de sistemas puedes estar autorizado
+para hacer otras tareas como crear cuentas de usuario
+y restablecer contraseñas. Puedes hacerlo gracias a tu rol
+de administrador de sistemas. Si agregas otro administrador de sistemas
+a la organización, no deberías averiguar a qué debería tener acceso
+ni otorgarle acceso individual a cada una de las cuentas de estos recursos. Sería eterno. En cambio, creamos un grupo
+para administradores de sistemas y agregamos a todas
+las personas con ese rol. Luego, otorgamos al grupo de administradores
+acceso a los recursos que necesiten. Si tú u otra persona cambia
+de rol en la empresa lo único que debes hacer es cambiar
+los grupos de los que formas parte no los derechos que tienes
+para acceder directamente a recursos. Esto se llama
+control de acceso basado en roles, o RBAC. Controlar el acceso a los recursos
+no es lo único que puedes hacer. También puedes centralizar
+la administración de la configuración. No debes configurar
+las cuentas de usuario en cada computadora. Tampoco tienes que hacerlo
+para instalar impresoras, configurar software o montar sistemas de archivos de red. Con la administración centralizada de la configuración
+de computadoras y software puedes crear reglas sobre cómo deben
+funcionar los componentes de la organización. La administración
+de la configuración se puede centralizar. Puedes empezar con algo simple como las secuencias de comandos
+de inicio de sesión que se ejecutan cada vez
+que se inicia sesión en una computadora.

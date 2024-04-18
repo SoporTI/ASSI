@@ -1,0 +1,52 @@
+Como mencionamos en una lección anterior,
+el administrador de sistemas suele gestionar el ciclo de vida de las cuentas de usuario. Las cuentas de usuario son
+una parte importante de la TI. Identifican quién eres
+y controlan el tipo de acceso que tienes a los recursos de TI de la organización. Una mala administración de las cuentas
+impide que los usuarios hagan sus tareas lo que desperdicia tiempo
+y se vuelve frustrante. Las cuentas de usuario con demasiados
+accesos o que ya no son necesarias son riesgosas para la organización. Todo esto implica que garantizar
+que las cuentas se creen, se mantengan y, finalmente, se eliminen es
+una de las tareas fundamentales que tienen los administradores de sistemas. Entremos en detalle. Creemos una cuenta de usuario para Kristi
+con Active Directory Administrative Center y dejémosla en su contenedor predeterminado. Si hacemos clic con el botón derecho
+en Usuarios y luego hacemos clic en Usuario aparece este cuadro de diálogo
+para crear un usuario. Hay muchos datos aquí. ¿Realmente debemos completar todo esto? Por suerte, no. Solo los campos con asteriscos. Escribamos un nombre completo
+y un nombre de cuenta para Kristi. El nombre completo es el nombre real. Pero ¿qué es Inicio de sesión
+de SamAccountName de usuario? Es una manera muy larga
+de decir nombre de usuario. El administrador de cuentas de seguridad
+(SAM) es una base de datos de Windows que almacena
+nombres de usuario y contraseñas. De aquí proviene el nombre de la cuenta SAM. Primero escribiré Kristi. Luego, su cuenta de usuario. También se llamará Kristi. Vemos que el dominio formará parte
+del nombre completo de las cuentas. Cada cuenta de usuario debe tener
+un nombre de usuario único en el dominio. Aquí solo usaremos
+el primer nombre de Kristi. Ahora, creemos una contraseña
+para la nueva cuenta de usuario. No queremos saber la contraseña de Kristi,
+por lo que nos aseguraremos de que la cambie cuando vuelva a iniciar sesión
+y le elegiremos una contraseña aleatoria. Así. Bien. La consola administrativa de AD permite
+crear cuentas de usuario una a la vez. Pero, con el tiempo, necesitaremos
+crear muchas más cuentas a la vez. Piensa en la época de inscripciones
+en colegios o universidades cuando deben crearse cientos o miles
+de cuentas de usuario en pocos días. No deberías hacerlo
+completando los formularios de ADAC. Si sabes crear una cuenta de usuario
+en la interfaz de línea de comandos puedes aprender a escribir una secuencia
+de comandos que ejecute esos comandos por ti una y otra vez. Hablaremos más sobre la escritura de
+secuencias de comandos y la automatización. Por ahora, solo queremos ver
+los comandos necesarios para emular lo que ADAC hace por nosotros. Resulta que todo lo que haces en ADAC,
+en realidad, se ejecuta en PowerShell. En la parte inferior de la consola,
+está el historial de Windows PowerShell. Podemos desplegarlo para ver
+los comandos que ejecuta ADAC. Parece que ADAC ejecutó algunos comandos
+al crear la cuenta de usuario de Kristi. Hay otro detalle que quiero mencionar. Cuando necesitamos describir
+toda la ruta de un objeto en AD a menudo usamos la notación de LDAP. Puedes verla en varios parámetros
+del historial de PowerShell. Ahora, veamos los grupos de Active Directory. ¿Recuerdas que hablamos sobre los grupos
+que se usan para otorgar permisos a roles? Creemos un grupo basado en el rol de Kristi
+en esta organización ficticia. Kristi es investigadora. En Active Directory Administrative Center,
+haz clic con el botón derecho en el contenedor Usuarios
+y selecciona Grupo nuevo. Lo llamaremos Investigadores. Escribámoslo en el campo Nombre de grupo. ¿Ves nuevamente
+el campo SamAccount? Se completa automáticamente
+a medida que escribimos el nombre. Puedes crear un grupo con otro nombre
+completo y otro nombre de SamAccount pero no suele ser útil. Sí es una buena idea
+incluir una descripción del grupo. Así, todos entenderán para qué es. También podemos agregar un grupo
+inicial de usuarios desde aquí. Pero lo dejaremos para el paso siguiente. Por ahora, hagamos clic en Aceptar
+para crear el grupo. Ahora el grupo aparece en ADAC,
+y la descripción indica para qué es. Excelente. Ahora veamos cómo funciona ADAC
+y cómo hacerlo en PowerShell. Para ello, abriré PowerShell
+y pegaré mi comando. Listo. Aquí están todos los ajustes
+que completamos en los campos del cuadro de diálogo Crear grupo en ADAC.

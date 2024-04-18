@@ -1,0 +1,42 @@
+Administrar Active Directory no es
+un tema importante, sino superimportante. Hay administradores de sistemas que pasan
+todo su tiempo administrando AD. Dedicaremos algo de tiempo a explicar
+algunas de las tareas más comunes que un administrador debe ejecutar
+en un entorno de Active Directory. Al instalar un dominio de Active Directory,
+vemos una cuenta de usuario predeterminada un administrador
+y varios grupos de usuario predeterminados. Repasemos los grupos más importantes. Para ello, iré
+a mi ventana de Active Directory. Como ven, estoy en example.com
+y revisaremos los usuarios. Admins. del dominio son los administradores
+del dominio de Active Directory. La cuenta de administrador es el único
+miembro del grupo en un dominio nuevo. ¿Recuerdas que un administrador local
+o usuario raíz de la máquina puede aplicar
+cualquier cambio en el sistema operativo? Los usuarios del grupo de administradores del
+dominio pueden hacer lo mismo en el dominio. Como el dominio controla la configuración
+de todas las computadoras vinculadas los administradores de dominio
+pueden ser administradores locales de todas estas máquinas. Es mucho poder y una gran responsabilidad;
+no agregues cuentas a este grupo a la ligera. Administradores de empresas son
+los administradores del dominio de AD. También pueden aplicar cambios
+en el dominio que afectan a otros dominios de un bosque multidominios. La cuenta de administrador es el único
+miembro del grupo en un dominio nuevo. Las cuentas de Administrador de empresas solo
+deberían usarse en casos especiales como cuando se actualiza el bosque
+de Active Directory a una versión nueva. Usuarios del dominio es un grupo que contiene
+cada cuenta de usuario del dominio. Si quieres otorgar a cada persona del dominio
+acceso a un recurso de red no debes hacerlo
+individualmente en cada cuenta. Puedes usar Usuarios del dominio. Cada computadora
+vinculada al dominio también tiene una cuenta por lo que hay
+un grupo predeterminado para ellas. Equipos del dominio contiene
+todas las computadoras vinculadas al dominio excepto los controladores de dominio. Controladores de dominio contiene todos
+los controladores de dominio del dominio. Podré hacer todo en esta lección
+porque simularé tener el rol de administrador de dominio en mi organización de ejemplo. Como administrador
+o especialista en asistencia de TI también puedes ser administrador
+de dominio o administrador empresarial. Gracias al poder que recibes para aplicar
+cambios en Active Directory no deberías usar una cuenta de administrador
+de dominio como tu cuenta habitual. Es muy fácil cometer un error
+que afecte a toda la organización. Las cuentas de administrador de dominio
+solo deben usarse para cambios deliberados en Active Directory, ¿entendido? Tu cuenta de usuario habitual debe ser
+como otras cuentas de usuario del dominio donde tus permisos se restringen solo a los
+recursos a los que debes acceder día a día. Si debes ejecutar algunas tareas
+administrativas como parte de tu trabajo pero no necesitas acceso general para aplicar
+cambios en AD, usa la delegación. Así como puedes configurar LCA de NFTS
+para otorgar permiso a las cuentas en el sistema de archivos, también puedes
+configurar LCA en los objetos de AD.

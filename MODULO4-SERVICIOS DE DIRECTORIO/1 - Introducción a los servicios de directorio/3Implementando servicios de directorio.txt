@@ -1,0 +1,27 @@
+Los servicios de directorio se volvieron
+un estándar de las redes abiertas para que los distintos proveedores
+de software interactúen entre sí. En 1988, se autorizó
+el estándar de directorios X.500 que incluía protocolos como el Protocolo
+de acceso a directorios, o DAP. El Protocolo del sistema
+de directorios, o DSP. El Protocolo de seguimiento
+de la información del directorio, o DSIP. Y el Protocolo de gestión de los enlaces
+operativos del directorio, o DOP. Con las alternativas a DAP, los clientes
+pudieron acceder al directorio X.500. La más popular fue el Protocolo
+ligero de acceso a directorios, o LDAP. Como son estándares abiertos de comunicación
+y acceso para servicios de directorio aparecieron muchas implementaciones
+distintas para estos servicios. Existen opciones de Apache, Oracle IBM y Red Hat, pero abordaremos
+dos de ellas con más detalle en este módulo. La primera es la implementación de Microsoft,
+denominada Active Directory o AD. Posee funciones personalizadas
+y adicionales para la plataforma de Windows. Además hay implementaciones de código abierto
+para servicios de directorio con LDAP. Un ejemplo conocido es OpenLDAP. OpenLDAP es compatible con muchas
+plataformas, como Windows, UNIX, Linux y otros productos derivados. Además del software de servicio,
+hay herramientas cliente que se usan para acceder y administrar
+el servidor de directorio. Microsoft Office Active Directory
+Users and Computers o ADUC que funciona muy bien
+con Active Directory Server de Microsoft. También hay otras herramientas abiertas
+que pueden usarse para interactuar con muchas otras implementaciones
+de servidor de directorio. Además de los clientes
+que administran un servidor de directorio también hay aplicaciones cliente
+que pueden interactuar y consultar un servidor de directorio. Las principales plataformas de SO admiten
+la integración en un servidor de directorio para iniciar sesión y autenticarse. Como ventaja, permite administrar
+las cuentas de usuario de forma centralizada.

@@ -1,0 +1,35 @@
+Es más fácil administrar OpenLDAP
+con un navegador web y phpLDAPadmin. Pero puedes lograr igual resultado
+con una herramienta de línea de comandos. Te recomiendo que revises
+cómo configurar phpLDAPadmin si es la primera vez que configuras OpenLDAP. En esta lección, repasaremos
+de forma rápida algunos de los comandos para agregar, modificar
+y eliminar entradas en tu directorio. Para usar
+una herramienta de línea de comandos debes recurrir a lo que se conoce
+como archivos LDIF. Ya vimos el formato LDIF
+o la notación de LDAP en acción. Se trata de un archivo de texto
+que enumera atributos y valores para describir algo. Aquí hay un ejemplo sencillo
+de un archivo LDIF para un usuario. Por más que no entendamos
+lo que dice la sintaxis de este archivo podemos deducir que se refiere
+a una empleada llamada Cindy que trabaja en el departamento de Ingeniería
+de la compañía example.com. Una vez que creas tus archivos LDIF,
+no hay más que hacer. Según el tipo de tarea
+que quieres ejecutar en tu directorio podrías usar comandos como los siguientes. Ldapadd recibe los datos de un archivo LDIF
+y agrega el contexto de los archivos. Ldapmodify, como supones,
+modifica un objeto vigente. Ldapdelete elimina el objeto
+al que se refiere el archivo LDIF. Ldapsearch busca las entradas
+en la base de datos de tu directorio. No hay que conocer
+la sintaxis de estos comandos. Puedes revisar
+la sintaxis en los documentos oficiales pero, como ves, trabajar
+con OpenLDAP no es tan aterrador. Funciona de forma muy similar
+a Windows Active Directory o AD. Puedes usar tus conocimientos y completar tu directorio
+como si usases Windows AD. Como sucede en Windows AD,
+este tema puede ser bastante extenso. Busca qué solución de directorios
+se adapta mejor a la TI de tu organización. Hay muchas razones para contar
+con la ayuda de un servicio de directorio como OpenLDAP o Active Directory o para usar
+el rol de administrador del sistema. Los servicios de directorio son útiles
+para centralizar la autenticación y para llevar un registro
+de las computadoras de tu organización o de quiénes acceden a ellas. Asegúrate de explorar OpenLDAP y phpLDAPadmin
+para familiarizarte con ellos y entender mejor cómo funcionan
+estos servicios de directorio. Revisar la documentación oficial es siempre
+una buena forma de empezar. Ya aprendiste sobre los servicios
+fundamentales en infraestructura informática.

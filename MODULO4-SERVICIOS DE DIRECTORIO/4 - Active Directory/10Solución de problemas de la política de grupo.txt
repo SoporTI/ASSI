@@ -1,0 +1,67 @@
+Como administrador de sistemas
+o especialista en asistencia de TI es posible que te convoquen para solucionar problemas
+relacionados con Active Directory. Veamos algunas de las tareas
+de solución de problemas que puedes encontrar. Aquí, veremos herramientas que te ayudarán
+a solucionar estas situaciones problemáticas. Ten en cuenta que son solo ejemplos. Dado que trabajamos con sistemas complejos hay muchas posibilidades
+de que las cosas no funcionen. Tu mejor herramienta es conocer
+estos sistemas y comprender cómo funcionan. La solución de problemas
+e investigación minuciosas son tus aliadas. Uno de los problemas más comunes
+que encontrarás es que un usuario no pueda iniciar sesión en su computadora
+o autenticarse en el dominio de Active Directory. Esto puede ocurrir por muchas razones. Tal vez escribió la contraseña
+con las mayúsculas activadas. Quizás bloqueó su computadora
+y no puede acceder cambió por accidente
+una configuración del sistema o haya un error de software. Es importante pensar en los pasos
+para solucionar el problema y recordar hacer preguntas
+sobre lo ocurrido. Asegúrate de observar las condiciones exactas
+que provocaron la falla y los mensajes de error que se generaron. Debería haber información suficiente
+para que comiences a solucionar el problema. Hablemos un poco de las fallas más comunes
+que pueden provocar problemas
+de autenticación de las cuentas de usuario. Si un usuario ingresa una contraseña errónea
+varias veces seguidas su cuenta puede bloquearse. Las personas suelen olvidar sus contraseñas
+y necesitan asistencia del administrador. Si la computadora de un dominio no encuentra
+un controlador de dominio para autenticarse entonces nada que requiera la autenticación
+de Active Directory funcionará. Cuando quieras solucionar un problema,
+comienza por la solución más sencilla. Podría ser
+un problema de conectividad de la red y nada específico de Active Directory. Si la computadora no está conectada a una red que pueda enrutar
+las comunicaciones al controlador de dominio entonces esto debe solucionarse. Los problemas
+de red que impiden que la computadora se conecte al controlador de dominio
+o a los servidores DNS configurados que permiten buscar el controlador
+de dominio pueden ser un inconveniente. ¿Por qué es tan importante el DNS? Para que la computadora
+se conecte a un controlador de dominio primero debe encontrar uno. Esto se logra con registros de DNS. La computadora del dominio
+le solicitará al DNS los registros SRV que coincidan
+con el dominio al que está vinculado. Si la computadora
+no puede conectarse a este servidor DNS o si los servidores DNS no tienen
+los registros SRV que busca la computadora no podrá encontrar el controlador de dominio. Los registros SRV
+que nos interesan son _ldapt._ tcp. dc._ msdcs.DOMAIN.NAME en donde el nombre de dominio
+es el nombre de DNS de nuestro dominio. Voy a ir a mi PowerShell y escribiré Resolve-DNSName -Type SRV -Name _ldap._tcp.dc._ msdcs.example.com. Eso se ve bien. Debería ver un registro SRV para cada uno
+de mis controladores de dominio, y así es. Perfecto. Si no puedo resolver los registros SRV
+para mis controladores de dominio es posible que los servidores DNS
+estén mal configurados. ¿Cómo podrían estar mal configurados? Bien, las computadoras del dominio deben usar
+los servidores DNS que alojan mis registros de dominio
+de Active Directory. A menudo se tratará de uno o más
+de mis controladores de dominio pero puede ser otro servidor de dominio. De cualquier forma,
+los servidores DNS correctos para las computadoras de tu dominio
+deben ser conocidos y estar documentados. Compara la configuración de la máquina
+con la configuración correcta conocida y detecta si debe ajustarse. Por otro lado,
+si estás resolviendo algunos registros SRV pero parecen estar incompletos
+o ser incorrectos es posible que la solución
+de problemas deba ser más detallada. Algo más para mencionar. Según la configuración
+del dominio y las computadoras es habitual que la autenticación local
+siga funcionando. Por un tiempo, al menos. Cuando alguien inicia sesión
+en una computadora de dominio la información necesaria para autenticar
+al usuario se copia en la máquina local. Esto significa
+que después del primer inicio de sesión podrás iniciar sesión en la computadora
+aunque la red esté desconectada. No te autenticarás en el dominio ni tendrás autorización
+para acceder a sus recursos como las carpetas compartidas. Que alguien pueda iniciar sesión
+no significa que pueda encontrar el controlador del dominio. Otro problema
+que puede impedir que los usuarios se autentiquen se relaciona con el reloj. Kerberos
+es el protocolo de autenticación que usa AD y es sensible a las diferencias de hora. No hablo de las zonas horarias locales.
+Me refiero a la hora UTC relativa. Si el controlador de dominio y la computadora
+no coinciden en la hora UTC en un plazo de cinco minutos,
+el intento de autenticación fallará. Las computadoras
+de dominio suelen sincronizar su hora con los controladores de dominio
+mediante el servicio Hora de Windows. Pero esto puede fallar. Si la computadora se desconecta
+de la red de un dominio mucho tiempo o si un software o administrador local
+modifican la hora y la desfasan demasiado es posible que la computadora no pueda resincronizarse automáticamente
+con un controlador de dominio. Puedes forzar manualmente la resincronización
+de la computadora de dominio con el comando w32tm/resync.
